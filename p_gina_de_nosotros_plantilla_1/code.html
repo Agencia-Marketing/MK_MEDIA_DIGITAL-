@@ -1,0 +1,359 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nosotros | VibrantAgency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-fixed": "#191c1d",
+                        "tertiary-fixed-dim": "#ffb877",
+                        "surface": "#f9f9f9",
+                        "secondary": "#5c5f60",
+                        "primary-fixed": "#f0dbff",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "inverse-surface": "#2f3131",
+                        "inverse-on-surface": "#f0f1f1",
+                        "secondary-fixed": "#e1e3e4",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#ddb8ff",
+                        "outline": "#7e7385",
+                        "on-secondary-container": "#626566",
+                        "primary": "#6200a9",
+                        "tertiary-fixed": "#ffdcc1",
+                        "on-secondary-fixed-variant": "#454748",
+                        "surface-container-low": "#f3f3f4",
+                        "on-primary-container": "#e4c5ff",
+                        "tertiary-container": "#864a00",
+                        "on-background": "#1a1c1c",
+                        "tertiary": "#643600",
+                        "secondary-fixed-dim": "#c5c7c8",
+                        "surface-tint": "#832ad3",
+                        "primary-container": "#7e22ce",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-tertiary-fixed-variant": "#6c3a00",
+                        "outline-variant": "#cfc2d6",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#e1e3e4",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary-container": "#ffc593",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ddb8ff",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#4c4354",
+                        "on-primary-fixed-variant": "#6800b4",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#2c0051",
+                        "surface-variant": "#e2e2e2",
+                        "surface-bright": "#f9f9f9",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "card": "24px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "section-padding-desktop": "120px",
+                        "section-padding-mobile": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-hero-mobile": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-hero": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-hero-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-hero": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Header Section -->
+<header class="bg-primary-container h-20 flex items-center sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-base md:px-gutter max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-primary">
+                VibrantAgency
+            </div>
+<nav class="hidden md:flex items-center gap-8 font-body-md text-body-md">
+<a class="text-on-primary-container opacity-80 hover:opacity-100 transition-opacity" href="../landing_page_plantilla_1/code.html">Inicio</a>
+<a class="text-on-primary font-bold border-b-2 border-on-primary pb-1" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
+<a class="text-on-primary-container opacity-80 hover:opacity-100 transition-opacity" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a>
+<a class="text-on-primary-container opacity-80 hover:opacity-100 transition-opacity" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+</nav>
+<div class="flex items-center gap-4 text-on-primary">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">search</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">shopping_cart</span>
+<button class="bg-on-primary text-primary-container font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-fixed transition-colors">
+                    Empecemos
+                </button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="bg-primary-container py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-base md:px-gutter grid md:grid-cols-2 gap-gutter items-center">
+<div class="text-on-primary">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero mb-6">
+                    Impulsamos el crecimiento de tu marca trabajando en equipo.
+                </h1>
+<p class="font-body-lg text-body-lg opacity-90 max-w-xl mb-10">
+                    Nuestro compromiso es ir más allá de tus metas, forjando alianzas duraderas cimentadas en la transparencia y los triunfos mutuos.
+                </p>
+<div class="flex gap-4">
+<button class="bg-on-primary text-primary-container font-label-sm text-label-sm px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">
+                        Nuestra Historia
+                    </button>
+<button class="border-2 border-on-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full font-bold hover:bg-on-primary hover:text-primary-container transition-all">
+                        Servicios
+                    </button>
+</div>
+</div>
+<div class="relative mt-12 md:mt-0">
+<div class="absolute -inset-4 bg-white/10 rounded-card blur-2xl"></div>
+<img alt="Equipo trabajando" class="relative z-10 w-full rounded-card shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQhPEMMIcG4hW_a1hwRUCZbB6U011aYxBNG6rY_Wlm0kLNNxgNBuaZQK2W43MWAdxsIFeJYhACgabnvUUnSsyWL0-nrqiRYX2Ui3MSA7xgEzpBZHaT4sd-QmisarvyAZlU2UxGFMFBb0PDkw8MM7YodinZHkhpF331gfHKMEFT9A2srJO4QsyiX8AnamTwk_Nosqrz92z1UgUOYnS-ROZWMOxxq6yoWgqVdA6u-bhcgrsZ9lnBT24GjhIJG-iVejSSjbOq7wFHksbI">
+</div>
+</div>
+</section>
+<!-- Motor Section (Bento Style Variation) -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto px-base md:px-gutter grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 relative">
+<img alt="Liderazgo creativo" class="w-full h-auto rounded-card shadow-xl border-4 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwKFIrrQy6l4HevDOlZIakGLDpej8j1gVs_wOQVLKp8w_lk2pi7YnE68Oq-hxvmfYm28agDkMRbfQJ3Q7jCgPVoIKgUdrtba4HL6PPxLTgvBDCfuLbpunBVDd_c3BvK_Em21m4HiCEjARo-2WSyFqw7IG0v-CpFOhUXlwNVkMgs42cs2w1XnaIs0yQHu_xYsObjOOjyGKoaNORKPRpfZPDwqIU0k8vV6V0yB7wgFNWwk2PiKq8k49uEFvAu7hONvLa6KlVkxayUGHO">
+<div class="absolute -bottom-10 -right-10 hidden md:block">
+<div class="bg-primary text-on-primary p-8 rounded-card shadow-lg max-w-[240px]">
+<span class="font-display-hero-mobile text-display-hero-mobile block">10+</span>
+<span class="font-body-md text-body-md">Años transformando marcas digitales</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<span class="text-primary font-label-sm text-label-sm uppercase tracking-widest mb-4 block">Nuestra Esencia</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">
+                    El motor que impulsa nuestra agencia
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                    Vivimos para detonar el máximo rendimiento de tu negocio en internet. No somos solo una agencia, somos tu socio estratégico. Entendemos que cada clic cuenta y cada interacción es una oportunidad para brillar. Nuestra metodología combina datos rigurosos con una creatividad desbordante para asegurar que tu marca no solo sea vista, sino recordada.
+                </p>
+<button class="bg-primary-container text-on-primary font-label-sm text-label-sm px-10 py-5 rounded-full hover:shadow-lg hover:-translate-y-1 transition-all">
+                    Hablemos de tu proyecto
+                </button>
+</div>
+</div>
+</section>
+<!-- Sobre Nosotros (Minimal Centered) -->
+<section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-3xl mx-auto px-base md:px-gutter text-center">
+<div class="w-16 h-1 bg-primary mx-auto mb-10"></div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">
+                Quiénes Somos
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8">
+                Nuestra misión es maximizar tu presencia online de forma contundente. Creemos en el poder de las ideas bien ejecutadas y en la tecnología como facilitador del crecimiento humano. VibrantAgency nació de la necesidad de ofrecer soluciones digitales que realmente muevan la aguja del éxito empresarial, sin complicaciones y con total transparencia.
+            </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+<div>
+<div class="text-primary font-bold text-headline-md font-headline-md mb-2">500+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm uppercase">Proyectos</div>
+</div>
+<div>
+<div class="text-primary font-bold text-headline-md font-headline-md mb-2">98%</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm uppercase">Retención</div>
+</div>
+<div>
+<div class="text-primary font-bold text-headline-md font-headline-md mb-2">24/7</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm uppercase">Soporte</div>
+</div>
+<div>
+<div class="text-primary font-bold text-headline-md font-headline-md mb-2">15</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm uppercase">Países</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Equipo (Grid Layout) -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-base md:px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">
+                        Conoce a nuestros expertos
+                    </h2>
+<p class="font-body-lg text-body-lg italic text-primary">
+                        "El talento gana partidos, pero el trabajo en equipo y la inteligencia ganan campeonatos."
+                    </p>
+</div>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full font-bold hover:bg-on-primary-fixed-variant transition-colors whitespace-nowrap">
+                    Agenda una cita
+                </button>
+</div>
+<!-- Team Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Representing the split grid from IMAGE_8 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-card mb-4 bg-on-surface aspect-square">
+<img alt="Expert 1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw68RandWuA-Cm66imlHO-2YaWcYkyGI0n__B4_S0gAi0BT9TZlemaiVNzbqp7ZnAtuiNhTc1WWoidxFicwQzbSRsr89x0zScYYenAWvffaK-8hyCxkJ-KrK7evS0H4ppjC-sokzLd51aYZCAND9vZyT2isoWP-HIPjO-l815HFdkD6RFfB7eTk4xHmxIYOaFZs0SzkKD4y3RF-YA_yvjJalYx9w6JeDn5hyQqMJmJZh5tSU-ey2ZltKzF7vgY__uxG8SKks2sRaFI">
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Alex Rivera</h3>
+<p class="text-primary font-body-md text-body-md">Director Creativo</p>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-card mb-4 bg-on-surface aspect-square">
+<img alt="Expert 2" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw68RandWuA-Cm66imlHO-2YaWcYkyGI0n__B4_S0gAi0BT9TZlemaiVNzbqp7ZnAtuiNhTc1WWoidxFicwQzbSRsr89x0zScYYenAWvffaK-8hyCxkJ-KrK7evS0H4ppjC-sokzLd51aYZCAND9vZyT2isoWP-HIPjO-l815HFdkD6RFfB7eTk4xHmxIYOaFZs0SzkKD4y3RF-YA_yvjJalYx9w6JeDn5hyQqMJmJZh5tSU-ey2ZltKzF7vgY__uxG8SKks2sRaFI">
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Elena Gómez</h3>
+<p class="text-primary font-body-md text-body-md">Estratega SEO</p>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-card mb-4 bg-on-surface aspect-square">
+<img alt="Expert 3" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw68RandWuA-Cm66imlHO-2YaWcYkyGI0n__B4_S0gAi0BT9TZlemaiVNzbqp7ZnAtuiNhTc1WWoidxFicwQzbSRsr89x0zScYYenAWvffaK-8hyCxkJ-KrK7evS0H4ppjC-sokzLd51aYZCAND9vZyT2isoWP-HIPjO-l815HFdkD6RFfB7eTk4xHmxIYOaFZs0SzkKD4y3RF-YA_yvjJalYx9w6JeDn5hyQqMJmJZh5tSU-ey2ZltKzF7vgY__uxG8SKks2sRaFI">
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Marc Costa</h3>
+<p class="text-primary font-body-md text-body-md">Lead Developer</p>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-card mb-4 bg-on-surface aspect-square">
+<img alt="Expert 4" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw68RandWuA-Cm66imlHO-2YaWcYkyGI0n__B4_S0gAi0BT9TZlemaiVNzbqp7ZnAtuiNhTc1WWoidxFicwQzbSRsr89x0zScYYenAWvffaK-8hyCxkJ-KrK7evS0H4ppjC-sokzLd51aYZCAND9vZyT2isoWP-HIPjO-l815HFdkD6RFfB7eTk4xHmxIYOaFZs0SzkKD4y3RF-YA_yvjJalYx9w6JeDn5hyQqMJmJZh5tSU-ey2ZltKzF7vgY__uxG8SKks2sRaFI">
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Sofía Méndez</h3>
+<p class="text-primary font-body-md text-body-md">Growth Manager</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-primary-fixed py-section-padding-mobile md:py-section-padding-desktop text-on-primary">
+<div class="max-w-container-max mx-auto px-base md:px-gutter grid grid-cols-1 md:grid-cols-4 gap-12">
+<!-- Col 1: Logo & Social -->
+<div>
+<div class="font-headline-md text-headline-md font-bold text-on-primary mb-6">
+                    VibrantAgency
+                </div>
+<p class="font-body-md text-body-md opacity-70 mb-8">
+                    Liderando la revolución digital con estrategias audaces y resultados medibles.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+</div>
+</div>
+<!-- Col 2: Contacto -->
+<div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest mb-6 font-bold text-primary-fixed">Contacto</h4>
+<ul class="space-y-4 font-body-md text-body-md opacity-80">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">mail</span>
+                        hola@vibrantagency.com
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">call</span>
+                        +34 900 123 456
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">location_on</span>
+                        Paseo de la Castellana, Madrid
+                    </li>
+</ul>
+</div>
+<!-- Col 3: Navegación -->
+<div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest mb-6 font-bold text-primary-fixed">Navegación</h4>
+<ul class="space-y-4 font-body-md text-body-md opacity-80">
+<li><a class="hover:text-primary-fixed transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Portafolio</a></li>
+</ul>
+</div>
+<!-- Col 4: Servicios -->
+<div>
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest mb-6 font-bold text-primary-fixed">Servicios</h4>
+<ul class="space-y-4 font-body-md text-body-md opacity-80">
+<li><a class="hover:text-primary-fixed transition-colors" href="#">SEO &amp; SEM</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Social Media</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Web Development</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Branding</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-20 border-t border-white/10 pt-8">
+<div class="max-w-container-max mx-auto px-base md:px-gutter flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60">
+<p>© 2026 VibrantAgency. Todos los derechos reservados.</p>
+<div class="flex gap-8">
+<a class="hover:text-on-primary" href="#">Privacidad</a>
+<a class="hover:text-on-primary" href="#">Términos</a>
+<a class="hover:text-on-primary" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll animation observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

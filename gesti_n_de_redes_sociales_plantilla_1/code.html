@@ -1,0 +1,454 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Gestión de Redes Sociales | Logo.</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-secondary-fixed": "#191c1d",
+                        "surface-tint": "#832ad3",
+                        "primary-fixed-dim": "#ddb8ff",
+                        "primary-container": "#7e22ce",
+                        "on-tertiary-fixed-variant": "#6c3a00",
+                        "secondary": "#5c5f60",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#c5c7c8",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary-fixed": "#2c0051",
+                        "tertiary-fixed-dim": "#ffb877",
+                        "surface-container-low": "#f3f3f4",
+                        "on-surface": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed": "#f0dbff",
+                        "background": "#f9f9f9",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "tertiary-fixed": "#ffdcc1",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#454748",
+                        "on-primary-container": "#e4c5ff",
+                        "surface-container-highest": "#e2e2e2",
+                        "outline-variant": "#cfc2d6",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-tertiary-container": "#ffc593",
+                        "on-surface-variant": "#4c4354",
+                        "primary": "#6200a9",
+                        "tertiary-container": "#864a00",
+                        "on-secondary-container": "#626566",
+                        "on-primary-fixed-variant": "#6800b4",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#e1e3e4",
+                        "surface-dim": "#dadada",
+                        "surface": "#f9f9f9",
+                        "outline": "#7e7385",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#e1e3e4",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary": "#643600",
+                        "surface-container": "#eeeeee",
+                        "inverse-primary": "#ddb8ff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "8px",
+                        "lg": "8px",
+                        "xl": "24px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "section-padding-desktop": "120px",
+                        "section-padding-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-hero-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "display-hero": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-hero-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-hero": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .active-link { position: relative; }
+        .active-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background-color: white; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Header / Navigation -->
+<header class="bg-primary-container sticky top-0 z-50 transition-all duration-300 h-20">
+<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+<!-- Brand Identity -->
+<div class="bg-surface-variant px-4 py-2 rounded-lg">
+<span class="font-headline-md text-headline-md font-bold text-primary">Logo.</span>
+</div>
+<!-- Main Navigation Links -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-on-primary hover:opacity-80 transition-opacity" href="../landing_page_plantilla_1/code.html">Inicio</a>
+<a class="font-body-md text-body-md text-on-primary hover:opacity-80 transition-opacity" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
+<a class="font-body-md text-body-md text-on-primary active-link font-bold" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a>
+<a class="font-body-md text-body-md text-on-primary hover:opacity-80 transition-opacity" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-6">
+<button class="text-on-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="bg-surface-container-lowest text-primary font-bold px-6 py-2 rounded-full hover:bg-opacity-90 transition-all active:scale-95 text-body-md font-body-md">
+                    Contactar
+                </button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="bg-primary-container pt-section-padding-mobile md:pt-section-padding-desktop pb-0 overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6 max-w-4xl mx-auto">
+                Domina tus Redes Sociales.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-12 max-w-2xl mx-auto opacity-90">
+                Convierte a tus seguidores en clientes leales con estrategias de contenido que atrapan, retienen y multiplican tus ventas.
+            </p>
+<div class="flex justify-center relative z-10">
+<img alt="3D Social Media Icons" class="w-full max-w-3xl transform hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Tnj9XFcjNHv9TekdiJ7cx1eBF-iE0UvldTA_1tK6cWUPXBHq0RZW5bweOm4dqHNkGRWR8gxvekPi7f1MjaBj8Yaus6m1km06NTnro_gQANrNrS4HNM1stjTcePuFfQNxJN7boywvsAiRfAkQuEHn20rH6zfIvJ7Vno-Y9ZWFivsAPXz8vKAv1ebhm_sIjQaZTX8wsZ9c3WSpC-Lrqm9hfBf6Z0ajD-y_IE7uDOHG4M08t-9iRAv9nuby_oY1INFf_-m-wmytOHff">
+</div>
+</div>
+</section>
+<!-- Benefits Bar -->
+<section class="bg-surface-container-lowest py-20 relative z-20 -mt-12 md:-mt-24">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 bg-white p-12 rounded-xl shadow-xl border border-outline-variant/30">
+<!-- Benefit 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">target</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Estrategia Definida</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Trazamos la ruta exacta basada en datos para conectar tu marca con la audiencia ideal.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">trending_up</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Crecimiento Escalable</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Impulsamos tu comunidad con métricas reales usando GA4, optimización de conversiones y resultados tangibles.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Contenido Innovador</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Destaca en el feed con formatos creativos y visuales atractivos que rompen el molde del mercado.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ecosistema 360 Section -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 text-on-surface">Ecosistema Digital 360</h2>
+<p class="font-body-lg text-body-lg text-on-secondary-fixed-variant mb-16">Dominamos las plataformas clave para tu negocio.</p>
+<div class="flex flex-col gap-12">
+<!-- Row 1 -->
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">social_leaderboard</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Facebook</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">camera</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Instagram</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">close</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">X</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="flex flex-wrap justify-center gap-8 md:gap-16">
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">work</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">LinkedIn</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">push_pin</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Pinterest</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">store</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Google Business</span>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">music_note</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">TikTok</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Plans Section -->
+<section class="bg-surface-container-lowest py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 text-on-surface">Nuestros Planes</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<!-- Plans Grid (Standard) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+<!-- Plan 1 -->
+<div class="bg-white border border-outline-variant p-8 rounded-xl shadow-lg flex flex-col hover:border-primary transition-colors">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Esencial</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(1 Red Social)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$2,470 - $20,800</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 1 red social</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Estudio de mercado</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 12 publicaciones mensuales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestión de comunidad básica</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Reporte mensual</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+<!-- Plan 2 (Featured) -->
+<div class="bg-white border-4 border-primary p-8 rounded-xl shadow-2xl flex flex-col relative transform scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-1 text-label-sm rounded-full">POPULAR</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Indispensable</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(2 Redes sociales)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$2,860 - $26,000</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 2 redes sociales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Estudio de mercado</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 12 publicaciones mensuales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestión de comunidad básica</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Integración de tracking GTM</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+<!-- Plan 3 -->
+<div class="bg-white border border-outline-variant p-8 rounded-xl shadow-lg flex flex-col hover:border-primary transition-colors">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Todo en Uno</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(3 Redes sociales)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$3,770 - $39,265</div>
+<ul class="flex-grow space-y-4 mb-8">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 3 redes sociales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Diseño visual personalizado</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 20 publicaciones mensuales</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Reportes avanzados GA4</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Atención prioritaria</li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+<!-- Card 4 & 5 (Simplified for space) -->
+<div class="bg-white border border-outline-variant p-8 rounded-xl shadow-lg flex flex-col hover:border-primary transition-colors">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Profesional</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(4 Redes sociales)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$4,413 - $52,271</div>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+<div class="bg-white border border-outline-variant p-8 rounded-xl shadow-lg flex flex-col hover:border-primary transition-colors lg:hidden xl:flex">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Plan Omnipresencia</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">(5 Redes sociales)</p>
+<div class="text-primary font-bold text-headline-md mb-8">$5,850 - $62,350</div>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-opacity">CONTRATAR</button>
+</div>
+</div>
+<!-- Master Plan Elite (Full Width Bento Style) -->
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12 border border-outline-variant/30 flex flex-col md:flex-row gap-12 items-center overflow-hidden group">
+<div class="flex-1">
+<span class="bg-primary text-on-primary text-label-sm font-label-sm px-3 py-1 rounded-full mb-6 inline-block">PREMIUM</span>
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface mb-4">Master Plan Élite</h2>
+<div class="text-primary font-bold text-headline-md mb-6">$7,800 - $78,000</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
+                        La solución definitiva para marcas que buscan dominar el mercado. Incluye gestión multiplataforma total, calificación de leads con agentes de IA (Maya/Alberto), analítica avanzada y embudos personalizados en GoHighLevel.
+                    </p>
+<button class="px-12 py-5 bg-primary text-on-primary font-bold rounded-lg hover:shadow-xl hover:translate-y-[-2px] transition-all active:scale-95">CONTRATAR AHORA</button>
+</div>
+<div class="flex-1 w-full">
+<div class="rounded-xl overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-105">
+<img alt="Data Analyst with laptop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_cFbTKhIOepVknkthHQlokuf9l-z47P6SvsGoc5yAHVofY1B5ASLbUbbDoAOubUy_Delf-u8nmruJ0uGwGDCPZd9y5XBUMUk2S7uevIOqFihXP_ZMh2ewVg6dCKvrVkrEVSg4JiEbC4om2rS9m1quDHQWFr0YpHZE126cUFNzEzG17zYL7W4Yk46ER_jMrgErSgWo_w5BIJFjaPlpRbvMPhp5JLO3lcOEMC0SYU_n_eJWO7l-78j_8kvBqT5ooSb2eeAFaWEtKldJ">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="bg-surface-container-lowest py-section-padding-mobile md:py-section-padding-desktop border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-16">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Nuestro Trabajo</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Casos de éxito y marcas que confían en nosotros.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Case 1 -->
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A clean minimalist office interior with white walls, natural wood accents, and bright daylight. Professional people are seen in a soft blur, focusing on creative work in a modern workspace. The aesthetic is professional, calm, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaRTOfruyW0-7pDWOma3em0DeAA5_ul_3LUEaP_trTy9rKHV0ObOXLYisrKu5UMQB5IThZ00aWiuJxZDcz4F03XofB9E02Emn0cB8cPKXfJ-V3Nm5I83E3TpP_CILDnRNGCCM1RayEAXFdnbglk1GWT5j-Wx8FkbqztUoZttiHEqKUPftATIoJVLgpeX2Mk1QKWSiSHR7YA6AWmokQQO7D0ZtFTyw9cLH4X02PON1zefSFMtTvnoX0WiZtMkGoLH1nqN0KBB5RZ_H-">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<div class="text-on-primary">
+<h4 class="font-headline-md text-headline-md">Beviederm</h4>
+<p class="font-label-sm text-label-sm uppercase opacity-80">Sector Estético</p>
+</div>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A professional workspace with multiple screens displaying financial charts, stock market data, and analytical graphs. The lighting is low and sophisticated, featuring cool blue and deep purple tones that suggest precision and high-level financial analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7bdY9bToKCbPoD-nz1ZSvPiPx_X9DRy-1QXXAioNVg8cvxpmcSG4so1u7wMzwDhFLnsT9LaQdFq2iEgeJhQreZZeVtaHSqGucMPR6joAIh1N0DBEl7h7vPvkKqCO86fiFRpZWbQBUUNmxki4EqxTwtIgSlKz1iJm-C0mcZ_xbOJvVc-5f8gKZ6yK7whD2aimdGJ-Odq1-t9taytV5bHPlxkrmAofgZ195cwLRuLvs8tYVLaxobF6PdMGJBR4bOKk5ayWZIMyrFlta">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<div class="text-on-primary">
+<h4 class="font-headline-md text-headline-md">Sion Capital</h4>
+<p class="font-label-sm text-label-sm uppercase opacity-80">Sector Financiero</p>
+</div>
+</div>
+</div>
+<!-- Case 3 -->
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="An elegant meeting room setting with glass tables, modern ergonomic chairs, and large windows overlooking a city skyline at sunset. The atmosphere is warm and professional, emphasizing high-level corporate consultation and strategic planning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWstWJsuHQUMeJt6OWS7ftJGtXJ-pC4uaIeC5GYgCvEfNsIEjB98SZ99hKQEK_DpdlSkdGhG9tlEQGRK_MZXBerNLujk-3xrvIaNY54pglHRskjdnkxLtfsS3JcqiGrm0Pc7bJWnut_s0gbE4CF9TD2Xr05wSHPXzY25inc7Ve71xjYo0yqh0-FpJP_KH6NElR2VkEqlXoX3tYuexmRU_B-Beo0ccgHwac2qVwN1dCaH127kdy_xrdzBIXkS1TtNqznMIRwdJyNY8">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<div class="text-on-primary">
+<h4 class="font-headline-md text-headline-md">Trezentos</h4>
+<p class="font-label-sm text-label-sm uppercase opacity-80">Consultoría</p>
+</div>
+</div>
+</div>
+<!-- Case 4 -->
+<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A dynamic creative agency studio space with white brick walls, colorful abstract art, and multiple workstations equipped with high-end design tools. Bright, natural lighting pours in through large industrial windows, creating an energetic and productive atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqks-3n_FiyhB-de65cqwnGxnfO6pmouxIVSK4UWgEPYTlGg0iWk1rr5R2ryirT6BbSk_gTJ4XeDEIJbJOIbwnekQ27FLywJ-80Z3kqJuPG8EK1ftf-i7AIPM_9CG0sXqfCePK2mBHzz8itsxrVOrcCjGTZd_tIaSJqS1MBfuFsg1W_cPaYsF4DV8V_M8Han0pKn6GyQGyNTAyTyZkLwZ2r4rlLqAr4p5RaI1NwzYx70knAfNqkdjmoAWgsyw2F56_HBx_tvqErTqt">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<div class="text-on-primary">
+<h4 class="font-headline-md text-headline-md">Waymedia</h4>
+<p class="font-label-sm text-label-sm uppercase opacity-80">Agencias</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-primary-fixed py-section-padding-mobile md:py-section-padding-desktop px-gutter text-on-primary">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+<!-- Col 1 -->
+<div class="flex flex-col gap-6">
+<span class="font-headline-md text-headline-md font-bold text-secondary-fixed">Logo.</span>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-primary-fixed/30 rounded-full flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 border border-primary-fixed/30 rounded-full flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">camera</span>
+</a>
+<a class="w-10 h-10 border border-primary-fixed/30 rounded-full flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">work</span>
+</a>
+</div>
+</div>
+<!-- Col 2 -->
+<div class="flex flex-col gap-4 text-primary-fixed-dim/80">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed">call</span> +52 (777) 123 4567</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed">mail</span> hola@tuagencia.com</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed">location_on</span> Cuernavaca, Morelos</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed">schedule</span> Lunes a viernes 9:00 am - 5:00 pm</p>
+</div>
+<!-- Col 3 -->
+<div class="flex flex-col gap-4">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Navegación</h5>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md hover:text-primary-fixed transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a></li>
+<li><a class="font-body-md text-body-md hover:text-primary-fixed transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a></li>
+<li><a class="font-body-md text-body-md hover:text-primary-fixed transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a></li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div class="flex flex-col gap-4">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Servicios</h5>
+<ul class="space-y-2 text-primary-fixed-dim/80">
+<li class="text-body-md">Desarrollo Web WordPress</li>
+<li class="text-body-md">Embudos GoHighLevel</li>
+<li class="text-body-md">Agentes IA</li>
+<li class="text-body-md">Análisis GA4</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-primary-fixed/10 flex flex-col md:flex-row justify-between items-center gap-4 text-primary-fixed-dim/50 text-label-sm font-label-sm">
+<p>© 2026 Plantilla 1. Todos los derechos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary-fixed transition-colors" href="#">Privacidad</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Términos</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-xl', 'h-16');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('shadow-xl', 'h-16');
+                header.classList.add('h-20');
+            }
+        });
+
+        // Hover animations for pricing cards
+        const cards = document.querySelectorAll('.bg-white.border');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                if (!card.classList.contains('border-primary')) {
+                    card.classList.add('translate-y-[-8px]');
+                }
+            });
+            card.addEventListener('mouseleave', () => {
+                if (!card.classList.contains('border-primary')) {
+                    card.classList.remove('translate-y-[-8px]');
+                }
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contacto | Plantilla 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#f9f9f9",
+                      "on-error": "#ffffff",
+                      "inverse-surface": "#2f3131",
+                      "error": "#ba1a1a",
+                      "error-container": "#ffdad6",
+                      "tertiary": "#643600",
+                      "surface-tint": "#832ad3",
+                      "surface-container-highest": "#e2e2e2",
+                      "on-secondary-fixed-variant": "#454748",
+                      "primary-fixed-dim": "#ddb8ff",
+                      "surface-container": "#eeeeee",
+                      "primary-container": "#7e22ce",
+                      "inverse-on-surface": "#f0f1f1",
+                      "background": "#f9f9f9",
+                      "tertiary-fixed-dim": "#ffb877",
+                      "on-tertiary-fixed-variant": "#6c3a00",
+                      "secondary-fixed-dim": "#c5c7c8",
+                      "tertiary-fixed": "#ffdcc1",
+                      "surface-container-low": "#f3f3f4",
+                      "on-secondary-fixed": "#191c1d",
+                      "secondary-container": "#e1e3e4",
+                      "on-primary-container": "#e4c5ff",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#e1e3e4",
+                      "primary": "#6200a9",
+                      "on-secondary-container": "#626566",
+                      "surface": "#f9f9f9",
+                      "on-surface-variant": "#4c4354",
+                      "on-surface": "#1a1c1c",
+                      "on-primary-fixed-variant": "#6800b4",
+                      "outline-variant": "#cfc2d6",
+                      "primary-fixed": "#f0dbff",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#e2e2e2",
+                      "surface-dim": "#dadada",
+                      "secondary": "#5c5f60",
+                      "outline": "#7e7385",
+                      "surface-container-high": "#e8e8e8",
+                      "on-tertiary-fixed": "#2e1500",
+                      "on-primary-fixed": "#2c0051",
+                      "inverse-primary": "#ddb8ff",
+                      "on-tertiary-container": "#ffc593",
+                      "tertiary-container": "#864a00",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "on-background": "#1a1c1c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-padding-desktop": "120px",
+                      "container-max": "1280px",
+                      "gutter": "24px",
+                      "section-padding-mobile": "64px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Inter"],
+                      "headline-lg-mobile": ["Inter"],
+                      "display-hero": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "display-hero-mobile": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-hero": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "display-hero-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+        }
+        .active-nav {
+            border-bottom: 2px solid white;
+            padding-bottom: 4px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- 1. TopNavBar -->
+<header class="bg-primary-container sticky top-0 z-50 shadow-sm h-20 transition-all duration-200">
+<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full text-on-primary">
+<div class="text-headline-md font-headline-md font-bold text-on-primary">Logo.</div>
+<div class="hidden md:flex gap-8 items-center font-body-md text-body-md">
+<a class="text-on-primary/80 font-medium hover:text-on-primary hover:opacity-100 transition-opacity" href="../landing_page_plantilla_1/code.html">Inicio</a>
+<a class="text-on-primary/80 font-medium hover:text-on-primary hover:opacity-100 transition-opacity" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
+<a class="text-on-primary/80 font-medium hover:text-on-primary hover:opacity-100 transition-opacity" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a>
+<a class="text-on-primary font-bold border-b-2 border-on-primary pb-1" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-primary hover:opacity-80 transition-all active:scale-95">share</button>
+<button class="material-symbols-outlined text-on-primary hover:opacity-80 transition-all active:scale-95">shopping_cart</button>
+<button class="md:hidden material-symbols-outlined text-on-primary">menu</button>
+</div>
+</nav>
+</header>
+<!-- 2. Hero Section -->
+<section class="bg-primary-container text-on-primary py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero">Inicia tu proyecto con nosotros</h1>
+<p class="font-body-lg text-body-lg text-on-primary-container/90 max-w-xl">
+                    Escríbenos hoy mismo y descubre cómo nuestras estrategias digitales y desarrollo web pueden escalar tus ventas al siguiente nivel.
+                </p>
+</div>
+<div class="relative flex justify-center">
+<img alt="Contacto" class="w-full max-w-[500px] aspect-square object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJHuN7GK8OrnqtHB9Hfls1crva_jJrTCIWMzfYcDDp5KmQAJchQmrrMF-g8KVrK3LiRhxz3SgkIWinZ-tdbufDoEhZYK1DBRgXu52RTdeYkZQ7Yuu4DamM_SwYKjW_fDNVstAq9n7vo570eV1o94j6_ejxMBeHbT03qgJ0iw9YaM_zN1fd73RO752OtB7DSvEj4r6LKPeYHp0hsznfi4gPGg4AH59rAIl0p-YQdOQOctj7MeeUa0lIw-DhqAFxc71-oDs1rjxMjtjb">
+</div>
+</div>
+</section>
+<!-- 3. Section Formulario -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-padding-mobile md:gap-24 items-start">
+<!-- Columna Izquierda: Info -->
+<div class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Escríbenos un mensaje</h2>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                            Estamos listos para transformar tu visión en una realidad digital impactante. Déjanos tus datos y un especialista se pondrá en contacto contigo en menos de 24 horas.
+                        </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Email</p>
+<p class="font-headline-md text-headline-md text-on-surface">hola@tuagencia.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Teléfono</p>
+<p class="font-headline-md text-headline-md text-on-surface">+52 (777) 123 4567</p>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider mb-4">Redes Sociales</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Columna Derecha: Formulario -->
+<div class="bg-surface p-8 md:p-12 rounded-[24px] border border-surface-variant shadow-sm">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Nombre Completo</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg px-4 py-3 text-body-md font-body-md" placeholder="Ej. Juan Pérez" type="text">
+</div>
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Email Corporativo</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg px-4 py-3 text-body-md font-body-md" placeholder="juan@empresa.com" type="email">
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Motivo de Consulta</label>
+<select class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg px-4 py-3 text-body-md font-body-md appearance-none">
+<option>Desarrollo Web</option>
+<option>Estrategia Digital</option>
+<option>SEO &amp; SEM</option>
+<option>Otro</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Mensaje</label>
+<textarea class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg px-4 py-3 text-body-md font-body-md resize-none" placeholder="Cuéntanos un poco más sobre tu proyecto..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary font-bold py-4 rounded-lg hover:brightness-110 active:scale-[0.98] transition-all tracking-widest uppercase" type="submit">
+                            SOLICITAR ASESORÍA
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Sección de Mapa -->
+<section class="w-full h-[450px] relative">
+<div class="absolute inset-0 bg-surface-variant flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="A full-bleed digital map visualization of Cuernavaca, Morelos, rendered in a modern UI style with soft purple and grey tones. The map features clean topography and subtle glowing pins that indicate locations. The lighting is bright and even, matching a high-end light-mode aesthetic. The atmosphere is professional and technologically advanced, using a minimalist design language." data-location="Cuernavaca, Morelos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6nVHVZWEmKfyoBWn-FocTAn2-7tBv-I3y8V1qDJZHchTN08ELSff4YuFB4i8YkCFv8DReKKJyNjxpH-Ke-BqpShVLWI7kk7e0Kldz-EdF70UKnnAAwyI2ZAPyFZ_Sa05mBcJjfDw8nWX4KhJwZT8d22qRDMFzvQmwQVuT-knP_aAkD_r8LNNiTOzwGvtT_ldcjCMFmrD-PTGWZy-BsfujARWgDornIb7CXgvISIfPsMmZ2xtQYpBlwjxyqpxvP63bOMdb-dKTOdZP">
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary-container text-on-primary px-6 py-3 rounded-full flex items-center gap-2 shadow-xl animate-bounce">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-bold">¡Visítanos en Cuernavaca!</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Footer -->
+<footer class="bg-inverse-surface text-surface-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-padding-desktop px-gutter max-w-container-max mx-auto">
+<!-- Columna 1: Branding & Contacto -->
+<div class="space-y-6">
+<div class="text-headline-md font-headline-md font-bold text-primary-fixed">Logo.</div>
+<div class="space-y-4 font-body-md text-body-md">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">call</span>
+<span>+52 (777) 123 4567</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">mail</span>
+<span>hola@tuagencia.com</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">location_on</span>
+<span>Cuernavaca, Morelos</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed">schedule</span>
+<span>Lunes-Viernes 9-5</span>
+</div>
+</div>
+</div>
+<!-- Columna 2: Navegación -->
+<div class="space-y-6">
+<h4 class="text-label-sm font-label-sm text-on-secondary/50 uppercase tracking-widest">Navegación</h4>
+<div class="flex flex-col gap-3 font-body-md text-body-md">
+<a class="hover:text-primary-fixed transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a>
+<a class="hover:text-primary-fixed transition-colors font-bold text-primary-fixed" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+<a class="hover:text-primary-fixed transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
+</div>
+</div>
+<!-- Columna 3: Servicios -->
+<div class="space-y-6">
+<h4 class="text-label-sm font-label-sm text-on-secondary/50 uppercase tracking-widest">Servicios</h4>
+<div class="flex flex-col gap-3 font-body-md text-body-md text-surface-variant">
+<a class="hover:text-primary-fixed transition-colors" href="#">Desarrollo Web Premium</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Estrategia Digital Pro</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Optimización SEO</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Marketing de Contenidos</a>
+</div>
+</div>
+<!-- Columna 4: Newsletter/Legal -->
+<div class="space-y-6">
+<h4 class="text-label-sm font-label-sm text-on-secondary/50 uppercase tracking-widest">Legal</h4>
+<div class="flex flex-col gap-3 font-body-md text-body-md">
+<a class="hover:text-primary-fixed transition-colors" href="#">Política de Privacidad</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Términos y Condiciones</a>
+</div>
+<div class="flex gap-4 pt-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed">share</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed">public</span>
+</div>
+</div>
+</div>
+<!-- Copyright Bottom Bar -->
+<div class="border-t border-surface-variant/10 py-8 px-gutter">
+<div class="max-w-container-max mx-auto text-center font-label-sm text-label-sm text-surface-variant/40">
+                © 2026 Plantilla 1. Todos los derechos reservados.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for Header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('h-16', 'bg-primary');
+                header.classList.remove('h-20', 'bg-primary-container');
+            } else {
+                header.classList.add('h-20', 'bg-primary-container');
+                header.classList.remove('h-16', 'bg-primary');
+            }
+        });
+    </script>
+</body></html>

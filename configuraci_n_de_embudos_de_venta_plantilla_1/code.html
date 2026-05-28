@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Configuración de Embudos de Venta | Plantilla 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f3f4",
+                        "background": "#f9f9f9",
+                        "on-surface-variant": "#4c4354",
+                        "on-tertiary-container": "#ffc593",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#e1e3e4",
+                        "on-secondary-container": "#626566",
+                        "on-background": "#1a1c1c",
+                        "primary": "#6200a9",
+                        "on-tertiary-fixed-variant": "#6c3a00",
+                        "on-surface": "#1a1c1c",
+                        "on-primary-fixed": "#2c0051",
+                        "secondary-fixed-dim": "#c5c7c8",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#864a00",
+                        "outline": "#7e7385",
+                        "tertiary": "#643600",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-tertiary-fixed": "#2e1500",
+                        "tertiary-fixed-dim": "#ffb877",
+                        "secondary-fixed": "#e1e3e4",
+                        "on-error": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-secondary-fixed-variant": "#454748",
+                        "tertiary-fixed": "#ffdcc1",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary-fixed-dim": "#ddb8ff",
+                        "on-secondary-fixed": "#191c1d",
+                        "inverse-primary": "#ddb8ff",
+                        "surface-tint": "#832ad3",
+                        "secondary": "#5c5f60",
+                        "primary-container": "#7e22ce",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-bright": "#f9f9f9",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#6800b4",
+                        "surface-dim": "#dadada",
+                        "on-primary-container": "#e4c5ff",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container": "#eeeeee",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#cfc2d6",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed": "#f0dbff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "8px",
+                        "lg": "12px",
+                        "xl": "24px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "section-padding-mobile": "64px",
+                        "section-padding-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-hero-mobile": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-hero": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-hero-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-hero": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nav-underline {
+            position: relative;
+        }
+        .nav-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-primary-container h-20 sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+<div class="flex items-center gap-4">
+<div class="bg-surface-container-low px-4 py-2 rounded">
+<span class="text-headline-md font-headline-md font-bold text-primary">Logo.</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-primary font-body-md text-body-md hover:opacity-80 transition-all" href="../landing_page_plantilla_1/code.html">Inicio</a>
+<a class="text-on-primary font-body-md text-body-md hover:opacity-80 transition-all" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
+<a class="text-on-primary font-body-md text-body-md hover:opacity-80 transition-all nav-underline font-bold" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a>
+<a class="text-on-primary font-body-md text-body-md hover:opacity-80 transition-all" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="bg-surface text-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-opacity-90 transition-all">
+                    Contactar
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="bg-primary-container text-on-primary pt-section-padding-mobile md:pt-section-padding-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero mb-6 max-w-4xl mx-auto">
+                    CONFIGURACIÓN DE EMBUDOS DE VENTA
+                </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-12 max-w-2xl mx-auto opacity-90">
+                    Transforma el tráfico de tus redes sociales en un flujo constante de clientes potenciales cualificados, operando en piloto automático 24/7.
+                </p>
+<div class="relative w-full max-w-5xl mx-auto">
+<img alt="Ilustración detallada de un embudo de ventas digital profesional con elementos 3D transparentes y logotipos de redes sociales integrados en un flujo de automatización moderno." class="w-full h-auto object-contain mx-auto transition-transform duration-700 hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUu9IlokmAkV3pjZ1CQete1g3cwm7HTZZMUR63uS7Icu0PC9ycgjyJm66sXVkbaO2p5gHN9vgE_647EQ8uqvdAIC9Zu2Q_xhXgNSNT2EJexJF1FZaCxnbaz0zvvb0vTedgRzTjcsZpmLVHHPjq6IQcfh5UeFPefacm08RZL5U4wjDJ41VtgwnWAwNy7P1nF3ejeLe1lN6lyCq-1cSVjVxECEvuLtnTbxJO-7Yy8qUOOMmSY_qCdEXAT-Lq4BebnNqHcsuYC5odq53g"/>
+</div>
+</div>
+<!-- Decorative wave or separation -->
+<div class="h-24 bg-surface-container-low mt-[-2px] clip-path-slant"></div>
+</section>
+<!-- Pricing / Features Section -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<!-- Left: Dashboard Graphic -->
+<div class="order-2 md:order-1">
+<div class="relative rounded-xl overflow-hidden shadow-2xl bg-white p-4">
+<img alt="Captura de pantalla de alta resolución de un panel de control de automatización de ventas con gráficos de flujo visual, métricas de conversión y una interfaz minimalista en tonos púrpura y blanco." class="w-full h-auto rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNoyfJG61Gp3ZV_HnvgRb4iHj4ozYq8xecsV5x9hiwDg7I7SeSdzfrtQ88ly52zYI7pzgWFjZb5yMKJBVlWi2pvoOBUmIkxPzTcgu2wtSP7V5TWf8cUMMIm2yyrl0_UB8vZc_i0v3gt0B9-EbGfDKpd3nShIE9VluZIO_BrnbufSihBfwRwVHt5AObmA2VNpWTkEvljXhvtfJ5BcI9mkcLpwTvQY7f_1nBRW6s4qK3bw2V1snYs8H_2RoUUtodxErC37DeJmEdYoa9"/>
+</div>
+</div>
+<!-- Right: Pricing Card -->
+<div class="order-1 md:order-2">
+<div class="bg-white border-t-8 border-primary rounded-xl shadow-xl p-8 md:p-12 transition-all hover:shadow-2xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Automatiza tus ventas</h2>
+</div>
+<div class="mb-8">
+<span class="text-4xl font-bold text-on-surface">$3,999</span>
+<span class="text-on-surface-variant font-body-md text-body-md ml-2">USD / Proyecto</span>
+</div>
+<ul class="space-y-4 mb-10">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-left">Diseño de landing page de alta conversión</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-left">Configuración y automatización del embudo en GoHighLevel</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-left">Integración de calendario de citas automático</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-left">Diseño de secuencia de 3 emails (Nurturing)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-left">Integración de formularios y API de conversión</span>
+</li>
+</ul>
+<button class="w-full bg-primary-container text-on-primary font-label-sm text-label-sm py-5 rounded-lg hover:bg-opacity-90 active:scale-95 transition-all tracking-widest">
+                                CONTRATAR AHORA
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface text-on-primary pt-section-padding-mobile md:pt-section-padding-desktop pb-12">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<!-- Col 1: Brand/Contact -->
+<div>
+<div class="text-headline-md font-headline-md font-bold mb-6">Logo.</div>
+<p class="font-body-md text-body-md text-surface-variant mb-6 opacity-80">
+                        Transformamos negocios digitales a través de estrategias de automatización inteligentes.
+                    </p>
+<div class="space-y-3 font-body-md text-body-md text-surface-variant">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed-dim" data-icon="mail">mail</span> contacto@plantilla1.com</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-fixed-dim" data-icon="call">call</span> +1 234 567 890</p>
+</div>
+</div>
+<!-- Col 2: Navigation -->
+<div>
+<h4 class="font-label-sm text-label-sm uppercase mb-6 tracking-widest text-primary-fixed-dim">Navegación</h4>
+<ul class="space-y-4 font-body-md text-body-md text-surface-variant">
+<li><a class="hover:text-primary-fixed transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a></li>
+</ul>
+</div>
+<!-- Col 3: Services -->
+<div>
+<h4 class="font-label-sm text-label-sm uppercase mb-6 tracking-widest text-primary-fixed-dim">Servicios</h4>
+<ul class="space-y-4 font-body-md text-body-md text-surface-variant">
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Embudos de Venta</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Email Marketing</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">GoHighLevel CRM</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Paid Media</a></li>
+</ul>
+</div>
+<!-- Col 4: Social -->
+<div>
+<h4 class="font-label-sm text-label-sm uppercase mb-6 tracking-widest text-primary-fixed-dim">Social</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined text-on-primary" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined text-on-primary" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined text-on-primary" data-icon="campaign">campaign</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Bottom bar -->
+<div class="border-t border-surface-variant/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-surface-variant/60 font-body-md text-body-md">
+<p>© 2026 Plantilla 1. Todos los derechos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-on-primary transition-colors" href="#">Política de Privacidad</a>
+<a class="hover:text-on-primary transition-colors" href="#">Términos de Servicio</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth reveal animation on scroll for the pricing card
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.pricing-card-animate').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Plantilla 1 | Agencia Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#2c0051",
+                        "secondary-container": "#e1e3e4",
+                        "surface-tint": "#832ad3",
+                        "primary": "#6200a9",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#7e7385",
+                        "surface-container-high": "#e8e8e8",
+                        "on-background": "#1a1c1c",
+                        "tertiary-container": "#864a00",
+                        "surface-dim": "#dadada",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#2e1500",
+                        "inverse-on-surface": "#f0f1f1",
+                        "inverse-surface": "#2f3131",
+                        "surface-container": "#eeeeee",
+                        "surface-variant": "#e2e2e2",
+                        "primary-fixed": "#f0dbff",
+                        "on-secondary-container": "#626566",
+                        "surface": "#f9f9f9",
+                        "on-primary-fixed-variant": "#6800b4",
+                        "on-error": "#ffffff",
+                        "tertiary": "#643600",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#454748",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-primary-container": "#e4c5ff",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#cfc2d6",
+                        "tertiary-fixed": "#ffdcc1",
+                        "background": "#f9f9f9",
+                        "on-tertiary-container": "#ffc593",
+                        "on-surface-variant": "#4c4354",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed-dim": "#ddb8ff",
+                        "on-tertiary-fixed-variant": "#6c3a00",
+                        "primary-container": "#7e22ce",
+                        "inverse-primary": "#ddb8ff",
+                        "secondary-fixed-dim": "#c5c7c8",
+                        "secondary": "#5c5f60",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "secondary-fixed": "#e1e3e4",
+                        "on-secondary-fixed": "#191c1d",
+                        "tertiary-fixed-dim": "#ffb877"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-padding-desktop": "120px",
+                        "base": "8px",
+                        "section-padding-mobile": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "display-hero-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-hero": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-hero-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "display-hero": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #7e22ce 0%, #6200a9 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Header / TopNavBar -->
+<header class="bg-primary-container docked full-width top-0 sticky z-50 transition-all duration-300">
+<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold text-on-primary">Logo.</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-primary font-bold border-b-2 border-on-primary transition-all font-body-md text-body-md" href="#">Inicio</a>
+<a class="text-on-primary/80 hover:text-on-primary transition-colors font-body-md text-body-md" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
+<a class="text-on-primary/80 hover:text-on-primary transition-colors font-body-md text-body-md" href="#servicios">Servicios</a>
+<a class="text-on-primary/80 hover:text-on-primary transition-colors font-body-md text-body-md" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+</div>
+<div class="flex items-center gap-4 text-on-primary">
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined">share</span></button>
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined">public</span></button>
+<button class="md:hidden"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="hero-gradient relative overflow-hidden pt-12 pb-24 md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="text-on-primary space-y-8">
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero">
+                    Maximiza el impacto de tu marca con Plantilla 1
+                </h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-xl">
+                    Eleva tu presencia digital y estrategias de marketing a un nivel superior con nuestras soluciones integrales diseñadas para el éxito sostenido de tu empresa.
+                </p>
+<div>
+<button onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})" class="bg-surface-container-lowest text-primary px-8 py-4 rounded-2xl font-bold font-body-md text-body-md hover:scale-105 transition-transform shadow-xl">
+                        Descubrir más
+                    </button>
+</div>
+</div>
+<div class="relative">
+<img alt="Digital Marketing Laptop" class="w-full h-auto object-contain drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv">
+</div>
+</div>
+<!-- Decorative blobs -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-on-primary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+</section>
+<!-- Services Section -->
+<section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop" id="servicios">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Soluciones digitales para tu crecimiento</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Impulsamos tu negocio en el entorno digital con estrategias personalizadas diseñadas para alcanzar tus objetivos específicos.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Desarrollo Web -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">code</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Desarrollo Web</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Construimos plataformas a medida que son rápidas, adaptables y optimizadas para convertir visitas en clientes reales.
+                </p>
+                <a href="../servicios_de_desarrollo_web_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+            <!-- Card 2: Agentes de IA -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Agentes de IA</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Implementamos agentes inteligentes de IA para automatizar tus procesos de atención y aumentar tus ventas 24/7.
+                </p>
+                <a href="../servicios_de_agentes_de_ia_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+            <!-- Card 3: Diseño Gráfico -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">palette</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Diseño Gráfico</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Potenciamos tu marca y generamos una impresión duradera con creaciones visuales atractivas y de nivel premium.
+                </p>
+                <a href="../servicios_de_dise_o_gr_fico_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+            <!-- Card 4: Gestión de Redes -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Gestión de Redes</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Incrementa la interacción con tu audiencia y la notoriedad de tu marca mediante una gestión experta y estratégica.
+                </p>
+                <a href="../gesti_n_de_redes_sociales_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+            <!-- Card 5: Campañas Publicitarias -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">ads_click</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Campañas de Ads</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Aumenta tu visibilidad y capta clientes calificados con campañas publicitarias optimizadas de alto rendimiento.
+                </p>
+                <a href="../campa_as_publicitarias_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+            <!-- Card 6: Videomarketing -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">movie</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Videomarketing</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Producimos piezas audiovisuales dinámicas y profesionales que conectan emocionalmente con tu público objetivo.
+                </p>
+                <a href="../servicios_de_videomarketing_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+            <!-- Card 7: Embudos de Venta -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">filter_alt</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Embudos de Venta</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Diseñamos sistemas automatizados de ventas para llevar a tus prospectos paso a paso hasta la conversión final.
+                </p>
+                <a href="../configuraci_n_de_embudos_de_venta_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+            <!-- Card 8: Creadores UGC -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">campaign</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Creadores UGC</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Conectamos tu marca con creadores de contenido generado por usuarios para campañas auténticas que generan confianza.
+                </p>
+                <a href="../servicios_de_creadores_ugc_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+            <!-- Card 9: Creación de Contenido -->
+            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm">
+                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span class="material-symbols-outlined">history_edu</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md mb-4">Creación de Contenido</h3>
+                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
+                    Diseñamos y redactamos contenidos atractivos para educar, captar interés y posicionar tu marca en la industria.
+                </p>
+                <a href="../servicios_de_creaci_n_de_contenido_plantilla_1/code.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block">
+                    + Info
+                </a>
+            </div>
+        </div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="bg-primary py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-primary">¿Por qué elegirnos?</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 max-w-2xl mx-auto">
+                    Nuestra propuesta de valor para el éxito de tu empresa en el mercado.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/20">
+<div class="p-12 glass-card">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Amplia Trayectoria</h4>
+<p class="text-on-primary/70 font-body-md text-body-md">
+                        Contamos con años de experiencia liderando campañas de marketing exitosas en el sector digital, adaptándonos constantemente a las nuevas tendencias del mercado.
+                    </p>
+</div>
+<div class="p-12 glass-card">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Equipo de Especialistas</h4>
+<p class="text-on-primary/70 font-body-md text-body-md">
+                        Nuestro equipo está formado por profesionales altamente cualificados en cada área del marketing digital, garantizando excelencia técnica en cada proyecto.
+                    </p>
+</div>
+<div class="p-12 glass-card">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Creatividad y Estrategia Innovadora</h4>
+<p class="text-on-primary/70 font-body-md text-body-md">
+                        Fomentamos la creatividad y la innovación como pilares fundamentales para diferenciar a tu marca en un entorno digital saturado.
+                    </p>
+</div>
+<div class="p-12 glass-card">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Enfoque en Resultados</h4>
+<p class="text-on-primary/70 font-body-md text-body-md">
+                        Estamos totalmente comprometidos con tus resultados comerciales, utilizando datos reales para optimizar cada fase de tu estrategia digital.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Central Section -->
+<section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop" id="servicios">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 grid grid-cols-1 md:grid-cols-2 items-center">
+<div class="p-12 md:p-20 space-y-8">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Por qué Plantilla 1 es tu mejor opción</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Nuestro enfoque diferente, basado en la personalización y la innovación constante, nos permite ofrecer soluciones que realmente impactan en el crecimiento de tu negocio.
+                    </p>
+<button onclick="window.location.href='../p_gina_de_contacto_plantilla_1/code.html'" class="bg-primary-container text-on-primary px-10 py-4 rounded-2xl font-bold hover:scale-105 transition-transform">
+                        Empieza ahora
+                    </button>
+</div>
+<div class="h-full">
+<img alt="Happy Specialist with Icons" class="w-full h-full object-cover" data-alt="A professional young man in a smart navy suit smiling confidently, pointing towards floating 3D icons representing marketing success, growth charts, and a gold trophy. The background is a clean, minimal light gray, emphasizing a high-end corporate digital agency style. The lighting is soft and professional, highlighting the vibrant blue and gold accents of the 3D graphics in a modern light-mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtzci1QtmfbUubFYJE_UBdNN2kzW2bYIBjN9nyBvQ7tYyRjqvSMc4p6b0lGlCC2UO-CceR-OUDeYhZ5rfjjVyQ0muUvBm5qjS6ZBn3Tv1nHWDonfspONEYlW7AdcmDvcm_Nc2ac3M-0cd4UNpUfTNXCEXXI-jLWclXiv8Tv-xgMT2f7LtqDSwcPbSjSJPhQHjAkGLbJTgqy2K21Dvls0EIdd5u1gv9DZdCoQyV2roKW-Q_ZcmIkfIBwljZ9GzVXn0lJaZQA2OIP6bx">
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-primary-fixed text-on-primary py-section-padding-mobile md:py-section-padding-desktop px-gutter">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-base md:gap-12 mb-20">
+<!-- Col 1 -->
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md font-bold text-surface-container">Logo.</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</button>
+</div>
+</div>
+<!-- Col 2 -->
+<div class="space-y-6">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Información de Contacto</h5>
+<ul class="space-y-4 text-primary-fixed/80 font-body-md text-body-md">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed-dim">call</span> +34 639 494 000</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed-dim">mail</span> contacto@plantilla1.com</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary-fixed-dim">location_on</span> Madrid, España</li>
+</ul>
+</div>
+<!-- Col 3 -->
+<div class="space-y-6">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Servicios</h5>
+<ul class="space-y-4 text-primary-fixed/80 font-body-md text-body-md">
+<li><a class="hover:text-on-primary transition-colors" href="#">Inicio</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="#servicios">Servicios</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a></li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div class="space-y-6">
+<h5 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Enlaces Rápidos</h5>
+<ul class="space-y-4 text-primary-fixed/80 font-body-md text-body-md">
+<li><a class="hover:text-on-primary transition-colors" href="#">Noticias</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-on-primary transition-colors" href="#">Privacidad</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-primary-fixed/50 font-label-sm text-label-sm">
+<p>© 2026 Plantilla 1 | Todos los derechos reservados.</p>
+<div class="flex gap-6">
+<a class="hover:text-on-primary transition-colors" href="#">Términos</a>
+<a class="hover:text-on-primary transition-colors" href="#">Soporte</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-lg', 'bg-primary-container/95', 'backdrop-blur-sm');
+                header.classList.remove('h-20');
+                header.classList.add('h-16');
+            } else {
+                header.classList.remove('shadow-lg', 'bg-primary-container/95', 'backdrop-blur-sm');
+                header.classList.add('h-20');
+                header.classList.remove('h-16');
+            }
+        });
+    </script>
+</body></html>

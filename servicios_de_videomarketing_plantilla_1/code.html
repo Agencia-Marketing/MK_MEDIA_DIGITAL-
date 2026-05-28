@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Servicios de Videomarketing | Plantilla 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f3f4",
+                        "primary-fixed-dim": "#ddb8ff",
+                        "background": "#f9f9f9",
+                        "tertiary-fixed": "#ffdcc1",
+                        "on-tertiary-fixed-variant": "#6c3a00",
+                        "inverse-primary": "#ddb8ff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-bright": "#f9f9f9",
+                        "secondary": "#5c5f60",
+                        "surface-variant": "#e2e2e2",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#832ad3",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary-fixed": "#2e1500",
+                        "tertiary-fixed-dim": "#ffb877",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#864a00",
+                        "surface-dim": "#dadada",
+                        "on-secondary-fixed": "#191c1d",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c5c7c8",
+                        "on-primary-fixed-variant": "#6800b4",
+                        "on-error-container": "#93000a",
+                        "outline": "#7e7385",
+                        "tertiary": "#643600",
+                        "on-background": "#1a1c1c",
+                        "on-secondary-fixed-variant": "#454748",
+                        "secondary-fixed": "#e1e3e4",
+                        "on-tertiary-container": "#ffc593",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-surface-variant": "#4c4354",
+                        "secondary-container": "#e1e3e4",
+                        "primary-fixed": "#f0dbff",
+                        "on-primary-fixed": "#2c0051",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary": "#6200a9",
+                        "on-secondary-container": "#626566",
+                        "on-primary-container": "#e4c5ff",
+                        "surface-container-high": "#e8e8e8",
+                        "surface": "#f9f9f9",
+                        "primary-container": "#7e22ce",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#cfc2d6",
+                        "surface-container": "#eeeeee"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "8px",
+                        "lg": "8px",
+                        "xl": "24px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-padding-mobile": "64px",
+                        "section-padding-desktop": "120px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "display-hero": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-effect { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .transition-standard { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 glass-effect border-b border-outline-variant/30">
+<div class="max-w-container-max mx-auto h-20 px-gutter flex justify-between items-center">
+<!-- Left: Logo & Nav -->
+<div class="flex items-center gap-12">
+<div class="bg-surface-container-highest px-6 py-2 rounded-lg">
+<span class="font-headline-md text-headline-md font-bold text-primary">Logo.</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+</nav>
+</div>
+<!-- Right: Actions -->
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-standard">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="bg-surface-container-lowest text-primary border border-outline-variant px-6 py-2 rounded-lg font-bold hover:bg-primary-container hover:text-white transition-standard">
+                    Contactar
+                </button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center justify-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Videomarketing Editorial Studio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFUqr1X_pwtHpAKqWNwAPUSlJ5tT3-T5BKTSC_M6ISDLBXNT8Qn2TXvA5C96UgXUfZWfmKJEBv_P18mnzfeewriiEUJeqGpsW2RQD42EgsMFXzHumLN8B9plFTZK-Tn13ozZTVgeuSreTazqm2zALs6LIaFQhsnPZRkUSifKNYZxrxmBZNEyIJgNBmtmtSJ6khRZEWRWUyd1OKtWPnCTrXH_LcAGdxLAZ-F8gpFolWeiiMFWUwJXSRsbAbEK-qCoq8JEvpTtjdOLqs"/>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto px-gutter text-center text-white">
+<h1 class="font-display-hero text-display-hero uppercase tracking-tight mb-6">
+                VIDEOMARKETING ESTRATÉGICO
+            </h1>
+<p class="font-body-lg text-body-lg opacity-90 max-w-2xl mx-auto mb-10">
+                Captura la atención de tu audiencia y multiplica tus conversiones con contenido audiovisual diseñado para destacar y vender en cualquier plataforma.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary-container text-white px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-standard">
+                    Comenzar ahora
+                </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition-standard">
+                    Ver Portafolio
+                </button>
+</div>
+</div>
+</section>
+<!-- Benefits Bar -->
+<section class="bg-surface-container-lowest py-16">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex items-center gap-6 p-4">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="favorite">favorite</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Mayor Retención</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Conectamos emocionalmente.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-4">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="trending_up">trending_up</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Alcance Viral</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Contenido diseñado para compartir.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-4">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="devices">devices</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Multiplataforma</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Adaptable a todo formato.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Plans Section -->
+<section class="bg-surface-container-low py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-lg text-headline-lg text-center text-on-surface mb-20">Nuestros Planes</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Plan 1 -->
+<div class="bg-white p-10 rounded-xl border border-outline-variant/30 transition-standard hover:shadow-xl group">
+<div class="text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-5xl" data-icon="videocam">videocam</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Video Básico</h3>
+<p class="text-primary font-bold text-2xl mb-6">$975 - $2,321</p>
+<ul class="space-y-4 mb-10 text-on-surface-variant font-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Edición básica</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 1 Corrección</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Formato Horizontal</li>
+</ul>
+<button class="w-full border-2 border-primary text-primary font-bold py-3 rounded-lg hover:bg-primary hover:text-white transition-standard">Seleccionar</button>
+</div>
+<!-- Plan 2 (Featured) -->
+<div class="bg-white p-10 rounded-xl border-2 border-primary-container shadow-2xl relative transform scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-container text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Recomendado</div>
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-5xl" data-icon="perm_media">perm_media</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Video Intermedio</h3>
+<p class="text-primary font-bold text-2xl mb-6">$1,950 - $4,641</p>
+<ul class="space-y-4 mb-10 text-on-surface-variant font-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Edición avanzada</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Motion Graphics</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Música sin copyright</li>
+</ul>
+<button class="w-full bg-primary-container text-white font-bold py-3 rounded-lg hover:opacity-90 transition-standard">Seleccionar</button>
+</div>
+<!-- Plan 3 -->
+<div class="bg-white p-10 rounded-xl border border-outline-variant/30 transition-standard hover:shadow-xl group">
+<div class="text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-5xl" data-icon="movie">movie</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Video Completo</h3>
+<p class="text-primary font-bold text-2xl mb-6">$2,600 - $11,603</p>
+<ul class="space-y-4 mb-10 text-on-surface-variant font-body-md">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Estrategia completa</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Guion profesional</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Múltiples formatos</li>
+</ul>
+<button class="w-full border-2 border-primary text-primary font-bold py-3 rounded-lg hover:bg-primary hover:text-white transition-standard">Seleccionar</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Special Service (Voiceover) -->
+<section class="bg-surface-container-lowest py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="bg-surface-container-low rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+<div class="p-12 md:p-20 flex flex-col justify-center">
+<h3 class="font-headline-lg text-headline-lg mb-4">Narración de voz (Voiceover)</h3>
+<div class="text-primary font-bold text-3xl mb-6">$650 - $1,300</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                        Dale alma a tus videos con locutores profesionales. Una voz adecuada puede aumentar la confianza en tu marca hasta en un 40%.
+                    </p>
+<div>
+<button class="bg-primary-container text-white px-10 py-4 rounded-lg font-bold hover:scale-105 transition-standard">CONTRATAR</button>
+</div>
+</div>
+<div class="relative min-h-[400px]">
+<img alt="Professional Studio Mic Setup" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPKu42EU8B_dEIfFjWWQUnk_cu_9F_9uf9zrJXF5trnZ7z9iFlWYnV-trQeUe5SVlG5fVQ6hsCzIPWpzp9TV6FP_35sI9gDGvfzVl0UlPNkwl1HC_kBA3wnnmPhzGDLztMHr34wgyHk2ummY7i24dkRCr3IjkM_amuO0tHNNbQ8LouuEvMEeqJd6YfcSLk9jVbt3rB5wJccUcT-Jp9gvsaAhn8NQpk1It8V8OQMKkRWKY6FEgnbWhMlmbvB22TJYst_w7pUZhEnMMg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Tables Section -->
+<section class="bg-surface-container-lowest py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Table 1: Subscription -->
+<div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="bg-primary-fixed-dim p-4">
+<h4 class="font-bold text-on-primary-fixed-variant">Suscripción Mensual</h4>
+</div>
+<table class="w-full text-left font-body-md">
+<tbody><tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">Nivel</th><th class="p-4 bg-surface-container">Frecuencia</th></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">Básico</td><td class="p-4">2 Videos/Mes</td></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">Intermedio</td><td class="p-4">5 Videos/Mes</td></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">Completo</td><td class="p-4">12 Videos/Mes</td></tr>
+</tbody></table>
+</div>
+<!-- Table 2: Content Creator -->
+<div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="bg-primary-fixed-dim p-4">
+<h4 class="font-bold text-on-primary-fixed-variant">Creador de Contenido</h4>
+</div>
+<table class="w-full text-left font-body-md">
+<tbody><tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">Servicio</th><th class="p-4 bg-surface-container">Plataforma</th></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">TikTok/Reels</td><td class="p-4">Social Media</td></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">Scripting</td><td class="p-4">Estratégico</td></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">Pack 5 videos</td><td class="p-4">Campaña</td></tr>
+</tbody></table>
+</div>
+<!-- Table 3: Logo Animation -->
+<div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="bg-primary-fixed-dim p-4">
+<h4 class="font-bold text-on-primary-fixed-variant">Animación de Logo</h4>
+</div>
+<table class="w-full text-left font-body-md">
+<tbody><tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">Estilo</th><th class="p-4 bg-surface-container">Entrega</th></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">2D Minimal</td><td class="p-4">48 Horas</td></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">3D Dinámico</td><td class="p-4">5 Días</td></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">VFX Premium</td><td class="p-4">7 Días</td></tr>
+</tbody></table>
+</div>
+<!-- Table 4: Format Change -->
+<div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="bg-primary-fixed-dim p-4">
+<h4 class="font-bold text-on-primary-fixed-variant">Cambio de Formato</h4>
+</div>
+<table class="w-full text-left font-body-md">
+<tbody><tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">Conversión</th><th class="p-4 bg-surface-container">Uso</th></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">Hori a Vert</td><td class="p-4">Shorts/Reels</td></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">Vert a Hori</td><td class="p-4">YouTube/TV</td></tr>
+<tr class="border-b border-outline-variant/20"><td class="p-4">Re-encuadre AI</td><td class="p-4">Automático</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-on-primary-fixed text-primary-fixed pt-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-12 pb-20">
+<!-- Col 1 -->
+<div>
+<div class="bg-primary-fixed text-primary inline-block px-4 py-2 rounded-lg font-bold text-xl mb-6">Logo.</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary-fixed-dim/20 flex items-center justify-center hover:bg-primary transition-standard" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-fixed-dim/20 flex items-center justify-center hover:bg-primary transition-standard" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="public">public</span>
+</a>
+</div>
+</div>
+<!-- Col 2 -->
+<div>
+<h5 class="text-white font-bold mb-6">Contacto</h5>
+<p class="text-primary-fixed-dim/70 mb-4">+52 (777) 123 4567</p>
+<p class="text-primary-fixed-dim/70">Cuernavaca, México</p>
+</div>
+<!-- Col 3 -->
+<div>
+<h5 class="text-white font-bold mb-6">Navegación</h5>
+<ul class="space-y-4">
+<li><a class="hover:text-white transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a></li>
+<li><a class="hover:text-white transition-colors" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a></li>
+<li><a class="hover:text-white transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a></li>
+<li><a class="hover:text-white transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a></li>
+</ul>
+</div>
+<!-- Col 4 -->
+<div>
+<h5 class="text-white font-bold mb-6">Servicios</h5>
+<ul class="space-y-4">
+<li><a class="hover:text-white transition-colors" href="#">Video Corporativo</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contenido Social</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Animación 2D/3D</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Locución</a></li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="border-t border-primary-fixed-dim/10 py-8">
+<div class="max-w-container-max mx-auto px-gutter text-center text-primary-fixed-dim/50 text-sm">
+                © 2026 Plantilla 1. Todos los derechos reservados.
+            </div>
+</div>
+</footer>
+</body></html>
