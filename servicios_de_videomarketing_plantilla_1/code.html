@@ -1,146 +1,503 @@
 <!DOCTYPE html>
-
 <html class="light" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Servicios de Videomarketing | Plantilla 1</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-container-low": "#f3f3f4",
-                        "primary-fixed-dim": "#ddb8ff",
-                        "background": "#f9f9f9",
-                        "tertiary-fixed": "#ffdcc1",
-                        "on-tertiary-fixed-variant": "#6c3a00",
-                        "inverse-primary": "#ddb8ff",
-                        "inverse-on-surface": "#f0f1f1",
-                        "surface-bright": "#f9f9f9",
-                        "secondary": "#5c5f60",
-                        "surface-variant": "#e2e2e2",
-                        "error": "#ba1a1a",
-                        "surface-tint": "#832ad3",
-                        "on-surface": "#1a1c1c",
-                        "on-tertiary-fixed": "#2e1500",
-                        "tertiary-fixed-dim": "#ffb877",
-                        "surface-container-lowest": "#ffffff",
-                        "on-error": "#ffffff",
-                        "tertiary-container": "#864a00",
-                        "surface-dim": "#dadada",
-                        "on-secondary-fixed": "#191c1d",
-                        "on-tertiary": "#ffffff",
-                        "secondary-fixed-dim": "#c5c7c8",
-                        "on-primary-fixed-variant": "#6800b4",
-                        "on-error-container": "#93000a",
-                        "outline": "#7e7385",
-                        "tertiary": "#643600",
-                        "on-background": "#1a1c1c",
-                        "on-secondary-fixed-variant": "#454748",
-                        "secondary-fixed": "#e1e3e4",
-                        "on-tertiary-container": "#ffc593",
-                        "inverse-surface": "#2f3131",
-                        "surface-container-highest": "#e2e2e2",
-                        "on-surface-variant": "#4c4354",
-                        "secondary-container": "#e1e3e4",
-                        "primary-fixed": "#f0dbff",
-                        "on-primary-fixed": "#2c0051",
-                        "on-primary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "primary": "#6200a9",
-                        "on-secondary-container": "#626566",
-                        "on-primary-container": "#e4c5ff",
-                        "surface-container-high": "#e8e8e8",
-                        "surface": "#f9f9f9",
-                        "primary-container": "#7e22ce",
-                        "on-secondary": "#ffffff",
-                        "outline-variant": "#cfc2d6",
-                        "surface-container": "#eeeeee"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "8px",
-                        "lg": "8px",
-                        "xl": "24px",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "section-padding-mobile": "64px",
-                        "section-padding-desktop": "120px",
-                        "gutter": "24px",
-                        "container-max": "1280px",
-                        "base": "8px"
-                    },
-                    "fontFamily": {
-                        "display-hero": ["Inter"],
-                        "headline-lg": ["Inter"],
-                        "headline-md": ["Inter"],
-                        "body-md": ["Inter"],
-                        "body-lg": ["Inter"]
-                    }
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "surface":                    "#ffffff",
+                    "surface-dim":                "#f8f9fc",
+                    "surface-container-lowest":   "#ffffff",
+                    "surface-container-low":      "#f8f9fc",
+                    "surface-container":          "#f1f0fb",
+                    "surface-container-high":     "#ede9fe",
+                    "surface-container-highest":  "#ddd6fe",
+                    "on-surface":                 "#0f172a",
+                    "on-surface-variant":         "#475569",
+                    "outline":                    "#e2e8f0",
+                    "outline-variant":            "#e2e8f0",
+                    "primary":                    "#7e22ce",
+                    "on-primary":                 "#ffffff",
+                    "primary-container":          "#7e22ce",
+                    "on-primary-container":       "#ffffff",
+                    "primary-fixed":              "#ede9fe",
+                    "on-primary-fixed":           "#3b0764",
+                    "primary-fixed-dim":          "#ddd6fe",
+                    "inverse-primary":            "#c4b5fd",
+                    "secondary":                  "#6d28d9",
+                    "on-secondary":               "#ffffff",
+                    "background":                 "#ffffff",
+                    "on-background":              "#0f172a"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg":      "0.75rem",
+                    "xl":      "1rem",
+                    "2xl":     "1.5rem",
+                    "full":    "9999px"
+                },
+                "spacing": {
+                    "gutter":                    "24px",
+                    "section-padding-desktop":   "120px",
+                    "section-padding-mobile":    "64px",
+                    "base":                      "8px",
+                    "container-max":             "1280px"
+                },
+                "fontFamily": {
+                    "display-hero":        ["Syne", "sans-serif"],
+                    "display-hero-mobile": ["Syne", "sans-serif"],
+                    "headline-lg":         ["Syne", "sans-serif"],
+                    "headline-lg-mobile":  ["Syne", "sans-serif"],
+                    "headline-md":         ["Syne", "sans-serif"],
+                    "body-lg":             ["Outfit", "sans-serif"],
+                    "body-md":             ["Outfit", "sans-serif"],
+                    "label-sm":            ["Outfit", "sans-serif"]
+                },
+                "fontSize": {
+                    "display-hero":        ["72px", {"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],
+                    "display-hero-mobile": ["40px", {"lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}],
+                    "headline-lg":         ["48px", {"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"600"}],
+                    "headline-lg-mobile":  ["32px", {"lineHeight":"1.3","fontWeight":"600"}],
+                    "headline-md":         ["24px", {"lineHeight":"1.4","fontWeight":"600"}],
+                    "body-lg":             ["18px", {"lineHeight":"1.6","fontWeight":"400"}],
+                    "body-md":             ["16px", {"lineHeight":"1.65","fontWeight":"400"}],
+                    "label-sm":            ["14px", {"lineHeight":"1","letterSpacing":"0.05em","fontWeight":"600"}]
+                },
+                "transitionTimingFunction": {
+                    "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
+                    "out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+                    "in-out-expo": "cubic-bezier(0.87, 0, 0.13, 1)",
+                    "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+                    "glass": "cubic-bezier(0.23, 1, 0.32, 1)"
+                },
+                "transitionDuration": {
+                    "400": "400ms",
+                    "600": "600ms",
+                    "800": "800ms"
                 }
             }
         }
-    </script>
+    }
+</script>
 <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .glass-effect { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-        .transition-standard { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-    </style>
-</head>
+    /* ================================================================
+       VIBRANT AGENCY — DEFINITIVE LIGHT THEME (Single Source of Truth)
+       ================================================================ */
+
+    /* --- Fonts --- */
+    html { scroll-behavior: smooth; }
+
+    body {
+        font-family: 'Outfit', sans-serif;
+        background-color: #ffffff;
+        color: #334155;
+        line-height: 1.65;
+    }
+
+    /* --- Headings: Syne, deep charcoal --- */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Syne', sans-serif;
+        letter-spacing: -0.03em;
+        color: #0f172a;
+        text-wrap: balance;
+    }
+
+    /* --- Body text elements --- */
+    p, li, label {
+        color: #475569;
+    }
+
+    /* --- Header: frosted white bar --- */
+    header {
+        background-color: rgba(255, 255, 255, 0.92) !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid #e2e8f0 !important;
+    }
+
+    /* --- Navigation links --- */
+    nav a {
+        color: #475569 !important;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+    nav a:hover {
+        color: #7e22ce !important;
+    }
+    /* Active nav link (bold + underline) */
+    nav a.font-bold,
+    nav a[class*="border-b"] {
+        color: #7e22ce !important;
+    }
+    /* Logo text */
+    nav .font-bold:first-child,
+    nav div.font-bold {
+        color: #0f172a !important;
+    }
+
+    /* --- Section backgrounds: alternating solid whites/grays --- */
+    section {
+        background-color: #ffffff;
+        background-image: none !important;
+    }
+    .bg-surface,
+    .bg-surface-container,
+    .bg-surface-container-low,
+    .bg-surface-container-high,
+    .bg-surface-container-highest {
+        background-color: #f8f9fc !important;
+        background-image: none !important;
+    }
+    .bg-surface-container-lowest,
+    .bg-surface-bright {
+        background-color: #ffffff !important;
+        background-image: none !important;
+    }
+
+    /* --- Hero section: light amethyst tint, NO gradient --- */
+    .hero-gradient {
+        background-color: #f3f0fa !important;
+        background-image: none !important;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    /* Ensure hero text is always dark/readable */
+    .hero-gradient h1,
+    .hero-gradient h2,
+    .hero-gradient p,
+    .hero-gradient li {
+        color: #0f172a !important;
+    }
+
+    /* --- Decorative blobs: kill them entirely for consistency --- */
+    .blur-3xl, .blur-120px, .blur-150px {
+        opacity: 0 !important;
+    }
+
+    /* --- Cards: pure white, clean border, soft lift on hover --- */
+    .bg-white,
+    [class*="bg-white"] {
+        background-color: #ffffff !important;
+        background-image: none !important;
+        backdrop-filter: none !important;
+    }
+    div.bg-white,
+    div[class*="bg-white"] {
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    div.bg-white:hover,
+    div[class*="bg-white"]:hover {
+        transform: translateY(-4px);
+        border-color: #c4b5fd;
+        box-shadow: 0 8px 24px rgba(124, 58, 237, 0.08);
+    }
+
+    /* --- Icon badge inside cards --- */
+    .bg-primary-fixed,
+    [class*="bg-primary-fixed"] {
+        background-color: #ede9fe !important;
+        background-image: none !important;
+        color: #7e22ce !important;
+    }
+    .bg-primary-fixed *,
+    [class*="bg-primary-fixed"] * {
+        color: #7e22ce !important;
+    }
+
+    /* --- Primary brand button / CTA --- */
+    a.bg-primary-container,
+    button.bg-primary-container,
+    a.bg-primary,
+    button.bg-primary {
+        background-color: #7e22ce !important;
+        background-image: none !important;
+        color: #ffffff !important;
+        border: none !important;
+        box-shadow: 0 3px 10px rgba(124, 58, 237, 0.20);
+        transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    a.bg-primary-container:hover,
+    button.bg-primary-container:hover,
+    a.bg-primary:hover,
+    button.bg-primary:hover {
+        background-color: #6d28d9 !important;
+        box-shadow: 0 6px 16px rgba(124, 58, 237, 0.30) !important;
+        transform: translateY(-1px);
+    }
+    a.bg-primary-container *,
+    button.bg-primary-container *,
+    a.bg-primary *,
+    button.bg-primary * {
+        color: #ffffff !important;
+    }
+
+    /* --- "Why us" / full-bleed purple section --- */
+    section.bg-primary {
+        background-color: #7e22ce !important;
+        background-image: none !important;
+    }
+    section.bg-primary h2,
+    section.bg-primary h3,
+    section.bg-primary h4,
+    section.bg-primary p,
+    section.bg-primary span,
+    section.bg-primary li {
+        color: #ffffff !important;
+    }
+
+    /* --- Glass-card in dark sections (keeps white text on purple bg) --- */
+    section.bg-primary .glass-card {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        backdrop-filter: blur(6px);
+    }
+    section.bg-primary .glass-card * {
+        color: #ffffff !important;
+    }
+
+    /* --- Text utility overrides (fix inherited Tailwind color tokens) --- */
+    .text-on-surface          { color: #0f172a !important; }
+    .text-on-surface-variant  { color: #475569 !important; }
+    .text-on-primary          { color: #ffffff !important; }   /* white — used in purple CTAs */
+    .text-primary             { color: #7e22ce !important; }
+    .text-on-primary-container{ color: #ffffff !important; }
+    .text-on-primary-fixed    { color: #3b0764 !important; }
+
+    /* Material icon inside nav / buttons inherits parent color */
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
+
+    /* --- Images --- */
+    img {
+        border-radius: 1rem;
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+    }
+
+    /* --- Scrollbar --- */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f8f9fc; }
+    ::-webkit-scrollbar-thumb { background: #c4b5fd; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #7e22ce; }
+
+    /* --- Fix: bg-white/10, bg-white/20 inside purple sections stay transparent --- */
+    section.bg-primary [class*="bg-white/"],
+    section.bg-primary [class*="bg-on-primary"] {
+        background-color: transparent !important;
+        background-image: none !important;
+        backdrop-filter: none !important;
+        border-color: rgba(255, 255, 255, 0.15) !important;
+    }
+    /* The glass grid wrapper itself */
+    section.bg-primary div[class*="bg-white"] {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    /* Each glass-card cell inside purple section: semi-transparent white */
+    section.bg-primary div.glass-card,
+    section.bg-primary [class*="glass-card"] {
+        background: rgba(255, 255, 255, 0.10) !important;
+        border: 1px solid rgba(255, 255, 255, 0.18) !important;
+        backdrop-filter: blur(6px) !important;
+        -webkit-backdrop-filter: blur(6px) !important;
+        box-shadow: none !important;
+    }
+    section.bg-primary div.glass-card:hover,
+    section.bg-primary [class*="glass-card"]:hover {
+        background: rgba(255, 255, 255, 0.16) !important;
+        border-color: rgba(255, 255, 255, 0.30) !important;
+        transform: translateY(-3px);
+    }
+    
+    /* --- Footer: dark purple bg, ALL text white --- */
+    footer, footer * { color: #ffffff !important; }
+    footer {
+        background-color: #3b0764 !important;
+        background-image: none !important;
+    }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer div.font-bold {
+        color: #ffffff !important;
+        font-family: 'Syne', sans-serif;
+    }
+    footer p, footer span, footer li, footer a, footer div, footer label {
+        color: rgba(255, 255, 255, 0.85) !important;
+        font-family: 'Outfit', sans-serif;
+    }
+    footer h5, footer [class*="text-label"] {
+        color: rgba(255, 255, 255, 0.55) !important;
+        letter-spacing: 0.08em;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    footer a:hover {
+        color: #c4b5fd !important;
+    }
+    footer button {
+        background-color: rgba(255, 255, 255, 0.12) !important;
+        border: 1px solid rgba(255, 255, 255, 0.18) !important;
+        color: #ffffff !important;
+        transition: background-color 0.2s ease;
+    }
+    footer button:hover { background-color: rgba(255, 255, 255, 0.22) !important; }
+    footer hr, footer [class*="border-"] { border-color: rgba(255, 255, 255, 0.15) !important; }
+    footer .material-symbols-outlined { color: rgba(255, 255, 255, 0.7) !important; }
+
+    /* --- ULTRA STRONG PURPLE SECTION TEXT FIX --- */
+    section[class*="bg-primary"] h1,
+    section[class*="bg-primary"] h2,
+    section[class*="bg-primary"] h3,
+    section[class*="bg-primary"] h4,
+    section[class*="bg-primary"] h5,
+    section[class*="bg-primary"] h6,
+    section[class*="bg-primary"] p,
+    section[class*="bg-primary"] span,
+    section[class*="bg-primary"] li,
+    section[class*="bg-primary"] div,
+    section[class*="bg-primary"] a,
+    div[class*="bg-primary"] h1,
+    div[class*="bg-primary"] h2,
+    div[class*="bg-primary"] h3,
+    div[class*="bg-primary"] h4,
+    div[class*="bg-primary"] h5,
+    div[class*="bg-primary"] h6,
+    div[class*="bg-primary"] p,
+    div[class*="bg-primary"] span,
+    div[class*="bg-primary"] li,
+    div[class*="bg-primary"] a {
+        color: #ffffff !important;
+    }
+    
+    /* Exception for buttons inside purple sections */
+    section[class*="bg-primary"] button.bg-white,
+    section[class*="bg-primary"] a.bg-white,
+    div[class*="bg-primary"] button.bg-white,
+    div[class*="bg-primary"] a.bg-white {
+        color: #7e22ce !important;
+    }
+    section[class*="bg-primary"] button.bg-white *,
+    section[class*="bg-primary"] a.bg-white *,
+    div[class*="bg-primary"] button.bg-white *,
+    div[class*="bg-primary"] a.bg-white * {
+        color: #7e22ce !important;
+    }
+
+/* ================================================================
+   PREMIUM INTERACTIONS & ANIMATIONS
+   ================================================================ */
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.press-effect {
+    transition: transform 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.press-effect:active {
+    transform: scale(0.97);
+}
+
+.btn-magnetic {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.btn-magnetic:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.25);
+}
+.btn-magnetic .icon-wrap {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-magnetic:hover .icon-wrap {
+    transform: translateX(4px);
+}
+
+.stagger-fade > * {
+    opacity: 0;
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: calc(var(--i, 0) * 60ms);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+div.card-hover, .card-hover {
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+                box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+                border-color 0.3s ease;
+}
+div.card-hover:hover, .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(124, 58, 237, 0.10);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .btn-magnetic .icon-wrap {
+        transform: none !important;
+    }
+}
+</style>
 <body class="text-on-surface">
 <!-- Header -->
-<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 glass-effect border-b border-outline-variant/30">
-<div class="max-w-container-max mx-auto h-20 px-gutter flex justify-between items-center">
-<!-- Left: Logo & Nav -->
-<div class="flex items-center gap-12">
-<div class="bg-surface-container-highest px-6 py-2 rounded-lg">
-<span class="font-headline-md text-headline-md font-bold text-primary">Logo.</span>
+<header class="bg-primary-container top-0 sticky z-50 transition-all duration-300">
+<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold" style="color:#0f172a;">Plantilla 1.</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md font-medium transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a>
+<a class="font-body-md text-body-md font-medium transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
 </div>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a>
-<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a>
+<div class="flex items-center gap-3">
+<a href="../p_gina_de_contacto_plantilla_1/code.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl hover:bg-secondary transition-colors press-effect btn-magnetic">
+  <span class="icon-wrap">Contáctanos</span>
+</a>
+<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
+</div>
 </nav>
-</div>
-<!-- Right: Actions -->
-<div class="flex items-center gap-4">
-<button class="p-2 text-on-surface-variant hover:text-primary transition-standard">
-<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-</button>
-<button class="bg-surface-container-lowest text-primary border border-outline-variant px-6 py-2 rounded-lg font-bold hover:bg-primary-container hover:text-white transition-standard">
-                    Contactar
-                </button>
-</div>
-</div>
 </header>
 <!-- Hero Section -->
-<section class="relative min-h-[80vh] flex items-center justify-center pt-20 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="Videomarketing Editorial Studio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFUqr1X_pwtHpAKqWNwAPUSlJ5tT3-T5BKTSC_M6ISDLBXNT8Qn2TXvA5C96UgXUfZWfmKJEBv_P18mnzfeewriiEUJeqGpsW2RQD42EgsMFXzHumLN8B9plFTZK-Tn13ozZTVgeuSreTazqm2zALs6LIaFQhsnPZRkUSifKNYZxrxmBZNEyIJgNBmtmtSJ6khRZEWRWUyd1OKtWPnCTrXH_LcAGdxLAZ-F8gpFolWeiiMFWUwJXSRsbAbEK-qCoq8JEvpTtjdOLqs"/>
-<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
-</div>
-<div class="relative z-10 max-w-4xl mx-auto px-gutter text-center text-white">
-<h1 class="font-display-hero text-display-hero uppercase tracking-tight mb-6">
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary-container overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter relative z-10 text-center">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6">
                 VIDEOMARKETING ESTRATÉGICO
             </h1>
-<p class="font-body-lg text-body-lg opacity-90 max-w-2xl mx-auto mb-10">
+<p class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-primary-container/90 mb-12">
                 Captura la atención de tu audiencia y multiplica tus conversiones con contenido audiovisual diseñado para destacar y vender en cualquier plataforma.
             </p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<button class="bg-primary-container text-white px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-standard">
-                    Comenzar ahora
-                </button>
-<button class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition-standard">
-                    Ver Portafolio
-                </button>
+<div class="relative w-full max-w-4xl mx-auto mt-12 transform hover:scale-[1.02] transition-transform duration-700">
+<img alt="Videomarketing Editorial Studio" class="w-full rounded-2xl shadow-2xl border border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFUqr1X_pwtHpAKqWNwAPUSlJ5tT3-T5BKTSC_M6ISDLBXNT8Qn2TXvA5C96UgXUfZWfmKJEBv_P18mnzfeewriiEUJeqGpsW2RQD42EgsMFXzHumLN8B9plFTZK-Tn13ozZTVgeuSreTazqm2zALs6LIaFQhsnPZRkUSifKNYZxrxmBZNEyIJgNBmtmtSJ6khRZEWRWUyd1OKtWPnCTrXH_LcAGdxLAZ-F8gpFolWeiiMFWUwJXSRsbAbEK-qCoq8JEvpTtjdOLqs"/>
 </div>
+</div>
+<!-- Background accents -->
+<div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20">
+<div class="absolute top-20 left-10 w-64 h-64 bg-primary-fixed rounded-full blur-[100px]"></div>
+<div class="absolute bottom-10 right-10 w-96 h-96 bg-on-primary-container rounded-full blur-[120px]"></div>
 </div>
 </section>
 <!-- Benefits Bar -->
@@ -304,52 +661,97 @@
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-on-primary-fixed text-primary-fixed pt-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-12 pb-20">
-<!-- Col 1 -->
-<div>
-<div class="bg-primary-fixed text-primary inline-block px-4 py-2 rounded-lg font-bold text-xl mb-6">Logo.</div>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-primary-fixed-dim/20 flex items-center justify-center hover:bg-primary transition-standard" href="#">
-<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-primary-fixed-dim/20 flex items-center justify-center hover:bg-primary transition-standard" href="#">
-<span class="material-symbols-outlined text-sm" data-icon="public">public</span>
-</a>
-</div>
-</div>
-<!-- Col 2 -->
-<div>
-<h5 class="text-white font-bold mb-6">Contacto</h5>
-<p class="text-primary-fixed-dim/70 mb-4">+52 (777) 123 4567</p>
-<p class="text-primary-fixed-dim/70">Cuernavaca, México</p>
-</div>
-<!-- Col 3 -->
-<div>
-<h5 class="text-white font-bold mb-6">Navegación</h5>
-<ul class="space-y-4">
-<li><a class="hover:text-white transition-colors" href="../landing_page_plantilla_1/code.html">Inicio</a></li>
-<li><a class="hover:text-white transition-colors" href="../landing_page_plantilla_1/code.html#servicios">Servicios</a></li>
-<li><a class="hover:text-white transition-colors" href="../p_gina_de_nosotros_plantilla_1/code.html">Nosotros</a></li>
-<li><a class="hover:text-white transition-colors" href="../p_gina_de_contacto_plantilla_1/code.html">Contacto</a></li>
-</ul>
-</div>
-<!-- Col 4 -->
-<div>
-<h5 class="text-white font-bold mb-6">Servicios</h5>
-<ul class="space-y-4">
-<li><a class="hover:text-white transition-colors" href="#">Video Corporativo</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Contenido Social</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Animación 2D/3D</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Locución</a></li>
-</ul>
-</div>
-</div>
-<!-- Bottom Bar -->
-<div class="border-t border-primary-fixed-dim/10 py-8">
-<div class="max-w-container-max mx-auto px-gutter text-center text-primary-fixed-dim/50 text-sm">
-                © 2026 Plantilla 1. Todos los derechos reservados.
-            </div>
+<footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+
+    <!-- Col 1: Brand -->
+    <div class="space-y-6">
+      <div class="font-headline-md text-headline-md font-bold" style="color:#ffffff;">Plantilla 1.</div>
+      <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);">
+        Soluciones digitales premium para impulsar el crecimiento de tu empresa.
+      </p>
+      <div class="flex gap-3">
+        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
+          <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">share</span>
+        </button>
+        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
+          <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">public</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Col 2: Contact -->
+    <div class="space-y-6">
+      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Información de Contacto</h5>
+      <ul class="space-y-4 font-body-md text-body-md" style="color:rgba(255,255,255,0.80);">
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">call</span>
+          +34 639 494 000
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">mail</span>
+          contacto@plantilla1.com
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">location_on</span>
+          Madrid, España
+        </li>
+      </ul>
+    </div>
+
+    <!-- Col 3: Nav links -->
+    <div class="space-y-6">
+      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5>
+      <ul class="space-y-3 font-body-md text-body-md">
+        <li><a href="../landing_page_plantilla_1/code.html"    style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li>
+        <li><a href="../p_gina_de_nosotros_plantilla_1/code.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li>
+        <li><a href="../landing_page_plantilla_1/code.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li>
+        <li><a href="../p_gina_de_contacto_plantilla_1/code.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 4: Quick links -->
+    <div class="space-y-6">
+      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Enlaces Rápidos</h5>
+      <ul class="space-y-3 font-body-md text-body-md">
+        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Blog</a></li>
+        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">FAQ</a></li>
+        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Privacidad</a></li>
+        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Términos</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top:1px solid rgba(255,255,255,0.12);">
+    <p class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);">© 2026 Plantilla 1 | Todos los derechos reservados.</p>
+    <div class="flex gap-6">
+      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Términos</a>
+      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Soporte</a>
+    </div>
+  </div>
+
 </div>
 </footer>
+<script>
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const header = document.querySelector('header');
+                    if (window.scrollY > 20) {
+                        header.classList.add('shadow-lg', 'bg-primary-container/95', 'backdrop-blur-sm');
+                        header.style.height = '4rem';
+                    } else {
+                        header.classList.remove('shadow-lg', 'bg-primary-container/95', 'backdrop-blur-sm');
+                        header.style.height = '5rem';
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    </script>
 </body></html>

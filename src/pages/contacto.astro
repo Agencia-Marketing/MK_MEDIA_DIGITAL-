@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Contacto | Plantilla 1">
+<section class="bg-primary text-on-primary py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6 reveal">
+<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero">Inicia tu proyecto con nosotros</h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 max-w-xl">
+                    Escríbenos hoy mismo y descubre cómo nuestras estrategias digitales y desarrollo web pueden escalar tus ventas al siguiente nivel.
+                </p>
+</div>
+<div class="relative flex justify-center reveal">
+<img alt="Contacto" class="w-full max-w-[500px] aspect-square object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJHuN7GK8OrnqtHB9Hfls1crva_jJrTCIWMzfYcDDp5KmQAJchQmrrMF-g8KVrK3LiRhxz3SgkIWinZ-tdbufDoEhZYK1DBRgXu52RTdeYkZQ7Yuu4DamM_SwYKjW_fDNVstAq9n7vo570eV1o94j6_ejxMBeHbT03qgJ0iw9YaM_zN1fd73RO752OtB7DSvEj4r6LKPeYHp0hsznfi4gPGg4AH59rAIl0p-YQdOQOctj7MeeUa0lIw-DhqAFxc71-oDs1rjxMjtjb">
+</div>
+</div>
+</section>
+<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-padding-mobile md:gap-24 items-start">
+<div class="space-y-8 reveal">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Escríbenos un mensaje</h2>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                            Estamos listos para transformar tu visión en una realidad digital impactante. Déjanos tus datos y un especialista se pondrá en contacto contigo en menos de 24 horas.
+                        </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110 press-effect">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Email</p>
+<p class="font-headline-md text-headline-md text-on-surface">hola@tuagencia.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110 press-effect">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Teléfono</p>
+<p class="font-headline-md text-headline-md text-on-surface">+52 (777) 123 4567</p>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider mb-4">Redes Sociales</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-surface p-8 md:p-12 rounded-[24px] border border-surface-variant shadow-sm reveal">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Nombre Completo</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-lg px-4 py-3 text-body-md font-body-md transition-shadow" placeholder="Ej. Juan Pérez" type="text">
+</div>
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Email Corporativo</label>
+<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-lg px-4 py-3 text-body-md font-body-md transition-shadow" placeholder="juan@empresa.com" type="email">
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Motivo de Consulta</label>
+<select class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-lg px-4 py-3 text-body-md font-body-md appearance-none transition-shadow">
+<option>Desarrollo Web</option>
+<option>Estrategia Digital</option>
+<option>SEO &amp; SEM</option>
+<option>Otro</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-label-sm font-label-sm text-on-surface-variant">Mensaje</label>
+<textarea class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-lg px-4 py-3 text-body-md font-body-md resize-none transition-shadow" placeholder="Cuéntanos un poco más sobre tu proyecto..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-lg btn-magnetic press-effect shadow-md shadow-primary/20 tracking-widest uppercase" type="submit">
+                            <span class="icon-wrap">SOLICITAR ASESORÍA</span>
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full h-[450px] relative">
+<div class="absolute inset-0 bg-surface-variant flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6nVHVZWEmKfyoBWn-FocTAn2-7tBv-I3y8V1qDJZHchTN08ELSff4YuFB4i8YkCFv8DReKKJyNjxpH-Ke-BqpShVLWI7kk7e0Kldz-EdF70UKnnAAwyI2ZAPyFZ_Sa05mBcJjfDw8nWX4KhJwZT8d22qRDMFzvQmwQVuT-knP_aAkD_r8LNNiTOzwGvtT_ldcjCMFmrD-PTGWZy-BsfujARWgDornIb7CXgvISIfPsMmZ2xtQYpBlwjxyqpxvP63bOMdb-dKTOdZP">
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary text-on-primary px-6 py-3 rounded-full flex items-center gap-2 shadow-xl">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-bold">Visítanos en Cuernavaca</span>
+</div>
+</div>
+</div>
+</section>
+</Layout>
