@@ -211,13 +211,13 @@
 
     /* --- Icon badge inside cards --- */
     .bg-primary-fixed,
-    [class*="bg-primary-fixed"] {
+    [class*="bg-primary-fixed"]:not([class*="bg-on-primary-fixed"]) {
         background-color: var(--color-primary-fixed) !important;
         background-image: none !important;
         color: var(--color-primary) !important;
     }
     .bg-primary-fixed *,
-    [class*="bg-primary-fixed"] * {
+    [class*="bg-primary-fixed"]:not([class*="bg-on-primary-fixed"]) * {
         color: var(--color-primary) !important;
     }
 

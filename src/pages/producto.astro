@@ -91,23 +91,26 @@ const cleanPhone = phone.replace(/[^0-9]/g, '');
           </div>
 
           <!-- WhatsApp Card -->
-          <div class="bg-primary-fixed/30 rounded-3xl border border-primary-fixed-dim/40 p-8 space-y-6">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-on-primary shadow-md">
+          <div class="bg-on-primary-fixed rounded-3xl border border-white/10 p-8 space-y-6 shadow-2xl relative overflow-hidden">
+            <!-- Subtle gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/25 via-transparent to-transparent pointer-events-none"></div>
+
+            <div class="relative z-10 flex items-center gap-4">
+              <div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-on-primary shadow-md shrink-0">
                 <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
               </div>
               <div>
-                <h3 class="font-headline-md text-headline-md text-on-primary-fixed">¡Comencemos hoy!</h3>
-                <p class="text-xs text-on-primary-fixed/80">Soporte directo 1 a 1 por chat</p>
+                <h3 class="font-headline-md text-headline-md text-white">¡Comencemos hoy!</h3>
+                <p class="text-xs text-primary-fixed/80">Soporte directo 1 a 1 por chat</p>
               </div>
             </div>
 
-            <p class="text-on-primary-fixed/90 font-body-md text-body-md leading-relaxed">
+            <p class="relative z-10 text-primary-fixed-dim font-body-md text-body-md leading-relaxed">
               Haz clic en el botón de abajo para enviarnos un mensaje por WhatsApp con los detalles de este plan. Uno de nuestros asesores te responderá para definir los alcances y dar inicio al proyecto.
             </p>
 
-            <a id="whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full bg-primary text-on-primary py-5 rounded-2xl font-bold text-center block btn-magnetic press-effect shadow-xl shadow-primary/20">
-              <span class="icon-wrap flex items-center justify-center gap-2">
+            <a id="whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="relative z-10 w-full bg-white text-primary py-5 rounded-2xl font-bold text-center block hover:bg-primary-fixed transition-colors shadow-xl press-effect">
+              <span class="flex items-center justify-center gap-2">
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.46 3.473 1.336 4.988L2 22l5.174-1.356c1.47.8 3.11 1.222 4.826 1.222 5.506 0 9.988-4.482 9.988-9.988C22 6.482 17.518 2 12.012 2zm0 18.294c-1.49 0-2.95-.4-4.223-1.157l-.303-.18-3.137.822.835-3.056-.197-.314c-.832-1.326-1.272-2.87-1.272-4.47 0-4.526 3.684-8.21 8.21-8.21 4.527 0 8.21 3.684 8.21 8.21 0 4.526-3.684 8.21-8.21 8.21zm4.786-6.522c-.262-.13-1.554-.767-1.793-.853-.24-.087-.414-.13-.588.13-.174.262-.676.853-.83 1.028-.152.173-.304.195-.566.065-.262-.13-1.107-.407-2.11-1.302-.78-.696-1.308-1.555-1.46-1.82-.152-.26-.016-.4-.147-.53-.118-.117-.262-.304-.393-.456-.13-.152-.174-.26-.262-.435-.087-.174-.043-.326-.022-.456.022-.13.174-.413.262-.565.087-.152.11-.26.174-.435.065-.174.032-.326-.01-.456-.044-.13-.415-1.002-.57-1.37-.152-.368-.317-.318-.435-.324-.112-.006-.24-.006-.37-.006-.13 0-.34.048-.518.24-.178.195-.678.662-.678 1.613s.69 1.87 .785 2c.096.13 1.36 2.077 3.293 2.912.46.2.82.32 1.1.41.462.146.88.125 1.212.076.37-.054 1.137-.465 1.298-.913.163-.45.163-.837.114-.913-.047-.077-.173-.12-.434-.25z"/>
                 </svg>
@@ -116,19 +119,19 @@ const cleanPhone = phone.replace(/[^0-9]/g, '');
             </a>
 
             <!-- Next steps -->
-            <div class="border-t border-primary-fixed-dim/30 pt-6">
-              <h4 class="font-label-sm text-label-sm text-on-primary-fixed uppercase tracking-wider mb-4">¿Qué pasa después?</h4>
-              <div class="space-y-3 font-body-md text-body-md text-on-primary-fixed/85">
+            <div class="relative z-10 border-t border-white/10 pt-6">
+              <h4 class="font-label-sm text-label-sm text-white uppercase tracking-wider mb-4">¿Qué pasa después?</h4>
+              <div class="space-y-3 font-body-md text-body-md text-primary-fixed-dim">
                 <div class="flex gap-3">
-                  <span class="font-bold text-primary">1.</span>
+                  <span class="font-bold text-primary-fixed">1.</span>
                   <p>Coordinamos una videollamada corta o conversamos por chat para entender tus necesidades.</p>
                 </div>
                 <div class="flex gap-3">
-                  <span class="font-bold text-primary">2.</span>
+                  <span class="font-bold text-primary-fixed">2.</span>
                   <p>Te enviamos una propuesta formal y cronograma de trabajo detallado.</p>
                 </div>
                 <div class="flex gap-3">
-                  <span class="font-bold text-primary">3.</span>
+                  <span class="font-bold text-primary-fixed">3.</span>
                   <p>¡Iniciamos el proyecto y te entregamos avances constantes!</p>
                 </div>
               </div>
