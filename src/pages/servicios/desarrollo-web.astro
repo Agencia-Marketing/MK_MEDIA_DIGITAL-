@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PlanesServicio from '../../components/PlanesServicio.astro';
 ---
-<Layout title="Desarrollo Web | Plantilla 1">
+<Layout title="Desarrollo web | MK Media Digital">
 <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary overflow-hidden">
 <div class="max-w-container-max mx-auto px-gutter relative z-10 text-center reveal in-view">
 <h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6">
@@ -46,61 +47,7 @@ import Layout from '../../layouts/Layout.astro';
 </div>
 </div>
 </section>
-<section class="bg-surface-container-low py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-16 reveal">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestros Planes</h2>
-<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-lg flex flex-col card-hover stagger-fade">
-<h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4">Express</h4>
-<h3 class="font-headline-md text-headline-md mb-2">Landing Page</h3>
-<div class="text-on-surface font-bold text-2xl mb-6">$13,000 <span class="text-sm font-normal text-on-surface-variant">- $16,900</span></div>
-<ul class="space-y-4 mb-8 flex-grow">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 1 Página de aterrizaje</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Formulario de contacto</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Botón de WhatsApp</li>
-</ul>
-<a href="/producto?service=desarrollo-web&plan=landing-page" class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-colors uppercase tracking-wider text-sm press-effect text-center block">CONTRATAR</a>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-lg flex flex-col card-hover stagger-fade">
-<h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4">Corporate</h4>
-<h3 class="font-headline-md text-headline-md mb-2">Web Informativa</h3>
-<div class="text-on-surface font-bold text-2xl mb-6">$17,550 <span class="text-sm font-normal text-on-surface-variant">- $22,100</span></div>
-<ul class="space-y-4 mb-8 flex-grow">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Hasta 5 secciones</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Blog autogestionable</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Integración Google Maps</li>
-</ul>
-<a href="/producto?service=desarrollo-web&plan=web-informativa" class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-colors uppercase tracking-wider text-sm press-effect text-center block">CONTRATAR</a>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-xl flex flex-col ring-4 ring-primary scale-105 z-10 card-hover relative stagger-fade">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">Más Popular</div>
-<h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4">Pro Business</h4>
-<h3 class="font-headline-md text-headline-md mb-2">E-commerce Básico</h3>
-<div class="text-on-surface font-bold text-2xl mb-6">$20,800 <span class="text-sm font-normal text-on-surface-variant">- $25,350</span></div>
-<ul class="space-y-4 mb-8 flex-grow">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Carrito de compras</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Pagos con tarjeta/PayPal</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Gestión de inventario</li>
-</ul>
-<a href="/producto?service=desarrollo-web&plan=ecommerce-basico" class="w-full py-4 bg-primary text-on-primary font-bold rounded-xl hover:brightness-110 uppercase tracking-wider text-sm shadow-lg shadow-primary/20 btn-magnetic press-effect text-center block"><span class="icon-wrap">CONTRATAR</span></a>
-</div>
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-lg flex flex-col card-hover stagger-fade">
-<h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-4">Enterprise</h4>
-<h3 class="font-headline-md text-headline-md mb-2">E-commerce Avanzado</h3>
-<div class="text-on-surface font-bold text-2xl mb-6">$25,350 <span class="text-sm font-normal text-on-surface-variant">- $29,900</span></div>
-<ul class="space-y-4 mb-8 flex-grow">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Integración de ERP</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Multi-divisa y envíos</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> UX personalizada</li>
-</ul>
-<a href="/producto?service=desarrollo-web&plan=ecommerce-avanzado" class="w-full py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-colors uppercase tracking-wider text-sm press-effect text-center block">CONTRATAR</a>
-</div>
-</div>
-</div>
-</section>
+<PlanesServicio service="desarrollo-web" heading="Elige el tipo de sitio web que necesitas" featured="sitio-web-informativo" />
 <section class="relative py-section-padding-desktop overflow-hidden bg-surface">
 <div class="absolute inset-0 z-0 opacity-10">
 <img alt="Background Office" class="w-full h-full object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKx_y5FG9O54q1Jytf9tJP8pgVoTxMe2yqJaaCjVEs0YEvEbiiHGeTSsPkXgP8a14nRfOU4RD280oghzMab5umvX-57WT5yPVbzek-pVUcR2o7hnhqqsCdZ3HepRTkizCKkqOVKcV9Pa3yVRYAz-LudccUsr9yrNou4S_INZTIHLaJFE_xRv7l48UqOtqwZOZlRrpnHC1alDY4lRlVbBqhf9DnGMXUbZ9Wvlveqwy98yDcfJxjJ7eyp7B5k8uIqHOz1AI1npBpJz4W"/>

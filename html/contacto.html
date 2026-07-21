@@ -2,9 +2,11 @@
 <html class="light" lang="es"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Contacto | Plantilla 1</title>
+<title>Contacto | MK Media Digital</title>
+<link rel="icon" type="image/png" href="logos/icono-color.png">
+<link rel="apple-touch-icon" href="logos/icono-180.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script id="tailwind-config">
     tailwind.config = {
@@ -13,28 +15,28 @@
             extend: {
                 "colors": {
                     "surface":                    "#ffffff",
-                    "surface-dim":                "#f8f9fc",
+                    "surface-dim":                "#f7f6fb",
                     "surface-container-lowest":   "#ffffff",
-                    "surface-container-low":      "#f8f9fc",
-                    "surface-container":          "#f1f0fb",
-                    "surface-container-high":     "#ede9fe",
-                    "surface-container-highest":  "#ddd6fe",
-                    "on-surface":                 "#0f172a",
-                    "on-surface-variant":         "#475569",
-                    "outline":                    "#e2e8f0",
-                    "outline-variant":            "#e2e8f0",
-                    "primary":                    "#7e22ce",
+                    "surface-container-low":      "#f7f6fb",
+                    "surface-container":          "#f3f0f9",
+                    "surface-container-high":     "#ede7f5",
+                    "surface-container-highest":  "#ddd1ec",
+                    "on-surface":                 "#101b33",
+                    "on-surface-variant":         "#4a5570",
+                    "outline":                    "#e3e0ec",
+                    "outline-variant":            "#e3e0ec",
+                    "primary":                    "#623D91",
                     "on-primary":                 "#ffffff",
-                    "primary-container":          "#7e22ce",
+                    "primary-container":          "#623D91",
                     "on-primary-container":       "#ffffff",
-                    "primary-fixed":              "#ede9fe",
-                    "on-primary-fixed":           "#3b0764",
-                    "primary-fixed-dim":          "#ddd6fe",
-                    "inverse-primary":            "#c4b5fd",
-                    "secondary":                  "#6d28d9",
+                    "primary-fixed":              "#ede7f5",
+                    "on-primary-fixed":           "#123274",
+                    "primary-fixed-dim":          "#ddd1ec",
+                    "inverse-primary":            "#009CDD",
+                    "secondary":                  "#4e3075",
                     "on-secondary":               "#ffffff",
                     "background":                 "#ffffff",
-                    "on-background":              "#0f172a"
+                    "on-background":              "#101b33"
                 },
                 "borderRadius": {
                     "DEFAULT": "0.5rem",
@@ -51,14 +53,14 @@
                     "container-max":             "1280px"
                 },
                 "fontFamily": {
-                    "display-hero":        ["Syne", "sans-serif"],
-                    "display-hero-mobile": ["Syne", "sans-serif"],
-                    "headline-lg":         ["Syne", "sans-serif"],
-                    "headline-lg-mobile":  ["Syne", "sans-serif"],
-                    "headline-md":         ["Syne", "sans-serif"],
-                    "body-lg":             ["Outfit", "sans-serif"],
-                    "body-md":             ["Outfit", "sans-serif"],
-                    "label-sm":            ["Outfit", "sans-serif"]
+                    "display-hero":        ["Montserrat", "sans-serif"],
+                    "display-hero-mobile": ["Montserrat", "sans-serif"],
+                    "headline-lg":         ["Montserrat", "sans-serif"],
+                    "headline-lg-mobile":  ["Montserrat", "sans-serif"],
+                    "headline-md":         ["Montserrat", "sans-serif"],
+                    "body-lg":             ["Poppins", "sans-serif"],
+                    "body-md":             ["Poppins", "sans-serif"],
+                    "label-sm":            ["Poppins", "sans-serif"]
                 },
                 "fontSize": {
                     "display-hero":        ["72px", {"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],
@@ -88,44 +90,44 @@
 </script>
 <style>
 :root {
-    --color-primary: #7e22ce;
-    --color-primary-rgb: 124, 58, 237;
-    --color-primary-dark: #6d28d9;
-    --color-primary-dark-rgb: 109, 40, 217;
-    --color-primary-fixed: #ede9fe;
-    --color-primary-fixed-rgb: 237, 233, 254;
-    --color-primary-fixed-dim: #ddd6fe;
-    --color-inverse-primary: #c4b5fd;
-    --color-inverse-primary-rgb: 196, 181, 253;
+    --color-primary: #623D91;
+    --color-primary-rgb: 98, 61, 145;
+    --color-primary-dark: #4e3075;
+    --color-primary-dark-rgb: 78, 48, 117;
+    --color-primary-fixed: #ede7f5;
+    --color-primary-fixed-rgb: 237, 231, 245;
+    --color-primary-fixed-dim: #ddd1ec;
+    --color-inverse-primary: #009CDD;
+    --color-inverse-primary-rgb: 0, 156, 221;
     --color-on-primary: #ffffff;
-    --color-on-primary-fixed: #3b0764;
+    --color-on-primary-fixed: #123274;
 
     --color-surface: #ffffff;
-    --color-surface-dim: #f8f9fc;
+    --color-surface-dim: #f7f6fb;
     --color-surface-container-lowest: #ffffff;
-    --color-on-surface: #0f172a;
-    --color-on-surface-rgb: 15, 23, 42;
-    --color-on-surface-variant: #475569;
-    --color-body-text: #334155;
-    --color-body-text-rgb: 51, 65, 85;
-    --color-outline: #e2e8f0;
+    --color-on-surface: #101b33;
+    --color-on-surface-rgb: 16, 27, 51;
+    --color-on-surface-variant: #4a5570;
+    --color-body-text: #3b4560;
+    --color-body-text-rgb: 59, 69, 96;
+    --color-outline: #e3e0ec;
 
-    --color-footer-bg: #3b0764;
+    --color-footer-bg: #123274;
 }
 
     /* --- Fonts --- */
     html { scroll-behavior: smooth; }
 
     body {
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
         background-color: var(--color-surface);
         color: var(--color-body-text);
         line-height: 1.65;
     }
 
-    /* --- Headings: Syne, deep charcoal --- */
+    /* --- Headings: Montserrat, deep charcoal --- */
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Syne', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: -0.03em;
         color: var(--color-on-surface);
         text-wrap: balance;
@@ -147,7 +149,7 @@
     /* --- Navigation links --- */
     nav a {
         color: var(--color-on-surface-variant) !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         transition: color 0.2s ease;
     }
@@ -279,6 +281,12 @@
     .text-primary             { color: var(--color-primary) !important; }
     .text-on-primary-container{ color: var(--color-on-primary) !important; }
     .text-on-primary-fixed    { color: var(--color-on-primary-fixed) !important; }
+    /* Los overrides de arriba llevan !important, así que ganarían también en :hover
+       y dejarían ilegible el texto de los botones outline al invertirse el fondo. */
+    .hover\:text-on-primary:hover,
+    .hover\:text-on-primary:hover * { color: var(--color-on-primary) !important; }
+    .hover\:text-primary:hover,
+    .hover\:text-primary:hover *    { color: var(--color-primary) !important; }
 
     /* Material icon inside nav / buttons inherits parent color */
     .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
@@ -333,11 +341,11 @@
     }
     footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer div.font-bold {
         color: var(--color-on-primary) !important;
-        font-family: 'Syne', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     footer p, footer span, footer li, footer a, footer div, footer label {
         color: rgba(255, 255, 255, 0.85) !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     footer h5, footer [class*="text-label"] {
         color: rgba(255, 255, 255, 0.55) !important;
@@ -431,17 +439,28 @@
     transform: translateX(4px);
 }
 
-.stagger-fade > * {
+.stagger-fade {
     opacity: 0;
-    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    animation-delay: calc(var(--i, 0) * 60ms);
+    transform: translateY(12px);
 }
+.stagger-fade.in-view {
+    animation: fadeUp 500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.stagger-fade:nth-child(1) { animation-delay: 0ms; }
+.stagger-fade:nth-child(2) { animation-delay: 60ms; }
+.stagger-fade:nth-child(3) { animation-delay: 120ms; }
+.stagger-fade:nth-child(4) { animation-delay: 180ms; }
+.stagger-fade:nth-child(5) { animation-delay: 240ms; }
+.stagger-fade:nth-child(6) { animation-delay: 300ms; }
+.stagger-fade:nth-child(7) { animation-delay: 360ms; }
+.stagger-fade:nth-child(8) { animation-delay: 420ms; }
+.stagger-fade:nth-child(9) { animation-delay: 480ms; }
 
 .reveal {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(16px);
+    transition: opacity 700ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 700ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .reveal.in-view {
     opacity: 1;
@@ -469,226 +488,88 @@ div.card-hover:hover, .card-hover:hover {
         transform: none !important;
     }
 }
+
+    /* --- Correcciones de cascada (ver global.css) ---------------------------
+       Los overrides con !important de más arriba ganarían también en :hover y
+       dejarían ilegible el texto de los botones outline. Además, el selector
+       [class*="bg-primary-fixed"] coincide por subcadena con la utilidad
+       hover:bg-primary-fixed y pintaría el fondo de forma permanente. */
+    .hover\:text-on-primary:hover,
+    .hover\:text-on-primary:hover * { color: var(--color-on-primary) !important; }
+    .hover\:text-primary:hover,
+    .hover\:text-primary:hover *    { color: var(--color-primary) !important; }
+
+    /* --- Submenú de servicios en la cabecera --- */
+    .nav-dropdown-panel {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%, 4px);
+        transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 200ms cubic-bezier(0.23, 1, 0.32, 1),
+                    visibility 0s linear 200ms;
+    }
+    .nav-dropdown:hover .nav-dropdown-panel,
+    .nav-dropdown:focus-within .nav-dropdown-panel {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+        transition-delay: 0s;
+    }
+    .nav-dropdown:hover .nav-dropdown-chevron,
+    .nav-dropdown:focus-within .nav-dropdown-chevron { transform: rotate(180deg); }
+    .nav-dropdown-item {
+        background-color: transparent;
+        color: var(--color-on-surface-variant) !important;
+    }
+    .nav-dropdown-item:hover {
+        background-color: var(--color-primary-fixed);
+        color: var(--color-primary) !important;
+    }
+
+    .btn-whatsapp {
+        background-color: #ffffff;
+        color: var(--color-primary) !important;
+    }
+    .btn-whatsapp:hover { background-color: var(--color-primary-fixed); }
+    .btn-whatsapp * { color: var(--color-primary) !important; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .nav-dropdown-panel { transition: none; }
+    }
 </style>
 <body class="font-body-md text-body-md overflow-x-hidden">
-<!-- 1. TopNavBar -->
-<header class="bg-primary-container top-0 sticky z-50 transition-all duration-300">
-<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
-<div class="font-headline-md text-headline-md font-bold" style="color:var(--color-on-surface)">Plantilla 1.</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-body-md text-body-md font-medium transition-colors" href="index.html">Inicio</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="nosotros.html">Nosotros</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="index.html#servicios">Servicios</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="#">Contacto</a>
-</div>
-<div class="flex items-center gap-3">
-<a href="#" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl hover:bg-secondary transition-colors press-effect btn-magnetic">
-  <span class="icon-wrap">Contáctanos</span>
-</a>
-<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
-</div>
-</nav>
-</header>
-<!-- 2. Hero Section -->
-<section class="bg-primary-container text-on-primary py-section-padding-mobile md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-<div class="space-y-6">
-<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero">Inicia tu proyecto con nosotros</h1>
-<p class="font-body-lg text-body-lg text-on-primary-container/90 max-w-xl">
-                    Escríbenos hoy mismo y descubre cómo nuestras estrategias digitales y desarrollo web pueden escalar tus ventas al siguiente nivel.
-                </p>
-</div>
-<div class="relative flex justify-center">
-<img alt="Contacto" class="w-full max-w-[500px] aspect-square object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJHuN7GK8OrnqtHB9Hfls1crva_jJrTCIWMzfYcDDp5KmQAJchQmrrMF-g8KVrK3LiRhxz3SgkIWinZ-tdbufDoEhZYK1DBRgXu52RTdeYkZQ7Yuu4DamM_SwYKjW_fDNVstAq9n7vo570eV1o94j6_ejxMBeHbT03qgJ0iw9YaM_zN1fd73RO752OtB7DSvEj4r6LKPeYHp0hsznfi4gPGg4AH59rAIl0p-YQdOQOctj7MeeUa0lIw-DhqAFxc71-oDs1rjxMjtjb">
-</div>
-</div>
-</section>
-<!-- 3. Section Formulario -->
-<section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container-lowest">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-section-padding-mobile md:gap-24 items-start">
-<!-- Columna Izquierda: Info -->
-<div class="space-y-8">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Escríbenos un mensaje</h2>
-<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
-                            Estamos listos para transformar tu visión en una realidad digital impactante. Déjanos tus datos y un especialista se pondrá en contacto contigo en menos de 24 horas.
-                        </p>
-</div>
-<div class="space-y-6">
-<div class="flex items-center gap-4 group">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
-</div>
-<div>
-<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Email</p>
-<p class="font-headline-md text-headline-md text-on-surface">hola@tuagencia.com</p>
-</div>
-</div>
-<div class="flex items-center gap-4 group">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
-</div>
-<div>
-<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Teléfono</p>
-<p class="font-headline-md text-headline-md text-on-surface">+52 (777) 123 4567</p>
-</div>
-</div>
-</div>
-<div class="pt-8">
-<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider mb-4">Redes Sociales</p>
-<div class="flex gap-4">
-<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all active:scale-90" href="#">
-<span class="material-symbols-outlined">social_leaderboard</span>
-</a>
-<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all active:scale-90" href="#">
-<span class="material-symbols-outlined">public</span>
-</a>
-<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all active:scale-90" href="#">
-<span class="material-symbols-outlined">share</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Columna Derecha: Formulario -->
-<div class="bg-surface p-8 md:p-12 rounded-[24px] border border-surface-variant shadow-sm">
-<form class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-label-sm font-label-sm text-on-surface-variant">Nombre Completo</label>
-<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg px-4 py-3 text-body-md font-body-md" placeholder="Ej. Juan Pérez" type="text">
-</div>
-<div class="space-y-2">
-<label class="text-label-sm font-label-sm text-on-surface-variant">Email Corporativo</label>
-<input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg px-4 py-3 text-body-md font-body-md" placeholder="juan@empresa.com" type="email">
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-label-sm font-label-sm text-on-surface-variant">Motivo de Consulta</label>
-<select class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg px-4 py-3 text-body-md font-body-md appearance-none">
-<option>Desarrollo Web</option>
-<option>Estrategia Digital</option>
-<option>SEO &amp; SEM</option>
-<option>Otro</option>
-</select>
-</div>
-<div class="space-y-2">
-<label class="text-label-sm font-label-sm text-on-surface-variant">Mensaje</label>
-<textarea class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary-container rounded-lg px-4 py-3 text-body-md font-body-md resize-none" placeholder="Cuéntanos un poco más sobre tu proyecto..." rows="4"></textarea>
-</div>
-<button class="w-full bg-primary-container text-on-primary font-bold py-4 rounded-lg hover:brightness-110 active:scale-[0.98] transition-all tracking-widest uppercase" type="submit">
-                            SOLICITAR ASESORÍA
-                        </button>
-</form>
-</div>
-</div>
-</div>
-</section>
-<!-- 4. Sección de Mapa -->
-<section class="w-full h-[450px] relative">
-<div class="absolute inset-0 bg-surface-variant flex items-center justify-center overflow-hidden">
-<img class="w-full h-full object-cover grayscale opacity-60" data-alt="A full-bleed digital map visualization of Cuernavaca, Morelos, rendered in a modern UI style with soft purple and grey tones. The map features clean topography and subtle glowing pins that indicate locations. The lighting is bright and even, matching a high-end light-mode aesthetic. The atmosphere is professional and technologically advanced, using a minimalist design language." data-location="Cuernavaca, Morelos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6nVHVZWEmKfyoBWn-FocTAn2-7tBv-I3y8V1qDJZHchTN08ELSff4YuFB4i8YkCFv8DReKKJyNjxpH-Ke-BqpShVLWI7kk7e0Kldz-EdF70UKnnAAwyI2ZAPyFZ_Sa05mBcJjfDw8nWX4KhJwZT8d22qRDMFzvQmwQVuT-knP_aAkD_r8LNNiTOzwGvtT_ldcjCMFmrD-PTGWZy-BsfujARWgDornIb7CXgvISIfPsMmZ2xtQYpBlwjxyqpxvP63bOMdb-dKTOdZP">
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="bg-primary-container text-on-primary px-6 py-3 rounded-full flex items-center gap-2 shadow-xl animate-bounce">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
-<span class="font-bold">¡Visítanos en Cuernavaca!</span>
-</div>
-</div>
-</div>
-</section>
-<!-- 5. Footer -->
-<footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-
-    <!-- Col 1: Brand -->
-    <div class="space-y-6">
-      <div class="font-headline-md text-headline-md font-bold" style="color:var(--color-on-primary)">Plantilla 1.</div>
-      <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);">
-        Soluciones digitales premium para impulsar el crecimiento de tu empresa.
-      </p>
-      <div class="flex gap-3">
-        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-          <span class="material-symbols-outlined text-[20px]" style="color:var(--color-on-primary);">share</span>
-        </button>
-        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-          <span class="material-symbols-outlined text-[20px]" style="color:var(--color-on-primary);">public</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Col 2: Contact -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Información de Contacto</h5>
-      <ul class="space-y-4 font-body-md text-body-md" style="color:rgba(255,255,255,0.80);">
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">call</span>
-          +34 639 494 000
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">mail</span>
-          contacto@plantilla1.com
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">location_on</span>
-          Madrid, España
-        </li>
-      </ul>
-    </div>
-
-    <!-- Col 3: Nav links -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5>
-      <ul class="space-y-3 font-body-md text-body-md">
-        <li><a href="index.html"    style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li>
-        <li><a href="nosotros.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li>
-        <li><a href="index.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li>
-        <li><a href="#"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li>
-      </ul>
-    </div>
-
-    <!-- Col 4: Quick links -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Enlaces Rápidos</h5>
-      <ul class="space-y-3 font-body-md text-body-md">
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Blog</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">FAQ</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Privacidad</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Términos</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Bottom bar -->
-  <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top:1px solid rgba(255,255,255,0.12);">
-    <p class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);">© 2026 Plantilla 1 | Todos los derechos reservados.</p>
-    <div class="flex gap-6">
-      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Términos</a>
-      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Soporte</a>
-    </div>
-  </div>
-
-</div>
-</footer>
+<header class="bg-surface border-b border-outline top-0 sticky z-50 transition-all duration-300"> <nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20"> <a href="index.html" class="font-headline-md text-headline-md font-bold flex items-center gap-2 shrink-0" style="color:var(--color-on-surface)" aria-label="MK Media Digital"> <img src="logos/logo-color.png" alt="MK Media Digital" class="h-12 md:h-14 w-auto" width="393" height="300"> </a> <div class="hidden md:flex items-center gap-8"> <a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="index.html">Inicio</a><a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="nosotros.html">Nosotros</a><div class="relative nav-dropdown"> <a href="index.html#servicios" class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary inline-flex items-center gap-1" aria-haspopup="true" aria-expanded="false"> Servicios <span class="material-symbols-outlined text-[18px] transition-transform duration-200 nav-dropdown-chevron">expand_more</span> </a> <div class="nav-dropdown-panel absolute left-1/2 -translate-x-1/2 top-full pt-4"> <div class="bg-surface border border-outline rounded-2xl shadow-xl p-2 grid grid-cols-2 gap-x-1 w-[36rem]"> <a href="servicios/redes-sociales.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Administración de redes sociales</a><a href="servicios/creacion-contenido.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Creación de contenido individuales</a><a href="servicios/creadores-ugc.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Creadores UGC</a><a href="producto.html?service=master-plan&#38;plan=master-plan" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Master Plan</a><a href="servicios/diseno-grafico.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Diseño gráfico</a><a href="servicios/desarrollo-web.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Desarrollo web</a><a href="servicios/videomarketing.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Video Marketing</a><a href="servicios/campanas-publicitarias.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Campañas Google Ads y Social Media</a><a href="servicios/agentes-ia.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Agentes IA 24/7</a><a href="servicios/embudos-venta.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Embudos de ventas con filtro API de Facebook</a> </div> </div> </div><a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="contacto.html">Contacto</a> </div> <div class="flex items-center gap-3"> <a href="contacto.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl btn-magnetic shadow-md shadow-primary/20"> <span class="icon-wrap">Contáctanos</span> </a> <button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button> </div> </nav> </header>  <section class="bg-primary text-on-primary py-section-padding-mobile md:py-section-padding-desktop"> <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center"> <div class="space-y-6 reveal"> <h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero">Comienza tu viaje digital con nosotros</h1> <p class="font-body-lg text-body-lg text-on-primary/90 max-w-xl"> No importa si eres una pequeña empresa local o una gran corporación global: tenemos las herramientas y la pasión para ayudarte a triunfar en el mundo digital. Tu viaje hacia el éxito comienza aquí. </p> </div> <div class="relative flex justify-center reveal"> <img alt="Contacto MK Media Digital" class="w-full max-w-[500px] aspect-square object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJHuN7GK8OrnqtHB9Hfls1crva_jJrTCIWMzfYcDDp5KmQAJchQmrrMF-g8KVrK3LiRhxz3SgkIWinZ-tdbufDoEhZYK1DBRgXu52RTdeYkZQ7Yuu4DamM_SwYKjW_fDNVstAq9n7vo570eV1o94j6_ejxMBeHbT03qgJ0iw9YaM_zN1fd73RO752OtB7DSvEj4r6LKPeYHp0hsznfi4gPGg4AH59rAIl0p-YQdOQOctj7MeeUa0lIw-DhqAFxc71-oDs1rjxMjtjb"> </div> </div> </section> <section class="py-section-padding-mobile md:py-section-padding-desktop bg-surface-container-lowest"> <div class="max-w-container-max mx-auto px-gutter"> <div class="grid grid-cols-1 md:grid-cols-2 gap-section-padding-mobile md:gap-24 items-start"> <div class="space-y-8 reveal"> <div> <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Escríbenos un mensaje</h2> <p class="text-on-surface-variant font-body-md text-body-md leading-relaxed"> Déjanos tus datos y un asesor se pondrá en contacto contigo. Nuestro horario de atención es de lunes a viernes de 9:00 am a 5:00 pm. </p> </div> <div class="space-y-6"> <div class="flex items-center gap-4 group"> <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110 press-effect"> <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span> </div> <div> <p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Email</p> <p class="font-headline-md text-headline-md text-on-surface">mkmediadigitalon@gmail.com</p> </div> </div> <div class="flex items-center gap-4 group"> <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary transition-transform group-hover:scale-110 press-effect"> <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span> </div> <div> <p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Teléfono</p> <p class="font-headline-md text-headline-md text-on-surface">+52 662 715 6286</p> </div> </div> </div> <div class="pt-8"> <p class="text-label-sm font-label-sm text-outline uppercase tracking-wider mb-4">Redes Sociales</p> <div class="flex gap-4"> <a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#"> <span class="material-symbols-outlined">social_leaderboard</span> </a> <a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#"> <span class="material-symbols-outlined">public</span> </a> <a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#"> <span class="material-symbols-outlined">share</span> </a> </div> </div> </div> <div class="bg-surface p-8 md:p-12 rounded-[24px] border border-surface-variant shadow-sm reveal"> <form class="space-y-6"> <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> <div class="space-y-2"> <label class="text-label-sm font-label-sm text-on-surface-variant">Nombre Completo</label> <input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-lg px-4 py-3 text-body-md font-body-md transition-shadow" placeholder="Ej. Juan Pérez" type="text"> </div> <div class="space-y-2"> <label class="text-label-sm font-label-sm text-on-surface-variant">Email Corporativo</label> <input class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-lg px-4 py-3 text-body-md font-body-md transition-shadow" placeholder="juan@empresa.com" type="email"> </div> </div> <div class="space-y-2"> <label class="text-label-sm font-label-sm text-on-surface-variant">Motivo de Consulta</label> <select class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-lg px-4 py-3 text-body-md font-body-md appearance-none transition-shadow"> <option>Administración de redes sociales</option><option>Creación de contenido individuales</option><option>Creadores UGC</option><option>Master Plan</option><option>Diseño gráfico</option><option>Desarrollo web</option><option>Video Marketing</option><option>Campañas Google Ads</option><option>Campañas social media</option><option>Agentes IA 24/7</option><option>Embudos de ventas con filtro API de Facebook</option><option>Otro</option> </select> </div> <div class="space-y-2"> <label class="text-label-sm font-label-sm text-on-surface-variant">Mensaje</label> <textarea class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-lg px-4 py-3 text-body-md font-body-md resize-none transition-shadow" placeholder="Cuéntanos un poco más sobre tu proyecto..." rows="4"></textarea> </div> <button class="w-full bg-primary text-on-primary font-bold py-4 rounded-lg btn-magnetic press-effect shadow-md shadow-primary/20 tracking-widest uppercase" type="submit"> <span class="icon-wrap">SOLICITAR ASESORÍA</span> </button> </form> </div> </div> </div> </section> <section class="w-full h-[450px] relative"> <div class="absolute inset-0 bg-surface-variant flex items-center justify-center overflow-hidden"> <img class="w-full h-full object-cover grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6nVHVZWEmKfyoBWn-FocTAn2-7tBv-I3y8V1qDJZHchTN08ELSff4YuFB4i8YkCFv8DReKKJyNjxpH-Ke-BqpShVLWI7kk7e0Kldz-EdF70UKnnAAwyI2ZAPyFZ_Sa05mBcJjfDw8nWX4KhJwZT8d22qRDMFzvQmwQVuT-knP_aAkD_r8LNNiTOzwGvtT_ldcjCMFmrD-PTGWZy-BsfujARWgDornIb7CXgvISIfPsMmZ2xtQYpBlwjxyqpxvP63bOMdb-dKTOdZP"> <div class="absolute inset-0 flex items-center justify-center"> <div class="bg-primary text-on-primary px-6 py-3 rounded-full flex items-center gap-2 shadow-xl"> <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span> <span class="font-bold">Oficinas en CDMX · Presencia en Hermosillo, Sonora</span> </div> </div> </div> </section>  <footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop"> <div class="max-w-container-max mx-auto"> <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16"> <div class="space-y-6"> <img src="logos/logo-blanco.png" alt="MK Media Digital" class="h-16 w-auto" width="393" height="300"> <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);"> Impulsamos tu crecimiento. Agencia de marketing digital especializada en estrategias personalizadas para marcas que buscan crecer en línea y presencialmente. </p> <div class="flex gap-3"> <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);"> <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">share</span> </button> <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);"> <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">public</span> </button> </div> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Información de Contacto</h5> <ul class="space-y-4 font-body-md text-body-md" style="color:rgba(255,255,255,0.80);"> <li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">call</span> +52 662 715 6286 </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">mail</span> mkmediadigitalon@gmail.com </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">location_on</span> Cerrada de Neptuno 1-A, Col. San Simón Tolnahuac, Alcaldía Cuauhtémoc, CDMX, C.P. 06920 </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">schedule</span> Lunes a viernes de 9:00 am a 5:00 pm </li> </ul> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5> <ul class="space-y-3 font-body-md text-body-md"> <li><a href="index.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li><li><a href="nosotros.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li><li><a href="index.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li><li><a href="contacto.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li> </ul> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Enlaces Rápidos</h5> <ul class="space-y-3 font-body-md text-body-md"> <li><a href="servicios/redes-sociales.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Administración de redes sociales</a></li><li><a href="servicios/desarrollo-web.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Desarrollo web</a></li><li><a href="servicios/agentes-ia.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Agentes IA 24/7</a></li><li><a href="servicios/diseno-grafico.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Diseño gráfico</a></li> </ul> </div> </div> <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top:1px solid rgba(255,255,255,0.12);"> <p class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);">© 2026 MK Media Digital | Todos los derechos reservados.</p> <div class="flex gap-6"> <a href="contacto.html" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Contacto</a><a href="index.html#servicios" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Servicios</a> </div> </div> </div> </footer>
 <script>
-        // Simple scroll interaction for Header
-        let ticking = false;
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    const header = document.querySelector('header');
-                    if (window.scrollY > 20) {
-                        header.classList.add('h-16', 'bg-primary');
-                        header.classList.remove('h-20', 'bg-primary-container');
-                    } else {
-                        header.classList.add('h-20', 'bg-primary-container');
-                        header.classList.remove('h-16', 'bg-primary');
-                    }
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-    </script>
+    // Cabecera al hacer scroll
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const header = document.querySelector('header');
+                const scrolled = window.scrollY > 20;
+                header.classList.toggle('shadow-lg', scrolled);
+                header.classList.toggle('bg-surface/95', scrolled);
+                header.classList.toggle('backdrop-blur-sm', scrolled);
+                header.style.height = scrolled ? '4rem' : '5rem';
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+
+    // Animaciones de entrada
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.reveal, .stagger-fade, .img-reveal').forEach(el => observer.observe(el));
+    } else {
+        document.querySelectorAll('.reveal, .stagger-fade, .img-reveal').forEach(el => el.classList.add('in-view'));
+    }
+</script>
 </body></html>

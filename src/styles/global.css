@@ -282,6 +282,59 @@ section.bg-primary .glass-card * {
 .text-on-primary-container{ color: var(--color-on-primary) !important; }
 .text-on-primary-fixed    { color: var(--color-on-primary-fixed) !important; }
 
+/* Los overrides de arriba llevan !important, así que ganarían también en :hover
+   y dejarían ilegible el texto de los botones outline al invertirse el fondo.
+   Estas reglas restauran la variante hover (y la heredan los <span> internos). */
+.hover\:text-on-primary:hover,
+.hover\:text-on-primary:hover * { color: var(--color-on-primary) !important; }
+.hover\:text-primary:hover,
+.hover\:text-primary:hover *    { color: var(--color-primary) !important; }
+
+/* --- Submenú de servicios en la cabecera --- */
+.nav-dropdown-panel {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 4px);
+  transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1),
+              transform 200ms cubic-bezier(0.23, 1, 0.32, 1),
+              visibility 0s linear 200ms;
+}
+.nav-dropdown:hover .nav-dropdown-panel,
+.nav-dropdown:focus-within .nav-dropdown-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+  transition-delay: 0s;
+}
+.nav-dropdown:hover .nav-dropdown-chevron,
+.nav-dropdown:focus-within .nav-dropdown-chevron {
+  transform: rotate(180deg);
+}
+/* Los ítems no pueden usar la utilidad hover:bg-primary-fixed: el selector
+   [class*="bg-primary-fixed"] de más arriba coincide por subcadena y pintaría
+   el fondo de todos permanentemente. Se resuelve con una clase propia. */
+.nav-dropdown-item {
+  background-color: transparent;
+  color: var(--color-on-surface-variant) !important;
+}
+.nav-dropdown-item:hover {
+  background-color: var(--color-primary-fixed);
+  color: var(--color-primary) !important;
+}
+
+/* Mismo motivo que .nav-dropdown-item: la utilidad hover:bg-primary-fixed
+   dejaría el botón lavanda de forma permanente en lugar de blanco. */
+.btn-whatsapp {
+  background-color: #ffffff;
+  color: var(--color-primary) !important;
+}
+.btn-whatsapp:hover { background-color: var(--color-primary-fixed); }
+.btn-whatsapp * { color: var(--color-primary) !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-dropdown-panel { transition: none; }
+}
+
 .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
 
 img {

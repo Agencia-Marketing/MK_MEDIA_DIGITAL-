@@ -1,18 +1,34 @@
 {
-  "brand": "Plantilla 1.",
+  "brand": "MK Media Digital",
   "ctaLabel": "Contáctanos",
   "nav": [
     { "label": "Inicio", "href": "/" },
     { "label": "Nosotros", "href": "/nosotros" },
-    { "label": "Servicios", "href": "/#servicios" },
+    {
+      "label": "Servicios",
+      "href": "/#servicios",
+      "children": [
+        { "label": "Administración de redes sociales", "href": "/servicios/redes-sociales" },
+        { "label": "Creación de contenido individuales", "href": "/servicios/creacion-contenido" },
+        { "label": "Creadores UGC", "href": "/servicios/creadores-ugc" },
+        { "label": "Master Plan", "href": "/producto?service=master-plan&plan=master-plan" },
+        { "label": "Diseño gráfico", "href": "/servicios/diseno-grafico" },
+        { "label": "Desarrollo web", "href": "/servicios/desarrollo-web" },
+        { "label": "Video Marketing", "href": "/servicios/videomarketing" },
+        { "label": "Campañas Google Ads y Social Media", "href": "/servicios/campanas-publicitarias" },
+        { "label": "Agentes IA 24/7", "href": "/servicios/agentes-ia" },
+        { "label": "Embudos de ventas con filtro API de Facebook", "href": "/servicios/embudos-venta" }
+      ]
+    },
     { "label": "Contacto", "href": "/contacto" }
   ],
   "contact": {
-    "phone": "+34 639 494 000",
-    "email": "contacto@plantilla1.com",
-    "location": "Madrid, España"
+    "phone": "+52 662 715 6286",
+    "email": "mkmediadigitalon@gmail.com",
+    "location": "Cerrada de Neptuno 1-A, Col. San Simón Tolnahuac, Alcaldía Cuauhtémoc, CDMX, C.P. 06920",
+    "hours": "Lunes a viernes de 9:00 am a 5:00 pm"
   },
-  "footerTagline": "Soluciones digitales premium para impulsar el crecimiento de tu empresa.",
+  "footerTagline": "Impulsamos tu crecimiento. Agencia de marketing digital especializada en estrategias personalizadas para marcas que buscan crecer en línea y presencialmente.",
   "footerPages": [
     { "label": "Inicio", "href": "/" },
     { "label": "Nosotros", "href": "/nosotros" },
@@ -20,14 +36,14 @@
     { "label": "Contacto", "href": "/contacto" }
   ],
   "footerLinks": [
-    { "label": "Blog", "href": "#" },
-    { "label": "FAQ", "href": "#" },
-    { "label": "Privacidad", "href": "#" },
-    { "label": "Términos", "href": "#" }
+    { "label": "Administración de redes sociales", "href": "/servicios/redes-sociales" },
+    { "label": "Desarrollo web", "href": "/servicios/desarrollo-web" },
+    { "label": "Agentes IA 24/7", "href": "/servicios/agentes-ia" },
+    { "label": "Diseño gráfico", "href": "/servicios/diseno-grafico" }
   ],
   "footerBottomLinks": [
-    { "label": "Términos", "href": "#" },
-    { "label": "Soporte", "href": "#" }
+    { "label": "Contacto", "href": "/contacto" },
+    { "label": "Servicios", "href": "/#servicios" }
   ],
-  "copyright": "© 2026 Plantilla 1 | Todos los derechos reservados."
+  "copyright": "© 2026 MK Media Digital | Todos los derechos reservados."
 }

@@ -1,358 +1,114 @@
 {
-  "desarrollo-web": {
-    "name": "Desarrollo Web",
-    "plans": {
-      "landing-page": {
-        "name": "Landing Page",
-        "label": "Express",
-        "price": "$13,000 - $16,900 MXN",
-        "desc": "Página de aterrizaje de alto rendimiento optimizada para la conversión de leads.",
-        "features": [
-          "1 Página de aterrizaje",
-          "Formulario de contacto",
-          "Botón de WhatsApp directo",
-          "Hosting y dominio (1 año)",
-          "Adaptabilidad móvil 100%"
-        ]
-      },
-      "web-informativa": {
-        "name": "Web Informativa",
-        "label": "Corporate",
-        "price": "$17,550 - $22,100 MXN",
-        "desc": "Plataforma corporativa ideal para mostrar servicios, equipo y generar credibilidad.",
-        "features": [
-          "Hasta 5 secciones/páginas",
-          "Blog autogestionable",
-          "Integración con Google Maps",
-          "Formulario avanzado",
-          "SEO básico en página"
-        ]
-      },
-      "ecommerce-basico": {
-        "name": "E-commerce Básico",
-        "label": "Pro Business",
-        "price": "$20,800 - $25,350 MXN",
-        "desc": "Tienda en línea completa para vender tus productos físicos o digitales de forma sencilla.",
-        "features": [
-          "Carrito de compras integrado",
-          "Pasarela de pagos (tarjeta/PayPal)",
-          "Gestión de inventario y pedidos",
-          "Configuración de envíos estándar",
-          "Capacitación de uso de la tienda"
-        ]
-      },
-      "ecommerce-avanzado": {
-        "name": "E-commerce Avanzado",
-        "label": "Enterprise",
-        "price": "$25,350 - $29,900 MXN",
-        "desc": "Solución de comercio electrónico a gran escala con integraciones de sistemas y diseño exclusivo.",
-        "features": [
-          "Integración de ERP / Facturación",
-          "Soporte multi-divisa y multi-idioma",
-          "Estrategia UX/UI a medida",
-          "Descuentos y cupones avanzados",
-          "Soporte prioritario post-venta"
-        ]
-      }
-    }
-  },
-  "agentes-ia": {
-    "name": "Agentes de IA",
-    "plans": {
-      "setup": {
-        "name": "Pago único de Configuración",
-        "label": "Plan Único",
-        "price": "$15,000 MXN",
-        "desc": "Implementación técnica completa de un agente conversacional inteligente adaptado a tu negocio.",
-        "features": [
-          "Ingeniería de prompts personalizada",
-          "Conexión CRM vía API",
-          "Entrenamiento con tu base de conocimientos",
-          "Auto-cualificación inteligente de prospectos",
-          "Integración con WhatsApp o Web chat"
-        ]
-      }
-    }
-  },
-  "diseno-grafico": {
-    "name": "Diseño Gráfico",
-    "plans": {
-      "branding-completo": {
-        "name": "Diseño de Marca",
-        "label": "Branding",
-        "price": "$6,662 MXN",
-        "desc": "Creamos una identidad visual coherente y premium que conecta con tus clientes y destaca en el mercado.",
-        "features": [
-          "Logotipo principal y versiones secundarias",
-          "Paleta de colores y combinación tipográfica",
-          "Manual de identidad visual básico",
-          "Diseño de papelería corporativa",
-          "Garantía de uso adecuado a futuro"
-        ]
-      },
-      "logotipo-basico": {
-        "name": "Naming",
-        "label": "Básico",
-        "price": "$1,820 MXN",
-        "desc": "Búsqueda estratégica y validación fonética para el nombre perfecto de tu marca.",
-        "features": [
-          "Búsqueda de naming",
-          "Evaluación de fonética",
-          "Revisión de disponibilidad de registro"
-        ]
-      },
-      "manual-identidad": {
-        "name": "Menú Digital Pyme",
-        "label": "Recomendado",
-        "price": "$3,250 MXN",
-        "desc": "La solución ideal para que tu restaurante cuente con una carta digital interactiva y profesional.",
-        "features": [
-          "Diseño de menú digital",
-          "Diseño gráfico general",
-          "Código QR personalizado"
-        ]
-      },
-      "kit-social-media": {
-        "name": "Menú Digital Empresarial",
-        "label": "Empresarial",
-        "price": "$3,900 MXN",
-        "desc": "Carta digital avanzada que incluye diseño fotográfico y formatos impresos para mesa.",
-        "features": [
-          "Diseño fotográfico",
-          "Diseño gráfico general",
-          "Código QR personalizado",
-          "Menú físico para restaurantes"
-        ]
-      }
-    }
-  },
   "redes-sociales": {
-    "name": "Gestión de Redes",
+    "name": "Administración de redes sociales",
     "plans": {
-      "basico": {
-        "name": "Plan Presencia",
-        "label": "Básico",
-        "price": "$2,470 - $20,800 MXN",
-        "desc": "Establece presencia constante y profesional en tu red social principal.",
+      "plan-vital": {
+        "name": "Plan Vital",
+        "label": "1 Red social",
+        "desc": "Establece presencia constante y profesional en la red social principal de tu negocio.",
         "features": [
-          "Gestión de 1 red social",
-          "Estudio de mercado",
-          "12 publicaciones mensuales",
-          "Gestión de comunidad básica",
-          "Reporte mensual de rendimiento"
+          "1 red social administrada",
+          "15 diseños por red social (hasta 6 pueden ser video)",
+          "Community manager y parrilla de contenidos con copies",
+          "Trafficker y diseñador gráfico asignados",
+          "Entrega el mismo día de contratación con la información completa"
         ]
       },
-      "crecimiento": {
-        "name": "Plan Indispensable",
-        "label": "Popular",
-        "price": "$2,860 - $26,000 MXN",
-        "desc": "La solución óptima para negocios en crecimiento que operan en múltiples plataformas.",
+      "plan-fundamental": {
+        "name": "Plan Fundamental",
+        "label": "2 Redes sociales",
+        "desc": "La opción óptima para negocios que ya operan en más de una plataforma.",
         "features": [
-          "Gestión de 2 redes sociales",
-          "Estudio de mercado",
-          "12 publicaciones mensuales",
-          "Gestión de comunidad básica",
-          "Integración de tracking GTM"
+          "2 redes sociales administradas",
+          "15 diseños por red social (hasta 6 pueden ser video)",
+          "Community manager y parrilla de contenidos con copies",
+          "Respuesta a mensajes y comentarios de 9:00 am a 5:00 pm (GMT-6)",
+          "Expertos en campañas incluidos"
         ]
       },
-      "pro": {
-        "name": "Plan Todo en Uno",
-        "label": "Pro",
-        "price": "$3,770 - $39,265 MXN",
-        "desc": "Plan integral para marcas activas con diseño visual personalizado y reportes avanzados.",
+      "plan-integral": {
+        "name": "Plan Integral",
+        "label": "3 Redes sociales",
+        "desc": "Cobertura multiplataforma para marcas activas que buscan crecimiento sostenido.",
         "features": [
-          "Gestión de 3 redes sociales",
-          "Diseño visual personalizado",
-          "20 publicaciones mensuales",
-          "Reportes avanzados GA4",
-          "Atención prioritaria"
+          "3 redes sociales administradas",
+          "15 diseños por red social (hasta 6 pueden ser video)",
+          "8 videos si adquieres TikTok, publicables también en Facebook e Instagram",
+          "Community manager, trafficker y diseñador gráfico",
+          "2 propuestas de diseño"
         ]
       },
-      "premium": {
-        "name": "Plan Profesional",
-        "label": "Premium",
-        "price": "$4,413 - $52,271 MXN",
-        "desc": "Estrategia extendida para un control multicanal avanzado y reportes estratégicos.",
+      "plan-competente": {
+        "name": "Plan Competente",
+        "label": "4 Redes sociales",
+        "desc": "Estrategia extendida para un control multicanal avanzado de tu marca.",
         "features": [
-          "Gestión de 4 redes sociales",
-          "Diseño visual personalizado",
-          "24 publicaciones mensuales",
-          "Reportes avanzados y estrategia",
-          "Soporte prioritario"
+          "4 redes sociales administradas",
+          "15 diseños por red social (hasta 6 pueden ser video)",
+          "Community manager y parrilla de contenidos con copies",
+          "Trafficker con propuestas de campaña de inversión",
+          "Reporte mensual de crecimiento"
         ]
       },
-      "enterprise": {
-        "name": "Plan Omnipresencia",
-        "label": "Enterprise",
-        "price": "$5,850 - $62,350 MXN",
-        "desc": "Dominio digital multiplataforma completo con manager de cuenta dedicado.",
+      "plan-universal": {
+        "name": "Plan Universal",
+        "label": "6 Redes sociales",
+        "desc": "Dominio digital multiplataforma completo para marcas con presencia amplia.",
         "features": [
-          "Gestión de 5 redes sociales",
-          "Diseño corporativo premium",
-          "30 publicaciones y Reels",
-          "Consultoría mensual dedicada",
-          "Manager de cuenta dedicado"
-        ]
-      },
-      "custom": {
-        "name": "Master Plan Élite",
-        "label": "Elite",
-        "price": "$7,800 - $78,000 MXN",
-        "desc": "Solución definitiva e ilimitada con agentes conversacionales de IA y analítica de embudo avanzada.",
-        "features": [
-          "Gestión multiplataforma total",
-          "Calificación de leads con agentes de IA",
-          "Analítica avanzada y embudos en GHL",
-          "Soporte corporativo dedicado 24/7"
+          "6 redes sociales administradas",
+          "15 diseños por red social (hasta 6 pueden ser video)",
+          "Community manager, trafficker y diseñador gráfico",
+          "Reporte mensual de crecimiento",
+          "Planes trabajados bajo la plataforma Canva"
         ]
       }
     }
   },
-  "campanas-publicitarias": {
-    "name": "Campañas de Ads",
+  "creacion-contenido": {
+    "name": "Creación de contenido individuales",
     "plans": {
-      "google-search": {
-        "name": "Google Search",
-        "label": "Búsqueda",
-        "price": "$2,210 MXN",
-        "desc": "Capta la demanda inmediata posicionando tu marca en los primeros resultados de Google Search.",
+      "diseno-individual": {
+        "name": "Diseño individual",
+        "label": "Individual",
+        "desc": "Una pieza puntual para cubrir una necesidad específica de tu negocio.",
         "features": [
-          "Análisis inicial",
-          "Búsqueda de palabras clave",
-          "Propuesta de campaña",
-          "Reporte de resultados"
+          "1 diseño (imagen fija)",
+          "Entrega en editable de CANVA",
+          "Tiempo de entrega: 1 a 2 días hábiles",
+          "1 mismo negocio (una sola línea gráfica)"
         ]
       },
-      "google-display": {
-        "name": "Google Display",
-        "label": "Recomendado",
-        "price": "$3,250 MXN",
-        "desc": "Genera branding y alcance visual en millones de sitios web asociados a Google.",
+      "paquete-15": {
+        "name": "Paquete de 15 diseños",
+        "label": "15 diseños",
+        "desc": "Mantén una presencia visual regular en tus redes sociales principales.",
         "features": [
-          "Análisis inicial",
-          "Búsqueda de palabras clave",
-          "Propuesta de campaña",
-          "Reporte de resultados",
-          "Banners para el anuncio"
+          "15 diseños, de los cuales hasta 8 pueden ser en formato video",
+          "Entrega en editable de CANVA",
+          "Tiempo de entrega para todos los diseños: 5 días hábiles",
+          "1 mismo negocio (una sola línea gráfica)"
         ]
       },
-      "google-video": {
-        "name": "Google Video YouTube",
-        "label": "YouTube",
-        "price": "$5,479 MXN",
-        "desc": "Conecta con tu audiencia ideal a través de anuncios de video de alta retención en YouTube.",
+      "paquete-20": {
+        "name": "Paquete de 20 diseños",
+        "label": "20 diseños",
+        "desc": "Cobertura de contenido robusta para negocios en crecimiento constante.",
         "features": [
-          "Análisis inicial",
-          "Búsqueda de palabras clave",
-          "Propuesta de campaña",
-          "Reporte de resultados",
-          "Creación de video"
+          "20 diseños, de los cuales hasta 10 pueden ser en formato video",
+          "Entrega en editable de CANVA",
+          "Tiempo de entrega para todos los diseños: 5 días hábiles",
+          "1 mismo negocio (una sola línea gráfica)"
         ]
       },
-      "facebook-ads": {
-        "name": "Facebook Ads",
-        "label": "Meta",
-        "price": "$1,105 MXN",
-        "desc": "Llega a tu nicho ideal mediante segmentaciones avanzadas en Facebook.",
+      "paquete-30": {
+        "name": "Paquete de 30 diseños",
+        "label": "30 diseños",
+        "desc": "Volumen de publicaciones de nivel corporativo para marcas activas.",
         "features": [
-          "Análisis inicial",
-          "Segmentación de mercado",
-          "Propuesta de campañas",
-          "Reporte de resultados"
-        ]
-      },
-      "instagram-ads": {
-        "name": "Instagram Ads",
-        "label": "Meta",
-        "price": "$1,105 MXN",
-        "desc": "Impacta visualmente y genera engagement en la plataforma favorita para branding móvil.",
-        "features": [
-          "Análisis inicial",
-          "Segmentación de mercado",
-          "Propuesta de campañas",
-          "Reporte de resultados"
-        ]
-      },
-      "tiktok-ads": {
-        "name": "TikTok Ads",
-        "label": "TikTok",
-        "price": "$1,105 MXN",
-        "desc": "Conecta con audiencias jóvenes utilizando contenido en video dinámico y de estilo orgánico.",
-        "features": [
-          "Análisis inicial",
-          "Segmentación de mercado",
-          "Propuesta de campañas",
-          "Reporte de resultados"
-        ]
-      }
-    }
-  },
-  "videomarketing": {
-    "name": "Videomarketing",
-    "plans": {
-      "basico": {
-        "name": "Video Básico",
-        "label": "Básico",
-        "price": "$975 - $2,321 MXN",
-        "desc": "Edición y creación de contenido en formato video básico para redes sociales.",
-        "features": [
-          "Edición básica",
-          "1 Corrección",
-          "Formato Horizontal",
-          "Música de fondo libre de derechos"
-        ]
-      },
-      "estandar": {
-        "name": "Video Intermedio",
-        "label": "Intermedio",
-        "price": "$1,950 - $4,641 MXN",
-        "desc": "Plan intermedio para alimentar tus canales con video marketing de calidad y dinamismo.",
-        "features": [
-          "Edición avanzada",
-          "Motion Graphics",
-          "Música sin copyright",
-          "Subtítulos dinámicos de alta retención"
-        ]
-      },
-      "premium": {
-        "name": "Video Completo",
-        "label": "Completo",
-        "price": "$2,600 - $11,603 MXN",
-        "desc": "Producción de video integral para campañas publicitarias de alta conversión.",
-        "features": [
-          "Estrategia completa",
-          "Guion profesional",
-          "Múltiples formatos (vertical y horizontal)",
-          "Edición avanzada con subtítulos y locución"
-        ]
-      },
-      "adicional": {
-        "name": "Narración de voz (Voiceover)",
-        "label": "Locución",
-        "price": "$650 - $1,300 MXN",
-        "desc": "Locución y narración de voz profesional para dar personalidad y autoridad a tus videos.",
-        "features": [
-          "Voces profesionales masculinas/femeninas",
-          "Grabación en estudio profesional",
-          "Entrega en alta calidad sin ruido"
-        ]
-      }
-    }
-  },
-  "embudos-venta": {
-    "name": "Embudos de Venta",
-    "plans": {
-      "automatizacion": {
-        "name": "Automatiza tus ventas",
-        "label": "Proyecto Completo",
-        "price": "$3,999 USD",
-        "desc": "Sistema de ventas completo y llave en mano para convertir tráfico en clientes recurrentes.",
-        "features": [
-          "Diseño y copia de landing page persuasiva",
-          "Estructura y automatización de embudo en CRM",
-          "Calendario de agendamiento automático integrado",
-          "Secuencia de nutrición automatizada de 3 emails",
-          "Integración de pasarelas de pago y APIs"
+          "30 diseños, de los cuales hasta 15 pueden ser en formato video",
+          "Entrega en editable de CANVA",
+          "Tiempo de entrega para todos los diseños: 5 días hábiles",
+          "1 mismo negocio (una sola línea gráfica)"
         ]
       }
     }
@@ -360,69 +116,338 @@
   "creadores-ugc": {
     "name": "Creadores UGC",
     "plans": {
-      "ugc": {
+      "creadores-ugc": {
         "name": "Creadores UGC",
-        "label": "Campañas UGC",
-        "price": "$2,999 USD",
-        "desc": "Conectamos tu marca con creadores auténticos para generar anuncios con alta credibilidad.",
+        "label": "Videos con personas reales",
+        "desc": "Videos publicitarios con personas reales que generan credibilidad y conectan con tu audiencia.",
         "features": [
-          "Selección y contratación de creadores ideales",
-          "Desarrollo de guiones y conceptos creativos",
-          "Edición y postproducción de los videos UGC",
-          "Derechos completos de uso publicitario de los clips"
+          "Diseño de script (guión de video vendedor)",
+          "Contratación de la persona que realizará el video",
+          "1 video con edición",
+          "Propuesta de campaña para lanzamiento de publicidad",
+          "1 trafficker para lanzamiento y monitoreo de la campaña durante máx. 30 días",
+          "Tiempo de entrega: guión 3 días hábiles, video 5-7 días hábiles"
         ]
       }
     }
   },
-  "creacion-contenido": {
-    "name": "Creación de Contenido",
+  "master-plan": {
+    "name": "Master Plan",
     "plans": {
-      "bronce": {
-        "name": "Paquete de 10 diseños",
-        "label": "Bronce",
-        "price": "$245 MXN",
-        "desc": "La opción ideal para mantener presencia visual regular en tus redes sociales principales.",
+      "master-plan": {
+        "name": "Master Plan",
+        "label": "Paquete completo",
+        "desc": "El paquete de marketing más completo para tu negocio: redes sociales, equipo dedicado y sitio web informativo.",
         "features": [
-          "10 diseños (hasta 5 en formato video)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 5 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
+          "Instagram y Facebook: 15 diseños cada uno, con community manager, trafficker y diseñador gráfico",
+          "TikTok: 8 videos con community manager y especialista en campañas",
+          "1 sitio web informativo de 5 páginas (Inicio, Nosotros, Contacto, Servicios, Testimonios)",
+          "Respuesta a mensajes y comentarios de 9:00 am a 5:00 pm (GMT-6, Centro CDMX)",
+          "Reporte mensual de crecimiento e incluye dos propuestas de campaña",
+          "Entrega: página web 8 días hábiles; redes sociales el mismo día de contratación"
+        ]
+      }
+    }
+  },
+  "diseno-grafico": {
+    "name": "Diseño gráfico",
+    "plans": {
+      "brand-design": {
+        "name": "Brand Design",
+        "label": "Identidad de marca",
+        "desc": "Diseñamos lo inimaginable: tres propuestas de logotipo y todo el material de apoyo de tu marca.",
+        "features": [
+          "Llenado de brief para el equipo de diseño",
+          "Etapa 1: desarrollo de 3 propuestas de logotipo en presentación PDF",
+          "1 ronda de cambios sobre una de las propuestas presentadas",
+          "Etapa 2: manual de identidad corporativa, logotipo editable, JPG, PNG y tipografías",
+          "Entrega: etapa 1 de 5 a 7 días, etapa 2 de 3 días hábiles"
         ]
       },
-      "plata": {
-        "name": "Paquete de 15 diseños",
-        "label": "Plata",
-        "price": "$2,200 MXN",
-        "desc": "Paquete intermedio con mayor cantidad de contenidos animados para impulsar tu engagement.",
+      "naming": {
+        "name": "Naming",
+        "label": "Naming",
+        "desc": "Búsqueda estratégica del nombre adecuado para tu marca.",
         "features": [
-          "15 diseños (hasta 8 en formato video)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 5 días hábiles",
-          "1 mismo negocio (una línea gráfica)"
+          "Propuesta de naming para tu marca",
+          "Tiempo de entrega: 5 días hábiles"
         ]
       },
-      "oro": {
-        "name": "Paquete de 20 diseños",
-        "label": "Oro",
-        "price": "$2,800 MXN",
-        "desc": "Cobertura de contenido robusta para negocios que buscan crecimiento y profesionalismo constante.",
+      "menu-digital-pyme": {
+        "name": "Menú digital Pyme",
+        "label": "Menú digital",
+        "desc": "Carta digital interactiva y profesional para tu negocio.",
         "features": [
-          "20 diseños (hasta 10 en formato video)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 5 días hábiles",
-          "1 mismo negocio (una línea gráfica)"
+          "Diseño de menú digital",
+          "Diseño gráfico general",
+          "Tiempo de entrega: 7 días hábiles"
         ]
       },
-      "platino": {
-        "name": "Paquete de 30 diseños",
-        "label": "Platino",
-        "price": "$3,000 MXN",
-        "desc": "Volumen de publicaciones de nivel corporativo para marcas activas e influyentes.",
+      "menu-digital-empresarial": {
+        "name": "Menú digital empresarial",
+        "label": "Empresarial",
+        "desc": "Carta digital avanzada para negocios con una oferta amplia.",
         "features": [
-          "30 diseños (hasta 15 en formato video)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 6 días hábiles",
-          "1 mismo negocio (una línea gráfica)"
+          "Diseño de menú digital empresarial",
+          "Diseño gráfico general",
+          "Tiempo de entrega: 7 días hábiles"
+        ]
+      },
+      "otros-servicios": {
+        "name": "Otros servicios de diseño gráfico",
+        "label": "Piezas individuales",
+        "desc": "Piezas gráficas individuales para complementar la comunicación de tu marca.",
+        "features": [
+          "Diseño de flyer, cartel y tríptico frente y vuelta",
+          "Tarjeta de presentación, infografía y página de catálogo",
+          "Display publicitario, post individual y cover, header o foto de portada",
+          "Lona 1m x 1m, rótulos y 5 stickers básicos",
+          "Ilustración básica y packaging básico (tiempo según dificultad)"
+        ]
+      }
+    }
+  },
+  "desarrollo-web": {
+    "name": "Desarrollo web",
+    "plans": {
+      "landing-page": {
+        "name": "Landing Page",
+        "label": "Económico / A la medida",
+        "desc": "Tu sitio web con una sola página: puedes incluir datos de contacto y un formulario, pero no tiene más secciones.",
+        "features": [
+          "Sitio de una sola página en WordPress",
+          "Datos de contacto y formulario",
+          "Incluye hosting, SSL y 1 correo corporativo",
+          "Entrega económico: 5 a 7 días",
+          "A la medida: maquetación 7 días y desarrollo de 6 a 8 días"
+        ]
+      },
+      "sitio-web-informativo": {
+        "name": "Sitio web informativo",
+        "label": "5 páginas",
+        "desc": "Ideal para negocios que buscan compartir información detallada de sus servicios.",
+        "features": [
+          "5 páginas de ejemplo: Inicio, Nosotros, Contacto, Servicios y Testimonios",
+          "Incluye hosting, SSL y 2 correos corporativos",
+          "Entrega económico: 8 a 12 días",
+          "A la medida: maquetación 15 días y desarrollo de 10 a 15 días"
+        ]
+      },
+      "ecommerce-whatsapp": {
+        "name": "E-commerce a WhatsApp",
+        "label": "Catálogo",
+        "desc": "Web con catálogo de productos sin pasarela de pago: los clientes envían su pedido a WhatsApp y desde ahí cierras las ventas.",
+        "features": [
+          "Catálogo de productos en WordPress",
+          "Pedidos enviados directo a WhatsApp",
+          "Incluye hosting, SSL y 2 correos corporativos",
+          "Entrega económico: 10 a 15 días",
+          "A la medida: maquetación 15 días y desarrollo de 15 a 20 días"
+        ]
+      },
+      "ecommerce-pasarela": {
+        "name": "E-commerce con pasarela de pagos",
+        "label": "Tienda en línea",
+        "desc": "Web con tienda en línea y pasarelas de pago: tus clientes compran directamente con tarjetas de crédito, débito, PayPal, entre otras.",
+        "features": [
+          "Tienda en línea completa en WordPress",
+          "Incluye hosting, SSL, 2 correos corporativos y 2 pasarelas de pago",
+          "Entrega económico: 10 a 15 días",
+          "A la medida: maquetación 15 días y desarrollo de 15 a 20 días",
+          "Extras disponibles: página extra, blog, multilenguaje, reservas y multimoneda"
+        ]
+      }
+    }
+  },
+  "videomarketing": {
+    "name": "Video Marketing",
+    "plans": {
+      "video-basico": {
+        "name": "Video Básico",
+        "label": "Básico",
+        "desc": "Edición de video con transiciones simples, textos 2D y música.",
+        "features": [
+          "Formatos de 60 segundos, 30 segundos o menos de 30 segundos",
+          "Transiciones simples y textos 2D",
+          "Música incluida",
+          "Tiempo de entrega: 2 a 5 días hábiles"
+        ]
+      },
+      "video-inter": {
+        "name": "Video Inter",
+        "label": "Intermedio",
+        "desc": "Edición de video con transiciones más elaboradas y uso de mockups.",
+        "features": [
+          "Formatos de 60 segundos, 30 segundos o menos de 30 segundos",
+          "Transiciones más elaboradas",
+          "Uso de mockups",
+          "Tiempo de entrega: 3 a 7 días hábiles"
+        ]
+      },
+      "video-completo": {
+        "name": "Video Completo",
+        "label": "Completo",
+        "desc": "Edición de video con transiciones más elaboradas, uso de mockups y animaciones.",
+        "features": [
+          "Formatos de 60 segundos, 30 segundos o menos de 30 segundos",
+          "Transiciones elaboradas, mockups y animaciones",
+          "Tiempo de entrega: 5 a 10 días hábiles",
+          "Disponible en suscripción de 4 videos al mes, uno por semana"
+        ]
+      },
+      "narracion-voz": {
+        "name": "Narración de voz en off",
+        "label": "Locución",
+        "desc": "Te ayudamos a crear el guion y a elegir la voz adecuada para darle vida a tu proyecto.",
+        "features": [
+          "Creación de guion y elección de voz",
+          "Formatos de 60 segundos, 30 segundos o menos de 30 segundos",
+          "Se contrata por separado del servicio de Video Marketing"
+        ]
+      },
+      "otros-servicios-video": {
+        "name": "Otros servicios de video",
+        "label": "Complementos",
+        "desc": "Complementa tu estrategia audiovisual con otras opciones de producción.",
+        "features": [
+          "Paquete creador de contenidos: creación de imagen, TikTok y Reels (3 a 7 días hábiles)",
+          "Animación de logotipo en versión básico, inter y completo (2 a 3 días hábiles)",
+          "Cambios de medida en videos básico, inter y completo (2 a 3 días hábiles)",
+          "Otro material audiovisual se cotiza según tipo de proyecto y complejidad"
+        ]
+      }
+    }
+  },
+  "campanas-publicitarias": {
+    "name": "Campañas Google Ads y Social Media",
+    "plans": {
+      "google-search": {
+        "name": "Google Search",
+        "label": "Google Ads",
+        "desc": "Llega a clientes interesados en tu producto o servicio con anuncios de texto.",
+        "features": [
+          "Análisis inicial",
+          "Búsqueda y selección de palabras clave",
+          "Segmentación de un mercado objetivo",
+          "Formato de propuesta de campaña",
+          "Lanzamiento y monitoreo de campaña, duración máxima de 30 días",
+          "Un agente asignado y reporte de resultados",
+          "Inversión de campaña no incluida"
+        ]
+      },
+      "google-display": {
+        "name": "Google Display",
+        "label": "Google Ads",
+        "desc": "Publicación de anuncios display en páginas web para generar alcance visual.",
+        "features": [
+          "Análisis inicial",
+          "Búsqueda y selección de palabras clave",
+          "Segmentación de un mercado objetivo",
+          "Creación del banner para el anuncio solicitado",
+          "Lanzamiento y monitoreo de campaña, duración máxima de 30 días",
+          "Un agente asignado y reporte de resultados",
+          "Inversión de campaña no incluida"
+        ]
+      },
+      "google-video-youtube": {
+        "name": "Google Video YouTube",
+        "label": "Google Ads",
+        "desc": "Publicación de anuncios en YouTube para conectar con tu audiencia en video.",
+        "features": [
+          "Análisis inicial",
+          "Búsqueda y selección de palabras clave",
+          "Segmentación de un mercado objetivo",
+          "Creación de video de 6, 15 o 20 segundos",
+          "Lanzamiento y monitoreo de campaña, duración máxima de 30 días",
+          "Un agente asignado y reporte de resultados",
+          "Inversión de campaña no incluida"
+        ]
+      },
+      "facebook-ads": {
+        "name": "Facebook Ads",
+        "label": "Social Media",
+        "desc": "Llega a clientes interesados en tu producto o servicio con anuncios efectivos.",
+        "features": [
+          "Análisis inicial",
+          "Segmentación de un mercado objetivo",
+          "Formato de propuesta de campaña",
+          "Lanzamiento y monitoreo de campaña, duración máxima de 30 días",
+          "Un agente asignado y reporte de resultados",
+          "Inversión de campaña no incluida"
+        ]
+      },
+      "instagram-ads": {
+        "name": "Instagram Ads",
+        "label": "Social Media",
+        "desc": "Generamos una estrategia según el giro de tu negocio para impactar en Instagram.",
+        "features": [
+          "Análisis inicial",
+          "Segmentación de un mercado objetivo",
+          "Formato de propuesta de campaña",
+          "Lanzamiento y monitoreo de campaña, duración máxima de 30 días",
+          "Un agente asignado y reporte de resultados",
+          "Inversión de campaña no incluida"
+        ]
+      },
+      "tiktok-ads": {
+        "name": "TikTok Ads",
+        "label": "Social Media",
+        "desc": "Aprovecha al máximo la creatividad de los videos para conectar con tu audiencia.",
+        "features": [
+          "Análisis inicial",
+          "Segmentación de un mercado objetivo",
+          "Formato de propuesta de campaña",
+          "Lanzamiento y monitoreo de campaña, duración máxima de 30 días",
+          "Un agente asignado y reporte de resultados",
+          "Inversión de campaña no incluida"
+        ]
+      }
+    }
+  },
+  "agentes-ia": {
+    "name": "Agentes IA 24/7",
+    "plans": {
+      "configuracion": {
+        "name": "Configuración Agente 24/7",
+        "label": "Pago único",
+        "desc": "El poder de la IA en tus manos: dejamos tu agente inteligente configurado y funcionando.",
+        "features": [
+          "Configuración del agente IA 24/7 por parte de uno de nuestros ejecutivos",
+          "Plataforma donde se instala tu agente IA",
+          "WhatsApp API incluido",
+          "10 USD de consumo de IA para tus primeros 700 a 800 mensajes",
+          "Requiere cuenta de High Level (highlead.us) o GHL; el pago de la plataforma no está incluido"
+        ]
+      },
+      "mensualidad": {
+        "name": "Mensualidad Agente 24/7",
+        "label": "Mensual",
+        "desc": "Mantenimiento y soporte continuo de tu agente de IA mes a mes.",
+        "features": [
+          "Operación del agente IA 24/7",
+          "Soporte técnico por parte de nuestro equipo mes a mes",
+          "WhatsApp API incluido",
+          "Requiere cuenta de High Level (highlead.us) o GHL; el pago de la plataforma no está incluido"
+        ]
+      }
+    }
+  },
+  "embudos-venta": {
+    "name": "Embudos de ventas con filtro API de Facebook",
+    "plans": {
+      "embudo-api-facebook": {
+        "name": "Embudos de ventas con filtro API de Facebook",
+        "label": "Pago único",
+        "desc": "Configuramos tu embudo completo y lo dejamos funcionando para convertir tráfico en clientes.",
+        "features": [
+          "Diseño de landing page",
+          "Configuración y automatización del embudo",
+          "Calendario de citas",
+          "Diseño de 3 emails para entrega de clientes",
+          "Diseño de formulario y configuración de API de Facebook",
+          "Especialista en campañas y lanzamiento de campaña (no incluye el monto a invertir)",
+          "Tiempo de entrega: 7 a 10 días hábiles",
+          "No incluye el pago de la plataforma High Level; consulta precios en highlead.us"
         ]
       }
     }

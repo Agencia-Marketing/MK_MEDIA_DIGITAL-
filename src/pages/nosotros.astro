@@ -32,7 +32,16 @@ export const prerender = true;
 <section id="esencia" class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop overflow-hidden">
 <div class="max-w-container-max mx-auto px-base md:px-gutter grid lg:grid-cols-12 gap-12 items-center">
 <div class="lg:col-span-5 relative reveal">
-<img alt={about.esenciaImageAlt} class="w-full h-auto rounded-card shadow-xl border-4 border-white" src={about.esenciaImage}>
+<div class="grid grid-cols-2 gap-4">
+{about.esenciaImages.map((img, i) => (
+<img
+  alt={img.alt}
+  src={img.src}
+  loading="lazy"
+  class:list={['w-full h-auto rounded-card shadow-xl border-4 border-white object-cover', i === 1 && 'mt-8']}
+/>
+))}
+</div>
 <div class="absolute -bottom-10 -right-10 hidden md:block">
 <div class="bg-primary text-on-primary p-8 rounded-card shadow-lg max-w-[240px]">
 <span class="font-display-hero-mobile text-display-hero-mobile block">{about.esenciaBadgeValue}</span>
@@ -63,14 +72,25 @@ export const prerender = true;
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8">
                 {about.quienesParagraph}
             </p>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-{about.stats.map(s => (
-<div>
-<div class="text-primary font-bold text-headline-md font-headline-md mb-2">{s.value}</div>
-<div class="text-on-surface-variant font-label-sm text-label-sm uppercase">{s.label}</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-base md:px-gutter">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">
+                {about.beneficiosHeading}
+            </h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+{about.beneficios.map(b => (
+<div class="bg-surface p-8 rounded-card border border-outline-variant/40 card-hover stagger-fade">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 block">{b.icon}</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">{b.title}</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">{b.desc}</p>
 </div>
 ))}
-</div>
 </div>
 </section>
 <section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
@@ -78,24 +98,24 @@ export const prerender = true;
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
 <div class="max-w-2xl">
 <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">
-                        {about.teamHeading}
+                        {about.enfoqueHeading}
                     </h2>
 <p class="font-body-lg text-body-lg italic text-primary">
-                        {about.teamQuote}
+                        {about.enfoqueQuote}
                     </p>
 </div>
 <a href="/contacto" class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full font-bold btn-magnetic press-effect shadow-md shadow-primary/20 whitespace-nowrap inline-flex">
-                    <span class="icon-wrap">{about.teamCtaLabel}</span>
+                    <span class="icon-wrap">{about.enfoqueCtaLabel}</span>
                 </a>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-{about.team.map(m => (
-<div class="group cursor-pointer stagger-fade">
-<div class="overflow-hidden rounded-card mb-4 bg-on-surface aspect-square">
-<img alt={m.name} class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500" src={m.img}>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+{about.enfoque.map(e => (
+<div class="bg-surface p-8 rounded-card border border-outline-variant/40 flex items-start gap-5 card-hover stagger-fade">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0">{e.icon}</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">{e.title}</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">{e.desc}</p>
 </div>
-<h3 class="font-headline-md text-headline-md text-on-surface">{m.name}</h3>
-<p class="text-primary font-body-md text-body-md">{m.role}</p>
 </div>
 ))}
 </div>

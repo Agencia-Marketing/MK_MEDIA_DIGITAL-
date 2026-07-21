@@ -1,7 +1,50 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PlanesServicio from '../../components/PlanesServicio.astro';
+// Tablas "Otros servicios de video" del Catálogo MK Media Digital 2026.
+const otrosVideo = [
+  {
+    titulo: 'Suscripción video 30 segundos',
+    encabezado: 'Servicio',
+    filas: [
+      ['Video Básico (4 videos, 1 por semana)', 'Un video semanal'],
+      ['Video Inter (4 videos, 1 por semana)', 'Un video semanal'],
+      ['Video Completo (4 videos, 1 por semana)', 'Un video semanal'],
+    ],
+  },
+  {
+    titulo: 'Paquete creador de contenidos',
+    encabezado: 'Servicio',
+    filas: [
+      ['Video Básico', '2-5 días hábiles'],
+      ['Video Inter', '3-7 días hábiles'],
+      ['Video Completo', '5-10 días hábiles'],
+      ['Creación de imagen', '3-7 días hábiles'],
+      ['TikTok', '3-7 días hábiles'],
+      ['Reels', '3-7 días hábiles'],
+    ],
+  },
+  {
+    titulo: 'Animación de logotipo',
+    encabezado: 'Estilo',
+    filas: [
+      ['Básico', '2-3 días hábiles'],
+      ['Inter', '2-3 días hábiles'],
+      ['Completo', '2-3 días hábiles'],
+    ],
+  },
+  {
+    titulo: 'Cambios de medida en videos',
+    encabezado: 'Servicio',
+    filas: [
+      ['Video Básico', '2-3 días hábiles'],
+      ['Video Inter', '2-3 días hábiles'],
+      ['Video Completo', '2-3 días hábiles'],
+    ],
+  },
+];
 ---
-<Layout title="Videomarketing | Plantilla 1">
+<Layout title="Video Marketing | MK Media Digital">
 <!-- Hero Section -->
 <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary-container overflow-hidden">
 <div class="max-w-container-max mx-auto px-gutter relative z-10 text-center">
@@ -56,68 +99,19 @@ import Layout from '../../layouts/Layout.astro';
 </div>
 </section>
 <!-- Plans Section -->
-<section class="bg-surface-container-low py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<h2 class="font-headline-lg text-headline-lg text-center text-on-surface mb-20">Nuestros Planes</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Plan 1 -->
-<div class="bg-white p-10 rounded-xl border border-outline-variant/30 transition-standard hover:shadow-xl group">
-<div class="text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-5xl" data-icon="videocam">videocam</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-2">Video Básico</h3>
-<p class="text-primary font-bold text-2xl mb-6">$975 - $2,321</p>
-<ul class="space-y-4 mb-10 text-on-surface-variant font-body-md">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Edición básica</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 1 Corrección</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Formato Horizontal</li>
-</ul>
-<a href="/producto?service=videomarketing&plan=basico" class="w-full border-2 border-primary text-primary font-bold py-3 rounded-lg hover:bg-primary hover:text-white transition-standard press-effect text-center block">Seleccionar</a>
-</div>
-<!-- Plan 2 (Featured) -->
-<div class="bg-white p-10 rounded-xl border-2 border-primary-container shadow-2xl relative transform scale-105 z-10">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-container text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Recomendado</div>
-<div class="text-primary mb-6">
-<span class="material-symbols-outlined text-5xl" data-icon="perm_media">perm_media</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-2">Video Intermedio</h3>
-<p class="text-primary font-bold text-2xl mb-6">$1,950 - $4,641</p>
-<ul class="space-y-4 mb-10 text-on-surface-variant font-body-md">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Edición avanzada</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Motion Graphics</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Música sin copyright</li>
-</ul>
-<a href="/producto?service=videomarketing&plan=estandar" class="w-full bg-primary-container text-on-primary font-bold py-3 rounded-lg hover:opacity-90 transition-standard btn-magnetic press-effect text-center block"><span class="icon-wrap">Seleccionar</span></a>
-</div>
-<!-- Plan 3 -->
-<div class="bg-white p-10 rounded-xl border border-outline-variant/30 transition-standard hover:shadow-xl group">
-<div class="text-primary mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-5xl" data-icon="movie">movie</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-2">Video Completo</h3>
-<p class="text-primary font-bold text-2xl mb-6">$2,600 - $11,603</p>
-<ul class="space-y-4 mb-10 text-on-surface-variant font-body-md">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Estrategia completa</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Guion profesional</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Múltiples formatos</li>
-</ul>
-<a href="/producto?service=videomarketing&plan=premium" class="w-full border-2 border-primary text-primary font-bold py-3 rounded-lg hover:bg-primary hover:text-white transition-standard press-effect text-center block">Seleccionar</a>
-</div>
-</div>
-</div>
-</section>
+<PlanesServicio service="videomarketing" heading="Elige el tipo de video que necesitas" featured="video-inter" />
 <!-- Special Service (Voiceover) -->
 <section class="bg-surface-container-lowest py-section-padding-desktop">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="bg-surface-container-low rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
 <div class="p-12 md:p-20 flex flex-col justify-center">
-<h3 class="font-headline-lg text-headline-lg mb-4">Narración de voz (Voiceover)</h3>
-<div class="text-primary font-bold text-3xl mb-6">$650 - $1,300</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Narración de voz en off</h3>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-6">60 seg · 30 seg · Menos de 30 seg</p>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
-                        Dale alma a tus videos con locutores profesionales. Una voz adecuada puede aumentar la confianza en tu marca hasta en un 40%.
+                        Te ayudamos a crear el guion y a elegir la voz adecuada para darle vida a tu proyecto. La narración de voz no está incluida en el servicio de Video Marketing: se contrata por separado.
                     </p>
 <div>
-<a href="/producto?service=videomarketing&plan=adicional" class="bg-primary-container text-on-primary px-10 py-4 rounded-lg font-bold hover:scale-105 transition-standard btn-magnetic press-effect text-center inline-block"><span class="icon-wrap">CONTRATAR</span></a>
+<a href="/producto?service=videomarketing&plan=narracion-voz" class="bg-primary-container text-on-primary px-10 py-4 rounded-lg font-bold hover:scale-105 transition-standard btn-magnetic press-effect text-center inline-block"><span class="icon-wrap">COTIZAR</span></a>
 </div>
 </div>
 <div class="relative min-h-[400px]">
@@ -127,58 +121,33 @@ import Layout from '../../layouts/Layout.astro';
 </div>
 </section>
 <!-- Tables Section -->
+<!-- Otros servicios de video (Catálogo MK Media Digital 2026) -->
 <section class="bg-surface-container-lowest py-section-padding-desktop">
 <div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-12 reveal">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Otros servicios de video</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Complementa con otras opciones y sus tiempos de entrega.</p>
+</div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-<!-- Table 1: Subscription -->
-<div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
+{otrosVideo.map(tabla => (
+<div class="bg-white rounded-xl border border-outline-variant/30 overflow-x-auto">
 <div class="bg-primary-fixed-dim p-4">
-<h4 class="font-bold text-on-primary-fixed-variant">Suscripción Mensual</h4>
+<h4 class="font-bold text-on-primary-fixed">{tabla.titulo}</h4>
 </div>
 <table class="w-full text-left font-body-md">
-<tbody><tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">Nivel</th><th class="p-4 bg-surface-container">Frecuencia</th></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">Básico</td><td class="p-4">2 Videos/Mes</td></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">Intermedio</td><td class="p-4">5 Videos/Mes</td></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">Completo</td><td class="p-4">12 Videos/Mes</td></tr>
-</tbody></table>
+<tbody>
+<tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">{tabla.encabezado}</th><th class="p-4 bg-surface-container text-right">Tiempos de entrega</th></tr>
+{tabla.filas.map(f => (
+<tr class="border-b border-outline-variant/20"><td class="p-4 text-on-surface">{f[0]}</td><td class="p-4 text-on-surface-variant text-right whitespace-nowrap">{f[1]}</td></tr>
+))}
+</tbody>
+</table>
 </div>
-<!-- Table 2: Content Creator -->
-<div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
-<div class="bg-primary-fixed-dim p-4">
-<h4 class="font-bold text-on-primary-fixed-variant">Creador de Contenido</h4>
+))}
 </div>
-<table class="w-full text-left font-body-md">
-<tbody><tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">Servicio</th><th class="p-4 bg-surface-container">Plataforma</th></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">TikTok/Reels</td><td class="p-4">Social Media</td></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">Scripting</td><td class="p-4">Estratégico</td></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">Pack 5 videos</td><td class="p-4">Campaña</td></tr>
-</tbody></table>
-</div>
-<!-- Table 3: Logo Animation -->
-<div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
-<div class="bg-primary-fixed-dim p-4">
-<h4 class="font-bold text-on-primary-fixed-variant">Animación de Logo</h4>
-</div>
-<table class="w-full text-left font-body-md">
-<tbody><tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">Estilo</th><th class="p-4 bg-surface-container">Entrega</th></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">2D Minimal</td><td class="p-4">48 Horas</td></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">3D Dinámico</td><td class="p-4">5 Días</td></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">VFX Premium</td><td class="p-4">7 Días</td></tr>
-</tbody></table>
-</div>
-<!-- Table 4: Format Change -->
-<div class="bg-white rounded-xl border border-outline-variant/30 overflow-hidden">
-<div class="bg-primary-fixed-dim p-4">
-<h4 class="font-bold text-on-primary-fixed-variant">Cambio de Formato</h4>
-</div>
-<table class="w-full text-left font-body-md">
-<tbody><tr class="border-b border-outline-variant/20"><th class="p-4 bg-surface-container">Conversión</th><th class="p-4 bg-surface-container">Uso</th></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">Hori a Vert</td><td class="p-4">Shorts/Reels</td></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">Vert a Hori</td><td class="p-4">YouTube/TV</td></tr>
-<tr class="border-b border-outline-variant/20"><td class="p-4">Re-encuadre AI</td><td class="p-4">Automático</td></tr>
-</tbody></table>
-</div>
-</div>
+<p class="text-center text-on-surface-variant font-body-md text-body-md mt-12">
+En caso de requerir otro tipo de material audiovisual debe ser cotizado en costo y en tiempos de entrega, ya que depende del tipo de proyecto y complejidad.
+</p>
 </div>
 </section>
 </Layout>

@@ -1,33 +1,34 @@
 {
-  "title": "Plantilla 1 | Agencia Digital",
-  "heroHeading": "Maximiza el impacto de tu marca con Plantilla 1",
-  "heroParagraph": "Eleva tu presencia digital y estrategias de marketing a un nivel superior con nuestras soluciones integrales diseñadas para el éxito sostenido de tu empresa.",
-  "heroCtaLabel": "Descubrir más",
+  "title": "MK Media Digital | Impulsamos tu crecimiento",
+  "heroHeading": "Te damos la bienvenida a MK Media Digital",
+  "heroParagraph": "Comprendemos que, durante esta era digital, tener visibilidad en línea resulta esencial para que tu negocio tenga éxito. Somos una agencia especializada en estrategias de marketing digital orientadas al crecimiento de marcas y negocios, combinando creatividad, tecnología y análisis de datos para desarrollar campañas que conectan con las audiencias correctas en el momento adecuado.",
+  "heroCtaLabel": "Impulsamos tu crecimiento",
   "heroImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv",
-  "heroImageAlt": "Digital Marketing Laptop",
-  "servicesHeading": "Soluciones digitales para tu crecimiento",
-  "servicesParagraph": "Impulsamos tu negocio en el entorno digital con estrategias personalizadas diseñadas para alcanzar tus objetivos específicos.",
+  "heroImageAlt": "MK Media Digital — marketing digital",
+  "servicesHeading": "Nuestros servicios",
+  "servicesParagraph": "Trabajamos como un aliado estratégico para empresas que buscan fortalecer su presencia digital, mejorar su visibilidad en internet y generar oportunidades reales de negocio a través de estrategias digitales efectivas.",
   "services": [
-    { "icon": "code", "title": "Desarrollo Web", "desc": "Plataformas digitales de alto rendimiento que convierten visitantes en clientes desde el primer clic.", "href": "/servicios/desarrollo-web" },
-    { "icon": "smart_toy", "title": "Agentes de IA", "desc": "Automatiza atención al cliente y cualificación de leads con inteligencia activa las 24 horas.", "href": "/servicios/agentes-ia" },
-    { "icon": "palette", "title": "Diseño Gráfico", "desc": "Identidades visuales que comunican autoridad y generan reconocimiento inmediato en cada punto de contacto.", "href": "/servicios/diseno-grafico" },
-    { "icon": "diversity_3", "title": "Gestión de Redes", "desc": "Estrategia, contenido y comunidad: convertimos tus redes en un canal real de ventas y fidelización.", "href": "/servicios/redes-sociales" },
-    { "icon": "ads_click", "title": "Campañas de Ads", "desc": "Publicidad de precisión en Google y Meta para captar clientes listos para comprar ahora mismo.", "href": "/servicios/campanas-publicitarias" },
-    { "icon": "movie", "title": "Videomarketing", "desc": "Piezas audiovisuales estratégicas que amplifican tu mensaje y disparan el engagement.", "href": "/servicios/videomarketing" },
-    { "icon": "filter_alt", "title": "Embudos de Venta", "desc": "Sistemas de conversión automatizados que guían a tus prospectos hasta la compra con mínima fricción.", "href": "/servicios/embudos-venta" },
-    { "icon": "campaign", "title": "Creadores UGC", "desc": "Conectamos tu marca con creadores reales para campañas auténticas que aumentan conversiones.", "href": "/servicios/creadores-ugc" },
-    { "icon": "history_edu", "title": "Creación de Contenido", "desc": "Contenido estratégico que posiciona tu marca como referente y atrae tráfico cualificado de forma constante.", "href": "/servicios/creacion-contenido" }
+    { "icon": "diversity_3", "title": "Administración de redes sociales", "desc": "Community manager, diseñador gráfico y trafficker dedicados a tu marca, con parrilla de contenidos y atención a mensajes y comentarios.", "href": "/servicios/redes-sociales" },
+    { "icon": "history_edu", "title": "Creación de contenido individuales", "desc": "Paquetes de diseños e imágenes fijas o en formato video, entregados en editable de CANVA sobre una misma línea gráfica.", "href": "/servicios/creacion-contenido" },
+    { "icon": "campaign", "title": "Creadores UGC", "desc": "Videos publicitarios con personas reales: diseño de script, contratación del creador, edición y propuesta de campaña.", "href": "/servicios/creadores-ugc" },
+    { "icon": "palette", "title": "Diseño gráfico", "desc": "Brand Design y material corporativo: logotipo, manual de identidad, flyers, tarjetas, menús digitales, packaging y más.", "href": "/servicios/diseno-grafico" },
+    { "icon": "code", "title": "Desarrollo web", "desc": "Landing page, sitio informativo y e-commerce en WordPress, en modalidad económico o a la medida, con hosting y SSL.", "href": "/servicios/desarrollo-web" },
+    { "icon": "movie", "title": "Video Marketing", "desc": "Reels, TikToks, edición de video, animaciones y locución en todos los formatos disponibles para redes y campañas.", "href": "/servicios/videomarketing" },
+    { "icon": "ads_click", "title": "Campañas Google Ads y Social Media", "desc": "Google Search, Display y YouTube, además de Facebook, Instagram y TikTok Ads con análisis, segmentación y reporte de resultados.", "href": "/servicios/campanas-publicitarias" },
+    { "icon": "smart_toy", "title": "Agentes IA 24/7", "desc": "El poder de la IA en tus manos: configuración del agente, plataforma, WhatsApp API y soporte técnico mes a mes.", "href": "/servicios/agentes-ia" },
+    { "icon": "filter_alt", "title": "Embudos de ventas con filtro API de Facebook", "desc": "Landing page, automatización del embudo, calendario de citas, emails de entrega y configuración de la API de Facebook.", "href": "/servicios/embudos-venta" },
+    { "icon": "workspace_premium", "title": "Master Plan", "desc": "El paquete de marketing más completo para tu negocio: Instagram, Facebook y TikTok con equipo dedicado, más un sitio web informativo de 5 páginas.", "href": "/producto?service=master-plan&plan=master-plan" }
   ],
-  "reasonsHeading": "Por qué elegirnos",
+  "reasonsHeading": "¿Qué logramos para tu marca?",
   "reasons": [
-    { "title": "Amplia Trayectoria", "desc": "Contamos con años de experiencia liderando campañas de marketing exitosas en el sector digital, adaptándonos constantemente a las nuevas tendencias del mercado." },
-    { "title": "Equipo de Especialistas", "desc": "Nuestro equipo está formado por profesionales altamente cualificados en cada área del marketing digital, garantizando excelencia técnica en cada proyecto." },
-    { "title": "Creatividad y Estrategia Innovadora", "desc": "Fomentamos la creatividad y la innovación como pilares fundamentales para diferenciar a tu marca en un entorno digital saturado." },
-    { "title": "Enfoque en Resultados", "desc": "Estamos totalmente comprometidos con tus resultados comerciales, utilizando datos reales para optimizar cada fase de tu estrategia digital." }
+    { "title": "Mayor visibilidad digital", "desc": "Impulsamos la presencia de tu marca en internet mediante estrategias multicanal que aumentan tu alcance y posicionamiento." },
+    { "title": "Segmentación inteligente", "desc": "Llegamos a tu público ideal utilizando datos, intereses y comportamiento digital para maximizar el impacto de cada campaña." },
+    { "title": "Resultados medibles", "desc": "Todas nuestras estrategias están basadas en métricas y analítica, permitiendo medir el rendimiento y optimizar constantemente el retorno de inversión." },
+    { "title": "Relación con tu audiencia", "desc": "Creamos estrategias de contenido y comunicación que fortalecen la confianza y fidelización de tus clientes." }
   ],
-  "ctaHeading": "Por qué Plantilla 1 es tu mejor opción",
-  "ctaParagraph": "Nuestro enfoque diferente, basado en la personalización y la innovación constante, nos permite ofrecer soluciones que realmente impactan en el crecimiento de tu negocio.",
+  "ctaHeading": "Comienza tu viaje digital con nosotros",
+  "ctaParagraph": "No importa si eres una pequeña empresa local o una gran corporación global, en MK Media Digital tenemos las herramientas y la pasión para ayudarte a triunfar en el mundo digital. Tu viaje hacia el éxito comienza aquí.",
   "ctaLabel": "Empieza ahora",
   "ctaImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBtzci1QtmfbUubFYJE_UBdNN2kzW2bYIBjN9nyBvQ7tYyRjqvSMc4p6b0lGlCC2UO-CceR-OUDeYhZ5rfjjVyQ0muUvBm5qjS6ZBn3Tv1nHWDonfspONEYlW7AdcmDvcm_Nc2ac3M-0cd4UNpUfTNXCEXXI-jLWclXiv8Tv-xgMT2f7LtqDSwcPbSjSJPhQHjAkGLbJTgqy2K21Dvls0EIdd5u1gv9DZdCoQyV2roKW-Q_ZcmIkfIBwljZ9GzVXn0lJaZQA2OIP6bx",
-  "ctaImageAlt": "Happy Specialist with Icons"
+  "ctaImageAlt": "Equipo MK Media Digital"
 }

@@ -9,7 +9,7 @@ const phone = site.contact.phone;
 const cleanPhone = phone.replace(/[^0-9]/g, '');
 ---
 
-<Layout title="Contratar Plan | Agencia Digital">
+<Layout title="Cotizar servicio | MK Media Digital">
   <main class="bg-surface py-16 md:py-24">
     <div class="max-w-container-max mx-auto px-gutter">
       <!-- Back Link -->
@@ -41,10 +41,10 @@ const cleanPhone = phone.replace(/[^0-9]/g, '');
                   Cargando Categoría...
                 </p>
               </div>
-              <div class="text-right">
-                <p class="text-xs text-outline font-bold uppercase tracking-widest">Precio Estimado</p>
-                <div id="plan-price" class="text-2xl md:text-3xl font-extrabold text-on-surface tracking-tight mt-1">
-                  --
+              <div class="text-right shrink-0">
+                <p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Cotización</p>
+                <div class="text-lg md:text-xl font-extrabold text-primary tracking-tight mt-1">
+                  Precio a consultar
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ const cleanPhone = phone.replace(/[^0-9]/g, '');
               Haz clic en el botón de abajo para enviarnos un mensaje por WhatsApp con los detalles de este plan. Uno de nuestros asesores te responderá para definir los alcances y dar inicio al proyecto.
             </p>
 
-            <a id="whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="relative z-10 w-full bg-white text-primary py-5 rounded-2xl font-bold text-center block hover:bg-primary-fixed transition-colors shadow-xl press-effect">
+            <a id="whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp relative z-10 w-full py-5 rounded-2xl font-bold text-center block transition-colors shadow-xl press-effect">
               <span class="flex items-center justify-center gap-2">
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.76.46 3.473 1.336 4.988L2 22l5.174-1.356c1.47.8 3.11 1.222 4.826 1.222 5.506 0 9.988-4.482 9.988-9.988C22 6.482 17.518 2 12.012 2zm0 18.294c-1.49 0-2.95-.4-4.223-1.157l-.303-.18-3.137.822.835-3.056-.197-.314c-.832-1.326-1.272-2.87-1.272-4.47 0-4.526 3.684-8.21 8.21-8.21 4.527 0 8.21 3.684 8.21 8.21 0 4.526-3.684 8.21-8.21 8.21zm4.786-6.522c-.262-.13-1.554-.767-1.793-.853-.24-.087-.414-.13-.588.13-.174.262-.676.853-.83 1.028-.152.173-.304.195-.566.065-.262-.13-1.107-.407-2.11-1.302-.78-.696-1.308-1.555-1.46-1.82-.152-.26-.016-.4-.147-.53-.118-.117-.262-.304-.393-.456-.13-.152-.174-.26-.262-.435-.087-.174-.043-.326-.022-.456.022-.13.174-.413.262-.565.087-.152.11-.26.174-.435.065-.174.032-.326-.01-.456-.044-.13-.415-1.002-.57-1.37-.152-.368-.317-.318-.435-.324-.112-.006-.24-.006-.37-.006-.13 0-.34.048-.518.24-.178.195-.678.662-.678 1.613s.69 1.87 .785 2c.096.13 1.36 2.077 3.293 2.912.46.2.82.32 1.1.41.462.146.88.125 1.212.076.37-.054 1.137-.465 1.298-.913.163-.45.163-.837.114-.913-.047-.077-.173-.12-.434-.25z"/>
@@ -152,7 +152,6 @@ const cleanPhone = phone.replace(/[^0-9]/g, '');
   const planLabel = document.getElementById('plan-label');
   const planName = document.getElementById('plan-name');
   const serviceName = document.getElementById('service-name');
-  const planPrice = document.getElementById('plan-price');
   const planDesc = document.getElementById('plan-desc');
   const planFeatures = document.getElementById('plan-features');
   const whatsappBtn = document.getElementById('whatsapp-btn');
@@ -186,7 +185,6 @@ const cleanPhone = phone.replace(/[^0-9]/g, '');
     planLabel.textContent = plan.label;
     planName.textContent = plan.name;
     serviceName.textContent = service.name;
-    planPrice.textContent = plan.price;
     planDesc.textContent = plan.desc;
 
     // Set Features
@@ -202,7 +200,7 @@ const cleanPhone = phone.replace(/[^0-9]/g, '');
     });
 
     // Update WhatsApp link
-    const textMessage = `¡Hola! Me interesa contratar el plan *${plan.name}* (${plan.label}) del servicio de *${service.name}*. ¿Podrían brindarme más información?`;
+    const textMessage = `¡Hola! Me interesa cotizar *${plan.name}* (${plan.label}) del servicio de *${service.name}*. ¿Podrían brindarme más información?`;
     whatsappBtn.href = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(textMessage)}`;
   }
 

@@ -1,0 +1,73 @@
+---
+/* Tarjetas de planes de un servicio, alimentadas por content/settings/plans.json.
+   El catálogo de MK Media Digital no publica precios en el sitio: cada tarjeta
+   lleva a /producto para solicitar la cotización por WhatsApp. */
+import plansData from '../content/settings/plans.json';
+
+export interface Props {
+  service: keyof typeof plansData;
+  heading?: string;
+  subheading?: string;
+  /** Clave del plan a destacar visualmente (opcional). */
+  featured?: string;
+}
+
+const { service, heading = 'Nuestros servicios', subheading, featured } = Astro.props;
+const data = plansData[service];
+const plans = Object.entries(data.plans);
+
+// Columnas según la cantidad de planes, para que la retícula quede equilibrada.
+const cols =
+  plans.length === 1 ? 'max-w-xl mx-auto grid-cols-1'
+  : plans.length === 2 ? 'max-w-4xl mx-auto grid-cols-1 md:grid-cols-2'
+  : plans.length === 4 ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4'
+  : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3';
+---
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+  <div class="max-w-container-max mx-auto px-gutter">
+    <div class="text-center mb-16 reveal">
+      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">{heading}</h2>
+      {subheading && <p class="text-on-surface-variant font-body-lg text-body-lg max-w-2xl mx-auto mb-6">{subheading}</p>}
+      <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+    </div>
+
+    <div class:list={['grid gap-8 items-stretch', cols]}>
+      {plans.map(([key, plan]) => (
+        <div
+          class:list={[
+            'bg-surface-container-lowest p-8 rounded-3xl flex flex-col card-hover stagger-fade',
+            featured === key ? 'shadow-xl ring-4 ring-primary relative z-10' : 'shadow-lg',
+          ]}
+        >
+          <h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-3">{plan.label}</h4>
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-3">{plan.name}</h3>
+          <p class="text-on-surface-variant font-body-md text-body-md mb-6">{plan.desc}</p>
+          <ul class="space-y-3 mb-8 flex-grow">
+            {plan.features.map(feature => (
+              <li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md">
+                <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`/producto?service=${service}&plan=${key}`}
+            class:list={[
+              'w-full py-4 font-bold rounded-xl uppercase tracking-wider text-sm text-center block press-effect transition-colors',
+              featured === key
+                ? 'bg-primary text-on-primary hover:brightness-110 shadow-lg shadow-primary/20 btn-magnetic'
+                : 'border-2 border-primary text-primary hover:bg-primary hover:text-on-primary',
+            ]}
+          >
+            <span class="icon-wrap">Cotizar</span>
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <p class="text-center text-on-surface-variant font-body-md text-body-md mt-12">
+      Los precios se cotizan según el alcance de tu proyecto.
+      <a href="/contacto" class="text-primary font-semibold hover:underline">Solicita tu cotización sin compromiso.</a>
+    </p>
+  </div>
+</section>

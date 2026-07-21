@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PlanesServicio from '../../components/PlanesServicio.astro';
 ---
-<Layout title="Agentes de IA | Plantilla 1">
+<Layout title="Agentes IA 24/7 | MK Media Digital">
 <main>
 <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary overflow-hidden">
 <div class="max-w-container-max mx-auto px-gutter relative z-10 text-center reveal in-view">
@@ -127,78 +128,6 @@ import Layout from '../../layouts/Layout.astro';
 </div>
 </div>
 </section>
-<section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<div class="md:col-span-5 bg-surface-container-lowest p-10 rounded-xl border border-outline-variant flex flex-col justify-between h-full card-hover stagger-fade">
-<div>
-<div class="flex items-center gap-4 mb-8">
-<span class="material-symbols-outlined text-primary text-4xl">forum</span>
-<h3 class="text-headline-md font-headline-md">Agentes IA 24/7 - Chat</h3>
-</div>
-<ul class="space-y-6 mb-12">
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary text-base">settings_suggest</span>
-<div>
-<div class="font-bold">Configuración de Prompt</div>
-<div class="text-on-surface-variant text-body-md">Ingeniería de instrucciones personalizada para tu marca.</div>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary text-base">api</span>
-<div>
-<div class="font-bold">Conexión CRM vía API</div>
-<div class="text-on-surface-variant text-body-md">Sincronización instantánea de datos y leads.</div>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary text-base">database</span>
-<div>
-<div class="font-bold">Entrenamiento de DB</div>
-<div class="text-on-surface-variant text-body-md">Carga de archivos y manuales para conocimiento experto.</div>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary text-base">verified_user</span>
-<div>
-<div class="font-bold">Auto-cualificación</div>
-<div class="text-on-surface-variant text-body-md">Filtro inteligente de prospectos según tus criterios.</div>
-</div>
-</li>
-</ul>
-</div>
-<button class="w-full bg-surface-container py-4 rounded-lg text-outline font-bold cursor-not-allowed border border-outline-variant uppercase text-label-sm tracking-widest" disabled>
-                            Agentes de llamadas (Voice AI) - PRÓXIMAMENTE
-                        </button>
-</div>
-<div class="md:col-span-7 flex flex-col gap-gutter">
-<div class="bg-surface-container-lowest p-10 rounded-xl border-4 border-primary shadow-2xl relative overflow-hidden card-hover stagger-fade">
-<div class="absolute top-0 right-0 bg-primary text-on-primary px-6 py-2 rounded-bl-xl font-bold text-label-sm uppercase tracking-tighter">Plan Único</div>
-<h3 class="text-headline-md font-headline-md mb-2">Pago único de Configuración</h3>
-<div class="flex items-baseline gap-2 my-8">
-<span class="text-6xl md:text-7xl font-extrabold text-primary tracking-tighter">$15,000</span>
-<span class="text-outline font-bold">MXN</span>
-</div>
-<p class="text-body-lg font-semibold text-on-surface mb-8">Implementación técnica completa y puesta en marcha.</p>
-<p class="text-on-surface-variant text-sm mb-8 opacity-70 italic">* No incluye costos de APIs de terceros (OpenAI, Make, etc.) ni CRM.</p>
-<a href="/producto?service=agentes-ia&plan=setup" class="w-full bg-primary text-on-primary py-5 rounded-lg font-bold text-headline-md btn-magnetic press-effect shadow-lg shadow-primary/20 text-center block">
-                                <span class="icon-wrap">CONTRATAR AHORA</span>
-                            </a>
-</div>
-<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant flex items-center gap-6 card-hover stagger-fade">
-<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary shadow-sm">
-<span class="material-symbols-outlined text-3xl">hub</span>
-</div>
-<div>
-<h4 class="text-headline-md font-bold mb-2">Embudos con Filtro API de FB</h4>
-<p class="text-on-surface-variant text-body-md">
-                                    Conectamos tus campañas de Facebook Ads directamente con el Agente de IA para una respuesta inmediata de menos de 10 segundos.
-                                </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<PlanesServicio service="agentes-ia" heading="Agentes IA 24/7" featured="configuracion" />
 </main>
 </Layout>

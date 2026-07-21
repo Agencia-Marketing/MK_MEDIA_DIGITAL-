@@ -2,9 +2,11 @@
 <html class="light" lang="es"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Plantilla 1 | Agencia Digital</title>
+<title>MK Media Digital | Impulsamos tu crecimiento</title>
+<link rel="icon" type="image/png" href="logos/icono-color.png">
+<link rel="apple-touch-icon" href="logos/icono-180.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script id="tailwind-config">
     tailwind.config = {
@@ -13,28 +15,28 @@
             extend: {
                 "colors": {
                     "surface":                    "#ffffff",
-                    "surface-dim":                "#f8f9fc",
+                    "surface-dim":                "#f7f6fb",
                     "surface-container-lowest":   "#ffffff",
-                    "surface-container-low":      "#f8f9fc",
-                    "surface-container":          "#f1f0fb",
-                    "surface-container-high":     "#ede9fe",
-                    "surface-container-highest":  "#ddd6fe",
-                    "on-surface":                 "#0f172a",
-                    "on-surface-variant":         "#475569",
-                    "outline":                    "#e2e8f0",
-                    "outline-variant":            "#e2e8f0",
-                    "primary":                    "#7e22ce",
+                    "surface-container-low":      "#f7f6fb",
+                    "surface-container":          "#f3f0f9",
+                    "surface-container-high":     "#ede7f5",
+                    "surface-container-highest":  "#ddd1ec",
+                    "on-surface":                 "#101b33",
+                    "on-surface-variant":         "#4a5570",
+                    "outline":                    "#e3e0ec",
+                    "outline-variant":            "#e3e0ec",
+                    "primary":                    "#623D91",
                     "on-primary":                 "#ffffff",
-                    "primary-container":          "#7e22ce",
+                    "primary-container":          "#623D91",
                     "on-primary-container":       "#ffffff",
-                    "primary-fixed":              "#ede9fe",
-                    "on-primary-fixed":           "#3b0764",
-                    "primary-fixed-dim":          "#ddd6fe",
-                    "inverse-primary":            "#c4b5fd",
-                    "secondary":                  "#6d28d9",
+                    "primary-fixed":              "#ede7f5",
+                    "on-primary-fixed":           "#123274",
+                    "primary-fixed-dim":          "#ddd1ec",
+                    "inverse-primary":            "#009CDD",
+                    "secondary":                  "#4e3075",
                     "on-secondary":               "#ffffff",
                     "background":                 "#ffffff",
-                    "on-background":              "#0f172a"
+                    "on-background":              "#101b33"
                 },
                 "borderRadius": {
                     "DEFAULT": "0.5rem",
@@ -51,14 +53,14 @@
                     "container-max":             "1280px"
                 },
                 "fontFamily": {
-                    "display-hero":        ["Syne", "sans-serif"],
-                    "display-hero-mobile": ["Syne", "sans-serif"],
-                    "headline-lg":         ["Syne", "sans-serif"],
-                    "headline-lg-mobile":  ["Syne", "sans-serif"],
-                    "headline-md":         ["Syne", "sans-serif"],
-                    "body-lg":             ["Outfit", "sans-serif"],
-                    "body-md":             ["Outfit", "sans-serif"],
-                    "label-sm":            ["Outfit", "sans-serif"]
+                    "display-hero":        ["Montserrat", "sans-serif"],
+                    "display-hero-mobile": ["Montserrat", "sans-serif"],
+                    "headline-lg":         ["Montserrat", "sans-serif"],
+                    "headline-lg-mobile":  ["Montserrat", "sans-serif"],
+                    "headline-md":         ["Montserrat", "sans-serif"],
+                    "body-lg":             ["Poppins", "sans-serif"],
+                    "body-md":             ["Poppins", "sans-serif"],
+                    "label-sm":            ["Poppins", "sans-serif"]
                 },
                 "fontSize": {
                     "display-hero":        ["72px", {"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],
@@ -89,44 +91,44 @@
 <style>
     :root {
         /* --- Brand colors — change these per client --- */
-        --color-primary: #7e22ce;
-        --color-primary-rgb: 124, 58, 237;
-        --color-primary-dark: #6d28d9;
-        --color-primary-dark-rgb: 109, 40, 217;
-        --color-primary-fixed: #ede9fe;
-        --color-primary-fixed-rgb: 237, 233, 254;
-        --color-primary-fixed-dim: #ddd6fe;
-        --color-inverse-primary: #c4b5fd;
-        --color-inverse-primary-rgb: 196, 181, 253;
+        --color-primary: #623D91;
+        --color-primary-rgb: 98, 61, 145;
+        --color-primary-dark: #4e3075;
+        --color-primary-dark-rgb: 78, 48, 117;
+        --color-primary-fixed: #ede7f5;
+        --color-primary-fixed-rgb: 237, 231, 245;
+        --color-primary-fixed-dim: #ddd1ec;
+        --color-inverse-primary: #009CDD;
+        --color-inverse-primary-rgb: 0, 156, 221;
         --color-on-primary: #ffffff;
-        --color-on-primary-fixed: #3b0764;
+        --color-on-primary-fixed: #123274;
 
         /* --- Neutral / surface colors --- */
         --color-surface: #ffffff;
-        --color-surface-dim: #f8f9fc;
+        --color-surface-dim: #f7f6fb;
         --color-surface-container-lowest: #ffffff;
-        --color-on-surface: #0f172a;
-        --color-on-surface-rgb: 15, 23, 42;
-        --color-on-surface-variant: #475569;
-        --color-body-text: #334155;
-        --color-body-text-rgb: 51, 65, 85;
-        --color-outline: #e2e8f0;
+        --color-on-surface: #101b33;
+        --color-on-surface-rgb: 16, 27, 51;
+        --color-on-surface-variant: #4a5570;
+        --color-body-text: #3b4560;
+        --color-body-text-rgb: 59, 69, 96;
+        --color-outline: #e3e0ec;
 
         /* --- Footer --- */
-        --color-footer-bg: #3b0764;
+        --color-footer-bg: #123274;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
         background-color: var(--color-surface);
         color: var(--color-body-text);
         line-height: 1.65;
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Syne', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: -0.03em;
         color: var(--color-on-surface);
         text-wrap: balance;
@@ -145,7 +147,7 @@
 
     nav a {
         color: var(--color-on-surface-variant) !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         transition: color 0.2s ease;
     }
@@ -267,6 +269,12 @@
     .text-primary             { color: var(--color-primary) !important; }
     .text-on-primary-container{ color: var(--color-on-primary) !important; }
     .text-on-primary-fixed    { color: var(--color-on-primary-fixed) !important; }
+    /* Los overrides de arriba llevan !important, así que ganarían también en :hover
+       y dejarían ilegible el texto de los botones outline al invertirse el fondo. */
+    .hover\:text-on-primary:hover,
+    .hover\:text-on-primary:hover * { color: var(--color-on-primary) !important; }
+    .hover\:text-primary:hover,
+    .hover\:text-primary:hover *    { color: var(--color-primary) !important; }
 
     .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
 
@@ -314,11 +322,11 @@
     }
     footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer div.font-bold {
         color: var(--color-on-primary) !important;
-        font-family: 'Syne', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     footer p, footer span, footer li, footer a, footer div, footer label {
         color: rgba(255, 255, 255, 0.85) !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     footer h5, footer [class*="text-label"] {
         color: rgba(255, 255, 255, 0.55) !important;
@@ -400,7 +408,7 @@
 }
 .btn-magnetic:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.25);
+    box-shadow: 0 8px 24px rgba(98, 61, 145, 0.25);
 }
 .btn-magnetic .icon-wrap {
     display: inline-block;
@@ -410,17 +418,28 @@
     transform: translateX(4px);
 }
 
-.stagger-fade > * {
+.stagger-fade {
     opacity: 0;
-    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    animation-delay: calc(var(--i, 0) * 60ms);
+    transform: translateY(12px);
 }
+.stagger-fade.in-view {
+    animation: fadeUp 500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.stagger-fade:nth-child(1) { animation-delay: 0ms; }
+.stagger-fade:nth-child(2) { animation-delay: 60ms; }
+.stagger-fade:nth-child(3) { animation-delay: 120ms; }
+.stagger-fade:nth-child(4) { animation-delay: 180ms; }
+.stagger-fade:nth-child(5) { animation-delay: 240ms; }
+.stagger-fade:nth-child(6) { animation-delay: 300ms; }
+.stagger-fade:nth-child(7) { animation-delay: 360ms; }
+.stagger-fade:nth-child(8) { animation-delay: 420ms; }
+.stagger-fade:nth-child(9) { animation-delay: 480ms; }
 
 .reveal {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(16px);
+    transition: opacity 700ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 700ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .reveal.in-view {
     opacity: 1;
@@ -434,7 +453,7 @@ div.card-hover, .card-hover {
 }
 div.card-hover:hover, .card-hover:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(124, 58, 237, 0.10);
+    box-shadow: 0 12px 32px rgba(98, 61, 145, 0.10);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -448,328 +467,108 @@ div.card-hover:hover, .card-hover:hover {
         transform: none !important;
     }
 }
+
+    /* --- Correcciones de cascada (ver global.css) ---------------------------
+       Los overrides con !important de más arriba ganarían también en :hover y
+       dejarían ilegible el texto de los botones outline. Además, el selector
+       [class*="bg-primary-fixed"] coincide por subcadena con la utilidad
+       hover:bg-primary-fixed y pintaría el fondo de forma permanente. */
+    .hover\:text-on-primary:hover,
+    .hover\:text-on-primary:hover * { color: var(--color-on-primary) !important; }
+    .hover\:text-primary:hover,
+    .hover\:text-primary:hover *    { color: var(--color-primary) !important; }
+
+    /* --- Submenú de servicios en la cabecera --- */
+    .nav-dropdown-panel {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%, 4px);
+        transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 200ms cubic-bezier(0.23, 1, 0.32, 1),
+                    visibility 0s linear 200ms;
+    }
+    .nav-dropdown:hover .nav-dropdown-panel,
+    .nav-dropdown:focus-within .nav-dropdown-panel {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+        transition-delay: 0s;
+    }
+    .nav-dropdown:hover .nav-dropdown-chevron,
+    .nav-dropdown:focus-within .nav-dropdown-chevron { transform: rotate(180deg); }
+    .nav-dropdown-item {
+        background-color: transparent;
+        color: var(--color-on-surface-variant) !important;
+    }
+    .nav-dropdown-item:hover {
+        background-color: var(--color-primary-fixed);
+        color: var(--color-primary) !important;
+    }
+
+    .btn-whatsapp {
+        background-color: #ffffff;
+        color: var(--color-primary) !important;
+    }
+    .btn-whatsapp:hover { background-color: var(--color-primary-fixed); }
+    .btn-whatsapp * { color: var(--color-primary) !important; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .nav-dropdown-panel { transition: none; }
+    }
 </style>
 <body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- Header / TopNavBar -->
-<header class="bg-primary-container top-0 sticky z-50 transition-all duration-300">
-<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
-<div class="font-headline-md text-headline-md font-bold" style="color:var(--color-on-surface)">Plantilla 1.</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-body-md text-body-md font-medium transition-colors" href="#">Inicio</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="nosotros.html">Nosotros</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="#servicios">Servicios</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="contacto.html">Contacto</a>
-</div>
-<div class="flex items-center gap-3">
-<a href="contacto.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl hover:bg-secondary transition-colors press-effect btn-magnetic">
-  <span class="icon-wrap">Contáctanos</span>
-</a>
-<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
-</div>
-</nav>
-</header>
-<!-- Hero Section -->
-<section class="bg-primary relative overflow-hidden pt-12 pb-24 md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
-<div class="text-on-primary space-y-8">
-<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero">
-                    Maximiza el impacto de tu marca con Plantilla 1
-                </h1>
-<p class="font-body-lg text-body-lg text-on-primary/90 max-w-xl">
-                    Eleva tu presencia digital y estrategias de marketing a un nivel superior con nuestras soluciones integrales diseñadas para el éxito sostenido de tu empresa.
-                </p>
-<div>
-<button onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})" class="bg-surface-container-lowest text-primary px-8 py-4 rounded-2xl font-bold font-body-md text-body-md hover:scale-105 transition-transform shadow-xl press-effect btn-magnetic">
-                        <span class="icon-wrap">Descubrir más</span>
-                    </button>
-</div>
-</div>
-<div class="relative">
-<img alt="Digital Marketing Laptop" class="w-full h-auto object-contain drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv">
-</div>
-</div>
-<!-- Decorative blobs -->
-<div class="absolute -top-24 -right-24 w-96 h-96 bg-white/[0.06] rounded-full" style="filter:blur(80px)"></div>
-<div class="absolute -bottom-12 -left-12 w-72 h-72 bg-white/[0.04] rounded-full" style="filter:blur(80px)"></div>
-</section>
-<!-- Services Section -->
-<section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop" id="servicios">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-16 space-y-4">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Soluciones digitales para tu crecimiento</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-                    Impulsamos tu negocio en el entorno digital con estrategias personalizadas diseñadas para alcanzar tus objetivos específicos.
-                </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-fade">
-            <!-- Card 1: Desarrollo Web -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:0">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">code</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Desarrollo Web</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Construimos plataformas a medida que son rápidas, adaptables y optimizadas para convertir visitas en clientes reales.
-                </p>
-                <a href="servicios/desarrollo-web.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-            <!-- Card 2: Agentes de IA -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:1">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">smart_toy</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Agentes de IA</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Implementamos agentes inteligentes de IA para automatizar tus procesos de atención y aumentar tus ventas 24/7.
-                </p>
-                <a href="servicios/agentes-ia.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-            <!-- Card 3: Diseño Gráfico -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:2">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">palette</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Diseño Gráfico</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Potenciamos tu marca y generamos una impresión duradera con creaciones visuales atractivas y de nivel premium.
-                </p>
-                <a href="servicios/diseno-grafico.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-            <!-- Card 4: Gestión de Redes -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:3">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">diversity_3</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Gestión de Redes</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Incrementa la interacción con tu audiencia y la notoriedad de tu marca mediante una gestión experta y estratégica.
-                </p>
-                <a href="servicios/redes-sociales.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-            <!-- Card 5: Campañas Publicitarias -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:4">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">ads_click</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Campañas de Ads</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Aumenta tu visibilidad y capta clientes calificados con campañas publicitarias optimizadas de alto rendimiento.
-                </p>
-                <a href="servicios/campanas-publicitarias.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-            <!-- Card 6: Videomarketing -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:5">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">movie</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Videomarketing</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Producimos piezas audiovisuales dinámicas y profesionales que conectan emocionalmente con tu público objetivo.
-                </p>
-                <a href="servicios/videomarketing.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-            <!-- Card 7: Embudos de Venta -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:6">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">filter_alt</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Embudos de Venta</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Diseñamos sistemas automatizados de ventas para llevar a tus prospectos paso a paso hasta la conversión final.
-                </p>
-                <a href="servicios/embudos-venta.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-            <!-- Card 8: Creadores UGC -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:7">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">campaign</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Creadores UGC</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Conectamos tu marca con creadores de contenido generado por usuarios para campañas auténticas que generan confianza.
-                </p>
-                <a href="servicios/creadores-ugc.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-            <!-- Card 9: Creación de Contenido -->
-            <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover" style="--i:8">
-                <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
-                    <span class="material-symbols-outlined">history_edu</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md mb-4">Creación de Contenido</h3>
-                <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow">
-                    Diseñamos y redactamos contenidos atractivos para educar, captar interés y posicionar tu marca en la industria.
-                </p>
-                <a href="servicios/creacion-contenido.html" class="w-full bg-primary-container text-on-primary py-3 rounded-xl font-bold hover:opacity-90 transition-opacity text-center block press-effect">
-                    + Info
-                </a>
-            </div>
-        </div>
-</section>
-<!-- Why Choose Us Section -->
-<section class="bg-primary py-section-padding-mobile md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-16 space-y-4">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-primary">¿Por qué elegirnos?</h2>
-<p class="font-body-lg text-body-lg text-on-primary/80 max-w-2xl mx-auto">
-                    Nuestra propuesta de valor para el éxito de tu empresa en el mercado.
-                </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/20">
-<div class="p-12 glass-card card-hover">
-<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Amplia Trayectoria</h4>
-<p class="text-on-primary/70 font-body-md text-body-md">
-                        Contamos con años de experiencia liderando campañas de marketing exitosas en el sector digital, adaptándonos constantemente a las nuevas tendencias del mercado.
-                    </p>
-</div>
-<div class="p-12 glass-card card-hover">
-<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Equipo de Especialistas</h4>
-<p class="text-on-primary/70 font-body-md text-body-md">
-                        Nuestro equipo está formado por profesionales altamente cualificados en cada área del marketing digital, garantizando excelencia técnica en cada proyecto.
-                    </p>
-</div>
-<div class="p-12 glass-card card-hover">
-<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Creatividad y Estrategia Innovadora</h4>
-<p class="text-on-primary/70 font-body-md text-body-md">
-                        Fomentamos la creatividad y la innovación como pilares fundamentales para diferenciar a tu marca en un entorno digital saturado.
-                    </p>
-</div>
-<div class="p-12 glass-card card-hover">
-<h4 class="font-headline-md text-headline-md text-on-primary mb-4">Enfoque en Resultados</h4>
-<p class="text-on-primary/70 font-body-md text-body-md">
-                        Estamos totalmente comprometidos con tus resultados comerciales, utilizando datos reales para optimizar cada fase de tu estrategia digital.
-                    </p>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Central Section -->
-<section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop" id="servicios">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 grid grid-cols-1 md:grid-cols-2 items-center">
-<div class="p-12 md:p-20 space-y-8">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Por qué Plantilla 1 es tu mejor opción</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                        Nuestro enfoque diferente, basado en la personalización y la innovación constante, nos permite ofrecer soluciones que realmente impactan en el crecimiento de tu negocio.
-                    </p>
-<button onclick="window.location.href='contacto.html'" class="bg-primary-container text-on-primary px-10 py-4 rounded-2xl font-bold hover:scale-105 transition-transform press-effect btn-magnetic">
-                        <span class="icon-wrap">Empieza ahora</span>
-                    </button>
-</div>
-<div class="h-full">
-<img alt="Happy Specialist with Icons" class="w-full h-full object-cover" data-alt="A professional young man in a smart navy suit smiling confidently, pointing towards floating 3D icons representing marketing success, growth charts, and a gold trophy. The background is a clean, minimal light gray, emphasizing a high-end corporate digital agency style. The lighting is soft and professional, highlighting the vibrant blue and gold accents of the 3D graphics in a modern light-mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtzci1QtmfbUubFYJE_UBdNN2kzW2bYIBjN9nyBvQ7tYyRjqvSMc4p6b0lGlCC2UO-CceR-OUDeYhZ5rfjjVyQ0muUvBm5qjS6ZBn3Tv1nHWDonfspONEYlW7AdcmDvcm_Nc2ac3M-0cd4UNpUfTNXCEXXI-jLWclXiv8Tv-xgMT2f7LtqDSwcPbSjSJPhQHjAkGLbJTgqy2K21Dvls0EIdd5u1gv9DZdCoQyV2roKW-Q_ZcmIkfIBwljZ9GzVXn0lJaZQA2OIP6bx">
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-
-    <!-- Col 1: Brand -->
-    <div class="space-y-6">
-      <div class="font-headline-md text-headline-md font-bold" style="color:var(--color-on-primary)">Plantilla 1.</div>
-      <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);">
-        Soluciones digitales premium para impulsar el crecimiento de tu empresa.
-      </p>
-      <div class="flex gap-3">
-        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-          <span class="material-symbols-outlined text-[20px]" style="color:var(--color-on-primary);">share</span>
-        </button>
-        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-          <span class="material-symbols-outlined text-[20px]" style="color:var(--color-on-primary);">public</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Col 2: Contact -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Información de Contacto</h5>
-      <ul class="space-y-4 font-body-md text-body-md" style="color:rgba(255,255,255,0.80);">
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">call</span>
-          +34 639 494 000
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">mail</span>
-          contacto@plantilla1.com
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">location_on</span>
-          Madrid, España
-        </li>
-      </ul>
-    </div>
-
-    <!-- Col 3: Nav links -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5>
-      <ul class="space-y-3 font-body-md text-body-md">
-        <li><a href="#"    style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li>
-        <li><a href="nosotros.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li>
-        <li><a href="#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li>
-        <li><a href="contacto.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li>
-      </ul>
-    </div>
-
-    <!-- Col 4: Quick links -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Enlaces Rápidos</h5>
-      <ul class="space-y-3 font-body-md text-body-md">
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Blog</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">FAQ</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Privacidad</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Términos</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Bottom bar -->
-  <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top:1px solid rgba(255,255,255,0.12);">
-    <p class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);">© 2026 Plantilla 1 | Todos los derechos reservados.</p>
-    <div class="flex gap-6">
-      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Términos</a>
-      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Soporte</a>
-    </div>
-  </div>
-
-</div>
-</footer>
+<header class="bg-surface border-b border-outline top-0 sticky z-50 transition-all duration-300"> <nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20"> <a href="index.html" class="font-headline-md text-headline-md font-bold flex items-center gap-2 shrink-0" style="color:var(--color-on-surface)" aria-label="MK Media Digital"> <img src="logos/logo-color.png" alt="MK Media Digital" class="h-12 md:h-14 w-auto" width="393" height="300"> </a> <div class="hidden md:flex items-center gap-8"> <a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="index.html">Inicio</a><a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="nosotros.html">Nosotros</a><div class="relative nav-dropdown"> <a href="index.html#servicios" class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary inline-flex items-center gap-1" aria-haspopup="true" aria-expanded="false"> Servicios <span class="material-symbols-outlined text-[18px] transition-transform duration-200 nav-dropdown-chevron">expand_more</span> </a> <div class="nav-dropdown-panel absolute left-1/2 -translate-x-1/2 top-full pt-4"> <div class="bg-surface border border-outline rounded-2xl shadow-xl p-2 grid grid-cols-2 gap-x-1 w-[36rem]"> <a href="servicios/redes-sociales.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Administración de redes sociales</a><a href="servicios/creacion-contenido.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Creación de contenido individuales</a><a href="servicios/creadores-ugc.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Creadores UGC</a><a href="producto.html?service=master-plan&#38;plan=master-plan" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Master Plan</a><a href="servicios/diseno-grafico.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Diseño gráfico</a><a href="servicios/desarrollo-web.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Desarrollo web</a><a href="servicios/videomarketing.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Video Marketing</a><a href="servicios/campanas-publicitarias.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Campañas Google Ads y Social Media</a><a href="servicios/agentes-ia.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Agentes IA 24/7</a><a href="servicios/embudos-venta.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Embudos de ventas con filtro API de Facebook</a> </div> </div> </div><a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="contacto.html">Contacto</a> </div> <div class="flex items-center gap-3"> <a href="contacto.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl btn-magnetic shadow-md shadow-primary/20"> <span class="icon-wrap">Contáctanos</span> </a> <button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button> </div> </nav> </header>  <section class="bg-primary relative overflow-hidden pt-12 pb-24 md:py-section-padding-desktop"> <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"> <div class="text-on-primary space-y-8 reveal in-view"> <h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero"> Te damos la bienvenida a MK Media Digital </h1> <p class="font-body-lg text-body-lg text-on-primary/90 max-w-xl"> Comprendemos que, durante esta era digital, tener visibilidad en línea resulta esencial para que tu negocio tenga éxito. Somos una agencia especializada en estrategias de marketing digital orientadas al crecimiento de marcas y negocios, combinando creatividad, tecnología y análisis de datos para desarrollar campañas que conectan con las audiencias correctas en el momento adecuado. </p> <div> <button onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})" class="bg-surface-container-lowest text-primary px-8 py-4 rounded-2xl font-bold font-body-md text-body-md btn-magnetic shadow-xl press-effect"> <span class="icon-wrap">Impulsamos tu crecimiento</span> </button> </div> </div> <div class="relative reveal in-view"> <img alt="MK Media Digital — marketing digital" class="w-full h-auto object-contain drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv"> </div> </div> <div class="absolute -top-24 -right-24 w-96 h-96 bg-white/[0.06] rounded-full" style="filter:blur(80px)"></div> <div class="absolute -bottom-12 -left-12 w-72 h-72 bg-white/[0.04] rounded-full" style="filter:blur(80px)"></div> </section> <section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop" id="servicios"> <div class="max-w-container-max mx-auto px-gutter"> <div class="text-center mb-16 space-y-4 reveal"> <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Nuestros servicios</h2> <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"> Trabajamos como un aliado estratégico para empresas que buscan fortalecer su presencia digital, mejorar su visibilidad en internet y generar oportunidades reales de negocio a través de estrategias digitales efectivas. </p> </div> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> <div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">diversity_3</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Administración de redes sociales</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> Community manager, diseñador gráfico y trafficker dedicados a tu marca, con parrilla de contenidos y atención a mensajes y comentarios. </p> <a href="servicios/redes-sociales.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">history_edu</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Creación de contenido individuales</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> Paquetes de diseños e imágenes fijas o en formato video, entregados en editable de CANVA sobre una misma línea gráfica. </p> <a href="servicios/creacion-contenido.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">campaign</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Creadores UGC</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> Videos publicitarios con personas reales: diseño de script, contratación del creador, edición y propuesta de campaña. </p> <a href="servicios/creadores-ugc.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">palette</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Diseño gráfico</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> Brand Design y material corporativo: logotipo, manual de identidad, flyers, tarjetas, menús digitales, packaging y más. </p> <a href="servicios/diseno-grafico.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">code</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Desarrollo web</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> Landing page, sitio informativo y e-commerce en WordPress, en modalidad económico o a la medida, con hosting y SSL. </p> <a href="servicios/desarrollo-web.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">movie</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Video Marketing</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> Reels, TikToks, edición de video, animaciones y locución en todos los formatos disponibles para redes y campañas. </p> <a href="servicios/videomarketing.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">ads_click</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Campañas Google Ads y Social Media</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> Google Search, Display y YouTube, además de Facebook, Instagram y TikTok Ads con análisis, segmentación y reporte de resultados. </p> <a href="servicios/campanas-publicitarias.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">smart_toy</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Agentes IA 24/7</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> El poder de la IA en tus manos: configuración del agente, plataforma, WhatsApp API y soporte técnico mes a mes. </p> <a href="servicios/agentes-ia.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">filter_alt</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Embudos de ventas con filtro API de Facebook</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> Landing page, automatización del embudo, calendario de citas, emails de entrega y configuración de la API de Facebook. </p> <a href="servicios/embudos-venta.html" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div><div class="bg-white p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all group flex flex-col h-full shadow-sm card-hover stagger-fade"> <div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6"> <span class="material-symbols-outlined">workspace_premium</span> </div> <h3 class="font-headline-md text-headline-md mb-4">Master Plan</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-8 flex-grow"> El paquete de marketing más completo para tu negocio: Instagram, Facebook y TikTok con equipo dedicado, más un sitio web informativo de 5 páginas. </p> <a href="producto.html?service=master-plan&#38;plan=master-plan" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
++ Info
+</a> </div> </div> </div> </section> <section class="bg-primary py-section-padding-mobile md:py-section-padding-desktop"> <div class="max-w-container-max mx-auto px-gutter"> <div class="text-center mb-16 space-y-4"> <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-primary">¿Qué logramos para tu marca?</h2> </div> <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/20"> <div class="p-12 glass-card"> <span class="font-headline-md text-headline-md text-on-primary mb-4 block">Mayor visibilidad digital</span> <p class="text-on-primary/70 font-body-md text-body-md"> Impulsamos la presencia de tu marca en internet mediante estrategias multicanal que aumentan tu alcance y posicionamiento. </p> </div><div class="p-12 glass-card"> <span class="font-headline-md text-headline-md text-on-primary mb-4 block">Segmentación inteligente</span> <p class="text-on-primary/70 font-body-md text-body-md"> Llegamos a tu público ideal utilizando datos, intereses y comportamiento digital para maximizar el impacto de cada campaña. </p> </div><div class="p-12 glass-card"> <span class="font-headline-md text-headline-md text-on-primary mb-4 block">Resultados medibles</span> <p class="text-on-primary/70 font-body-md text-body-md"> Todas nuestras estrategias están basadas en métricas y analítica, permitiendo medir el rendimiento y optimizar constantemente el retorno de inversión. </p> </div><div class="p-12 glass-card"> <span class="font-headline-md text-headline-md text-on-primary mb-4 block">Relación con tu audiencia</span> <p class="text-on-primary/70 font-body-md text-body-md"> Creamos estrategias de contenido y comunicación que fortalecen la confianza y fidelización de tus clientes. </p> </div> </div> </div> </section> <section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop"> <div class="max-w-container-max mx-auto px-gutter"> <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 grid grid-cols-1 md:grid-cols-2 items-center"> <div class="p-12 md:p-20 space-y-8"> <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Comienza tu viaje digital con nosotros</h2> <p class="font-body-lg text-body-lg text-on-surface-variant"> No importa si eres una pequeña empresa local o una gran corporación global, en MK Media Digital tenemos las herramientas y la pasión para ayudarte a triunfar en el mundo digital. Tu viaje hacia el éxito comienza aquí. </p> <button onclick="window.location.href='/contacto'" class="bg-primary text-on-primary px-10 py-4 rounded-2xl font-bold btn-magnetic press-effect shadow-md shadow-primary/20"> <span class="icon-wrap">Empieza ahora</span> </button> </div> <div class="h-full"> <img alt="Equipo MK Media Digital" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtzci1QtmfbUubFYJE_UBdNN2kzW2bYIBjN9nyBvQ7tYyRjqvSMc4p6b0lGlCC2UO-CceR-OUDeYhZ5rfjjVyQ0muUvBm5qjS6ZBn3Tv1nHWDonfspONEYlW7AdcmDvcm_Nc2ac3M-0cd4UNpUfTNXCEXXI-jLWclXiv8Tv-xgMT2f7LtqDSwcPbSjSJPhQHjAkGLbJTgqy2K21Dvls0EIdd5u1gv9DZdCoQyV2roKW-Q_ZcmIkfIBwljZ9GzVXn0lJaZQA2OIP6bx"> </div> </div> </div> </section>  <footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop"> <div class="max-w-container-max mx-auto"> <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16"> <div class="space-y-6"> <img src="logos/logo-blanco.png" alt="MK Media Digital" class="h-16 w-auto" width="393" height="300"> <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);"> Impulsamos tu crecimiento. Agencia de marketing digital especializada en estrategias personalizadas para marcas que buscan crecer en línea y presencialmente. </p> <div class="flex gap-3"> <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);"> <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">share</span> </button> <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);"> <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">public</span> </button> </div> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Información de Contacto</h5> <ul class="space-y-4 font-body-md text-body-md" style="color:rgba(255,255,255,0.80);"> <li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">call</span> +52 662 715 6286 </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">mail</span> mkmediadigitalon@gmail.com </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">location_on</span> Cerrada de Neptuno 1-A, Col. San Simón Tolnahuac, Alcaldía Cuauhtémoc, CDMX, C.P. 06920 </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">schedule</span> Lunes a viernes de 9:00 am a 5:00 pm </li> </ul> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5> <ul class="space-y-3 font-body-md text-body-md"> <li><a href="index.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li><li><a href="nosotros.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li><li><a href="index.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li><li><a href="contacto.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li> </ul> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Enlaces Rápidos</h5> <ul class="space-y-3 font-body-md text-body-md"> <li><a href="servicios/redes-sociales.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Administración de redes sociales</a></li><li><a href="servicios/desarrollo-web.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Desarrollo web</a></li><li><a href="servicios/agentes-ia.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Agentes IA 24/7</a></li><li><a href="servicios/diseno-grafico.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Diseño gráfico</a></li> </ul> </div> </div> <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top:1px solid rgba(255,255,255,0.12);"> <p class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);">© 2026 MK Media Digital | Todos los derechos reservados.</p> <div class="flex gap-6"> <a href="contacto.html" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Contacto</a><a href="index.html#servicios" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Servicios</a> </div> </div> </div> </footer>
 <script>
-        // Scroll interaction for header with smooth easing
-        let ticking = false;
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    const header = document.querySelector('header');
-                    if (window.scrollY > 20) {
-                        header.classList.add('shadow-lg', 'bg-primary-container/95', 'backdrop-blur-sm');
-                        header.style.height = '4rem';
-                    } else {
-                        header.classList.remove('shadow-lg', 'bg-primary-container/95', 'backdrop-blur-sm');
-                        header.style.height = '5rem';
-                    }
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-    </script>
+    // Cabecera al hacer scroll
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const header = document.querySelector('header');
+                const scrolled = window.scrollY > 20;
+                header.classList.toggle('shadow-lg', scrolled);
+                header.classList.toggle('bg-surface/95', scrolled);
+                header.classList.toggle('backdrop-blur-sm', scrolled);
+                header.style.height = scrolled ? '4rem' : '5rem';
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+
+    // Animaciones de entrada
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.reveal, .stagger-fade, .img-reveal').forEach(el => observer.observe(el));
+    } else {
+        document.querySelectorAll('.reveal, .stagger-fade, .img-reveal').forEach(el => el.classList.add('in-view'));
+    }
+</script>
 </body></html>

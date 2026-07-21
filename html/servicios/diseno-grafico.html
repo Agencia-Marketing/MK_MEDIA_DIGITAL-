@@ -2,9 +2,11 @@
 <html class="light" lang="es"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Servicios de Diseño Gráfico | Logo.</title>
+<title>Diseño gráfico | MK Media Digital</title>
+<link rel="icon" type="image/png" href="../logos/icono-color.png">
+<link rel="apple-touch-icon" href="../logos/icono-180.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <script id="tailwind-config">
     tailwind.config = {
@@ -13,28 +15,28 @@
             extend: {
                 "colors": {
                     "surface":                    "#ffffff",
-                    "surface-dim":                "#f8f9fc",
+                    "surface-dim":                "#f7f6fb",
                     "surface-container-lowest":   "#ffffff",
-                    "surface-container-low":      "#f8f9fc",
-                    "surface-container":          "#f1f0fb",
-                    "surface-container-high":     "#ede9fe",
-                    "surface-container-highest":  "#ddd6fe",
-                    "on-surface":                 "#0f172a",
-                    "on-surface-variant":         "#475569",
-                    "outline":                    "#e2e8f0",
-                    "outline-variant":            "#e2e8f0",
-                    "primary":                    "#7e22ce",
+                    "surface-container-low":      "#f7f6fb",
+                    "surface-container":          "#f3f0f9",
+                    "surface-container-high":     "#ede7f5",
+                    "surface-container-highest":  "#ddd1ec",
+                    "on-surface":                 "#101b33",
+                    "on-surface-variant":         "#4a5570",
+                    "outline":                    "#e3e0ec",
+                    "outline-variant":            "#e3e0ec",
+                    "primary":                    "#623D91",
                     "on-primary":                 "#ffffff",
-                    "primary-container":          "#7e22ce",
+                    "primary-container":          "#623D91",
                     "on-primary-container":       "#ffffff",
-                    "primary-fixed":              "#ede9fe",
-                    "on-primary-fixed":           "#3b0764",
-                    "primary-fixed-dim":          "#ddd6fe",
-                    "inverse-primary":            "#c4b5fd",
-                    "secondary":                  "#6d28d9",
+                    "primary-fixed":              "#ede7f5",
+                    "on-primary-fixed":           "#123274",
+                    "primary-fixed-dim":          "#ddd1ec",
+                    "inverse-primary":            "#009CDD",
+                    "secondary":                  "#4e3075",
                     "on-secondary":               "#ffffff",
                     "background":                 "#ffffff",
-                    "on-background":              "#0f172a"
+                    "on-background":              "#101b33"
                 },
                 "borderRadius": {
                     "DEFAULT": "0.5rem",
@@ -51,14 +53,14 @@
                     "container-max":             "1280px"
                 },
                 "fontFamily": {
-                    "display-hero":        ["Syne", "sans-serif"],
-                    "display-hero-mobile": ["Syne", "sans-serif"],
-                    "headline-lg":         ["Syne", "sans-serif"],
-                    "headline-lg-mobile":  ["Syne", "sans-serif"],
-                    "headline-md":         ["Syne", "sans-serif"],
-                    "body-lg":             ["Outfit", "sans-serif"],
-                    "body-md":             ["Outfit", "sans-serif"],
-                    "label-sm":            ["Outfit", "sans-serif"]
+                    "display-hero":        ["Montserrat", "sans-serif"],
+                    "display-hero-mobile": ["Montserrat", "sans-serif"],
+                    "headline-lg":         ["Montserrat", "sans-serif"],
+                    "headline-lg-mobile":  ["Montserrat", "sans-serif"],
+                    "headline-md":         ["Montserrat", "sans-serif"],
+                    "body-lg":             ["Poppins", "sans-serif"],
+                    "body-md":             ["Poppins", "sans-serif"],
+                    "label-sm":            ["Poppins", "sans-serif"]
                 },
                 "fontSize": {
                     "display-hero":        ["72px", {"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],
@@ -88,44 +90,44 @@
 </script>
 <style>
 :root {
-    --color-primary: #7e22ce;
-    --color-primary-rgb: 124, 58, 237;
-    --color-primary-dark: #6d28d9;
-    --color-primary-dark-rgb: 109, 40, 217;
-    --color-primary-fixed: #ede9fe;
-    --color-primary-fixed-rgb: 237, 233, 254;
-    --color-primary-fixed-dim: #ddd6fe;
-    --color-inverse-primary: #c4b5fd;
-    --color-inverse-primary-rgb: 196, 181, 253;
+    --color-primary: #623D91;
+    --color-primary-rgb: 98, 61, 145;
+    --color-primary-dark: #4e3075;
+    --color-primary-dark-rgb: 78, 48, 117;
+    --color-primary-fixed: #ede7f5;
+    --color-primary-fixed-rgb: 237, 231, 245;
+    --color-primary-fixed-dim: #ddd1ec;
+    --color-inverse-primary: #009CDD;
+    --color-inverse-primary-rgb: 0, 156, 221;
     --color-on-primary: #ffffff;
-    --color-on-primary-fixed: #3b0764;
+    --color-on-primary-fixed: #123274;
 
     --color-surface: #ffffff;
-    --color-surface-dim: #f8f9fc;
+    --color-surface-dim: #f7f6fb;
     --color-surface-container-lowest: #ffffff;
-    --color-on-surface: #0f172a;
-    --color-on-surface-rgb: 15, 23, 42;
-    --color-on-surface-variant: #475569;
-    --color-body-text: #334155;
-    --color-body-text-rgb: 51, 65, 85;
-    --color-outline: #e2e8f0;
+    --color-on-surface: #101b33;
+    --color-on-surface-rgb: 16, 27, 51;
+    --color-on-surface-variant: #4a5570;
+    --color-body-text: #3b4560;
+    --color-body-text-rgb: 59, 69, 96;
+    --color-outline: #e3e0ec;
 
-    --color-footer-bg: #3b0764;
+    --color-footer-bg: #123274;
 }
 
     /* --- Fonts --- */
     html { scroll-behavior: smooth; }
 
     body {
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
         background-color: var(--color-surface);
         color: var(--color-body-text);
         line-height: 1.65;
     }
 
-    /* --- Headings: Syne, deep charcoal --- */
+    /* --- Headings: Montserrat, deep charcoal --- */
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Syne', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: -0.03em;
         color: var(--color-on-surface);
         text-wrap: balance;
@@ -147,7 +149,7 @@
     /* --- Navigation links --- */
     nav a {
         color: var(--color-on-surface-variant) !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 500;
         transition: color 0.2s ease;
     }
@@ -279,6 +281,12 @@
     .text-primary             { color: var(--color-primary) !important; }
     .text-on-primary-container{ color: var(--color-on-primary) !important; }
     .text-on-primary-fixed    { color: var(--color-on-primary-fixed) !important; }
+    /* Los overrides de arriba llevan !important, así que ganarían también en :hover
+       y dejarían ilegible el texto de los botones outline al invertirse el fondo. */
+    .hover\:text-on-primary:hover,
+    .hover\:text-on-primary:hover * { color: var(--color-on-primary) !important; }
+    .hover\:text-primary:hover,
+    .hover\:text-primary:hover *    { color: var(--color-primary) !important; }
 
     /* Material icon inside nav / buttons inherits parent color */
     .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
@@ -333,11 +341,11 @@
     }
     footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer div.font-bold {
         color: var(--color-on-primary) !important;
-        font-family: 'Syne', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     footer p, footer span, footer li, footer a, footer div, footer label {
         color: rgba(255, 255, 255, 0.85) !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     footer h5, footer [class*="text-label"] {
         color: rgba(255, 255, 255, 0.55) !important;
@@ -431,17 +439,28 @@
     transform: translateX(4px);
 }
 
-.stagger-fade > * {
+.stagger-fade {
     opacity: 0;
-    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    animation-delay: calc(var(--i, 0) * 60ms);
+    transform: translateY(12px);
 }
+.stagger-fade.in-view {
+    animation: fadeUp 500ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.stagger-fade:nth-child(1) { animation-delay: 0ms; }
+.stagger-fade:nth-child(2) { animation-delay: 60ms; }
+.stagger-fade:nth-child(3) { animation-delay: 120ms; }
+.stagger-fade:nth-child(4) { animation-delay: 180ms; }
+.stagger-fade:nth-child(5) { animation-delay: 240ms; }
+.stagger-fade:nth-child(6) { animation-delay: 300ms; }
+.stagger-fade:nth-child(7) { animation-delay: 360ms; }
+.stagger-fade:nth-child(8) { animation-delay: 420ms; }
+.stagger-fade:nth-child(9) { animation-delay: 480ms; }
 
 .reveal {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(16px);
+    transition: opacity 700ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 700ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .reveal.in-view {
     opacity: 1;
@@ -469,425 +488,96 @@ div.card-hover:hover, .card-hover:hover {
         transform: none !important;
     }
 }
+
+    /* --- Correcciones de cascada (ver global.css) ---------------------------
+       Los overrides con !important de más arriba ganarían también en :hover y
+       dejarían ilegible el texto de los botones outline. Además, el selector
+       [class*="bg-primary-fixed"] coincide por subcadena con la utilidad
+       hover:bg-primary-fixed y pintaría el fondo de forma permanente. */
+    .hover\:text-on-primary:hover,
+    .hover\:text-on-primary:hover * { color: var(--color-on-primary) !important; }
+    .hover\:text-primary:hover,
+    .hover\:text-primary:hover *    { color: var(--color-primary) !important; }
+
+    /* --- Submenú de servicios en la cabecera --- */
+    .nav-dropdown-panel {
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%, 4px);
+        transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 200ms cubic-bezier(0.23, 1, 0.32, 1),
+                    visibility 0s linear 200ms;
+    }
+    .nav-dropdown:hover .nav-dropdown-panel,
+    .nav-dropdown:focus-within .nav-dropdown-panel {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+        transition-delay: 0s;
+    }
+    .nav-dropdown:hover .nav-dropdown-chevron,
+    .nav-dropdown:focus-within .nav-dropdown-chevron { transform: rotate(180deg); }
+    .nav-dropdown-item {
+        background-color: transparent;
+        color: var(--color-on-surface-variant) !important;
+    }
+    .nav-dropdown-item:hover {
+        background-color: var(--color-primary-fixed);
+        color: var(--color-primary) !important;
+    }
+
+    .btn-whatsapp {
+        background-color: #ffffff;
+        color: var(--color-primary) !important;
+    }
+    .btn-whatsapp:hover { background-color: var(--color-primary-fixed); }
+    .btn-whatsapp * { color: var(--color-primary) !important; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .nav-dropdown-panel { transition: none; }
+    }
 </style>
 <body class="overflow-x-hidden">
-
-<!-- Hero Section -->
-<header class="bg-primary-container top-0 sticky z-50 transition-all duration-300">
-<nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
-<div class="font-headline-md text-headline-md font-bold" style="color:var(--color-on-surface)">Plantilla 1.</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-body-md text-body-md font-medium transition-colors" href="../index.html">Inicio</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="../nosotros.html">Nosotros</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="../index.html#servicios">Servicios</a>
-<a class="font-body-md text-body-md font-medium transition-colors" href="../contacto.html">Contacto</a>
-</div>
-<div class="flex items-center gap-3">
-<a href="../contacto.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl hover:bg-secondary transition-colors press-effect btn-magnetic">
-  <span class="icon-wrap">Contáctanos</span>
-</a>
-<button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button>
-</div>
-</nav>
-</header>
-<!-- Hero Section -->
-<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary-container overflow-hidden">
-<div class="max-w-container-max mx-auto px-gutter relative z-10 text-center">
-<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6">
-                DISEÑO GRÁFICO
-            </h1>
-<p class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-primary-container/90 mb-12">
-                Damos vida a tus ideas con diseños visuales impactantes, desde branding y logotipos hasta material gráfico completo para tu marca.
-            </p>
-<div class="relative w-full max-w-4xl mx-auto mt-12 transform hover:scale-[1.02] transition-transform duration-700">
-<img alt="Diseño Gráfico" class="w-full rounded-2xl shadow-2xl border border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv"/>
-</div>
-</div>
-<!-- Background accents -->
-<div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20">
-<div class="absolute top-20 left-10 w-64 h-64 bg-primary-fixed rounded-full blur-[100px]"></div>
-<div class="absolute bottom-10 right-10 w-96 h-96 bg-on-primary-container rounded-full blur-[120px]"></div>
-</div>
-</section>
-
-<!-- Benefits Bar -->
-<section class="bg-white py-16">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Benefit 1 -->
-<div class="flex flex-col items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">palette</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Identidad Visual</h3>
-<p class="font-body-md text-body-md text-secondary">Creamos conceptos que te diferencian y aportan valor real a tu marca para que sea inolvidable.</p>
-</div>
-<!-- Benefit 2 -->
-<div class="flex flex-col items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">edit_square</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Diseño Versátil</h3>
-<p class="font-body-md text-body-md text-secondary">Adaptamos tu imagen para formatos digitales y físicos, garantizando la consistencia visual.</p>
-</div>
-<!-- Benefit 3 -->
-<div class="flex flex-col items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-3xl">visibility</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Impacto Visual</h3>
-<p class="font-body-md text-body-md text-secondary">Composiciones estratégicas para comunicar el mensaje correcto y persuadir a tu audiencia.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Service -->
-<section class="bg-surface-container-low py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div class="order-2 md:order-1">
-<div class="bg-white p-12 rounded-xl shadow-sm border border-outline-variant flex flex-col gap-6">
-<h2 class="font-headline-lg text-headline-lg text-primary">Diseño de Marca</h2>
-<div class="text-4xl font-bold text-on-surface">$6,662 <span class="text-sm font-normal text-secondary">MXN</span></div>
-<p class="font-body-md text-body-md text-secondary">Más allá de un logotipo, creamos una identidad que conecte y se destaque en el mercado. Desarrollamos manuales de identidad visual que garantizarán el uso adecuado en el futuro.</p>
-<a href="../producto.html?service=diseno-grafico&plan=branding-completo" class="w-full bg-primary text-white py-4 rounded-lg font-bold hover:bg-on-primary-fixed-variant transition-colors tracking-widest text-center block">CONTRATAR</a>
-</div>
-</div>
-<div class="order-1 md:order-2 flex justify-center">
-<div class="relative w-80 h-80 md:w-full md:max-w-md aspect-square rounded-full border-[12px] border-primary-fixed p-4 overflow-visible">
-<img alt="" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ZIa7ozAxTtuyMwcwTTwnjdSZN35MKkeOUjXrrPQ6meEWgyXEqAZOlArZItSu8Fkbefbj3lqFhslzQFzhOJMzxD-RTJT0NCm7JsJsv165BhaaIO22bU2TrlNfCRKD8mpWl0iyLADgvEI0VegTuSuGl9bL6owNPy9FlpmfEJUpKBXoy9ev456k2s-pMtJ5lFeIqAWHk_anF4x7boy5UMh_ObrA-lJHDjNF1lQ6czT3fzIoenaOG-7ZmcumPVihj6n5lsCEr8QOGDx9"/>
-<!-- Floating visual elements simulated with div decorations -->
-<div class="absolute -top-4 -right-4 bg-white p-3 rounded-full shadow-md text-primary">
-<span class="material-symbols-outlined">auto_fix_high</span>
-</div>
-<div class="absolute top-1/2 -left-8 bg-white p-3 rounded-full shadow-md text-primary">
-<span class="material-symbols-outlined">brush</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Our Plans -->
-<section class="bg-white py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestros Planes</h2>
-<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="p-8 border border-outline-variant rounded-xl flex flex-col hover:border-primary transition-colors">
-<div class="mb-6 text-primary">
-<span class="material-symbols-outlined text-4xl" data-weight="fill">star</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-2">Naming</h3>
-<div class="text-3xl font-bold text-on-surface mb-6">$1,820 <span class="text-sm font-normal text-secondary">MXN</span></div>
-<ul class="flex flex-col gap-4 mb-8 flex-grow">
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Búsqueda de naming
-                        </li>
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Evaluación de fonética
-                        </li>
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Revisión de disponibilidad de registro
-                        </li>
-</ul>
-<a href="../producto.html?service=diseno-grafico&plan=logotipo-basico" class="w-full border-2 border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all text-center block">CONTRATAR</a>
-</div>
-<!-- Card 2 (Featured) -->
-<div class="p-8 border-[3px] border-primary rounded-xl flex flex-col relative bg-surface-container-low shadow-xl scale-105">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Recomendado</div>
-<div class="mb-6 text-primary">
-<span class="material-symbols-outlined text-4xl" data-weight="fill">menu_book</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-2">Menú Digital Pyme</h3>
-<div class="text-3xl font-bold text-on-surface mb-6">$3,250 <span class="text-sm font-normal text-secondary">MXN</span></div>
-<ul class="flex flex-col gap-4 mb-8 flex-grow">
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Diseño de menú digital
-                        </li>
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Diseño gráfico general
-                        </li>
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Código QR personalizado
-                        </li>
-</ul>
-<a href="../producto.html?service=diseno-grafico&plan=manual-identidad" class="w-full bg-primary text-white py-4 rounded-lg font-bold hover:bg-on-primary-fixed-variant transition-colors shadow-lg shadow-primary/20 text-center block">CONTRATAR</a>
-</div>
-<!-- Card 3 -->
-<div class="p-8 border border-outline-variant rounded-xl flex flex-col hover:border-primary transition-colors">
-<div class="mb-6 text-primary">
-<span class="material-symbols-outlined text-4xl" data-weight="fill">storefront</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-2">Menú Digital Empresarial</h3>
-<div class="text-3xl font-bold text-on-surface mb-6">$3,900 <span class="text-sm font-normal text-secondary">MXN</span></div>
-<ul class="flex flex-col gap-4 mb-8 flex-grow">
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Diseño fotográfico
-                        </li>
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Diseño gráfico general
-                        </li>
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Código QR personalizado
-                        </li>
-<li class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
-                            Menú físico para restaurantes
-                        </li>
-</ul>
-<a href="../producto.html?service=diseno-grafico&plan=kit-social-media" class="w-full border-2 border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all text-center block">CONTRATAR</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Other Services Tables -->
-<section class="bg-white py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="mb-12">
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Otros Servicios de Diseño Gráfico</h2>
-<p class="font-body-lg text-body-lg text-secondary">Si buscas algo en específico, revisa nuestra lista de servicios individuales.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-<div class="overflow-hidden rounded-lg border border-outline-variant">
-<table class="w-full text-left">
-<thead class="bg-surface-container text-on-surface font-bold">
-<tr>
-<th class="px-6 py-4 font-headline-md text-body-md">Servicio</th>
-<th class="px-6 py-4 font-headline-md text-body-md text-right">Inversión</th>
-</tr>
-</thead>
-<tbody class="divide-y divide-outline-variant">
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Diseño Logotipo</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$1,500 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Vectorización</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$1,000 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Cartel</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$800 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Tríptico / Folleto</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$1,200 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Banner Web</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$500 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Página de Aterrizaje</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$4,000 MXN</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="overflow-hidden rounded-lg border border-outline-variant">
-<table class="w-full text-left">
-<thead class="bg-surface-container text-on-surface font-bold">
-<tr>
-<th class="px-6 py-4 font-headline-md text-body-md">Servicio</th>
-<th class="px-6 py-4 font-headline-md text-body-md text-right">Inversión</th>
-</tr>
-</thead>
-<tbody class="divide-y divide-outline-variant">
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Diseño de empaque</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$2,500 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Tarjeta de presentación</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$400 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Catálogo digital</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$3,500 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Presentación Corporativa</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$2,000 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Firma de Correo</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$300 MXN</td>
-</tr>
-<tr class="hover:bg-primary-fixed/30 transition-colors">
-<td class="px-6 py-4 text-secondary font-body-md">Edición de video corta</td>
-<td class="px-6 py-4 text-on-surface font-bold text-right">$1,500 MXN</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</section>
-<!-- Portfolio -->
-<section class="bg-surface-container-low py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestro Trabajo</h2>
-<p class="font-body-lg text-body-lg text-secondary">Algunos de nuestros proyectos recientes.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Portfolio 1 -->
-<div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all">
-<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-300 z-10 flex flex-col justify-end p-6">
-<h4 class="text-white font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Identidad Visual 3D y Minimalista</h4>
-<p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Functor Studio</p>
-</div>
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant">image</span>
-</div>
-</div>
-<!-- Portfolio 2 -->
-<div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all">
-<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-300 z-10 flex flex-col justify-end p-6">
-<h4 class="text-white font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Branding Corporativo y Ciberseguridad</h4>
-<p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Trezentos</p>
-</div>
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant">image</span>
-</div>
-</div>
-<!-- Portfolio 3 -->
-<div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all">
-<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-300 z-10 flex flex-col justify-end p-6">
-<h4 class="text-white font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Logotipo Estética</h4>
-<p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Beviederm</p>
-</div>
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant">image</span>
-</div>
-</div>
-<!-- Portfolio 4 -->
-<div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all">
-<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-300 z-10 flex flex-col justify-end p-6">
-<h4 class="text-white font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Diseño de Menú Digital</h4>
-<p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Alta Pinta</p>
-</div>
-<div class="w-full h-full bg-surface-container-highest flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-outline-variant">image</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-
-    <!-- Col 1: Brand -->
-    <div class="space-y-6">
-      <div class="font-headline-md text-headline-md font-bold" style="color:var(--color-on-primary)">Plantilla 1.</div>
-      <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);">
-        Soluciones digitales premium para impulsar el crecimiento de tu empresa.
-      </p>
-      <div class="flex gap-3">
-        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-          <span class="material-symbols-outlined text-[20px]" style="color:var(--color-on-primary);">share</span>
-        </button>
-        <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-          <span class="material-symbols-outlined text-[20px]" style="color:var(--color-on-primary);">public</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Col 2: Contact -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Información de Contacto</h5>
-      <ul class="space-y-4 font-body-md text-body-md" style="color:rgba(255,255,255,0.80);">
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">call</span>
-          +34 639 494 000
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">mail</span>
-          contacto@plantilla1.com
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">location_on</span>
-          Madrid, España
-        </li>
-      </ul>
-    </div>
-
-    <!-- Col 3: Nav links -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5>
-      <ul class="space-y-3 font-body-md text-body-md">
-        <li><a href="../index.html"    style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li>
-        <li><a href="../nosotros.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li>
-        <li><a href="../index.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li>
-        <li><a href="../contacto.html"  style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li>
-      </ul>
-    </div>
-
-    <!-- Col 4: Quick links -->
-    <div class="space-y-6">
-      <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Enlaces Rápidos</h5>
-      <ul class="space-y-3 font-body-md text-body-md">
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Blog</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">FAQ</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Privacidad</a></li>
-        <li><a href="#" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Términos</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Bottom bar -->
-  <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top:1px solid rgba(255,255,255,0.12);">
-    <p class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);">© 2026 Plantilla 1 | Todos los derechos reservados.</p>
-    <div class="flex gap-6">
-      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Términos</a>
-      <a href="#" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Soporte</a>
-    </div>
-  </div>
-
-</div>
-</footer>
+<header class="bg-surface border-b border-outline top-0 sticky z-50 transition-all duration-300"> <nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20"> <a href="../index.html" class="font-headline-md text-headline-md font-bold flex items-center gap-2 shrink-0" style="color:var(--color-on-surface)" aria-label="MK Media Digital"> <img src="../logos/logo-color.png" alt="MK Media Digital" class="h-12 md:h-14 w-auto" width="393" height="300"> </a> <div class="hidden md:flex items-center gap-8"> <a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="../index.html">Inicio</a><a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="../nosotros.html">Nosotros</a><div class="relative nav-dropdown"> <a href="../index.html#servicios" class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary inline-flex items-center gap-1" aria-haspopup="true" aria-expanded="false"> Servicios <span class="material-symbols-outlined text-[18px] transition-transform duration-200 nav-dropdown-chevron">expand_more</span> </a> <div class="nav-dropdown-panel absolute left-1/2 -translate-x-1/2 top-full pt-4"> <div class="bg-surface border border-outline rounded-2xl shadow-xl p-2 grid grid-cols-2 gap-x-1 w-[36rem]"> <a href="../servicios/redes-sociales.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Administración de redes sociales</a><a href="../servicios/creacion-contenido.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Creación de contenido individuales</a><a href="../servicios/creadores-ugc.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Creadores UGC</a><a href="../producto.html?service=master-plan&#38;plan=master-plan" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Master Plan</a><a href="../servicios/diseno-grafico.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Diseño gráfico</a><a href="../servicios/desarrollo-web.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Desarrollo web</a><a href="../servicios/videomarketing.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Video Marketing</a><a href="../servicios/campanas-publicitarias.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Campañas Google Ads y Social Media</a><a href="../servicios/agentes-ia.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Agentes IA 24/7</a><a href="../servicios/embudos-venta.html" class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors">Embudos de ventas con filtro API de Facebook</a> </div> </div> </div><a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href="../contacto.html">Contacto</a> </div> <div class="flex items-center gap-3"> <a href="../contacto.html" class="hidden md:inline-flex bg-primary text-white font-label-sm text-label-sm px-5 py-2.5 rounded-xl btn-magnetic shadow-md shadow-primary/20"> <span class="icon-wrap">Contáctanos</span> </a> <button class="md:hidden text-on-surface"><span class="material-symbols-outlined">menu</span></button> </div> </nav> </header>  <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary overflow-hidden"> <div class="max-w-container-max mx-auto px-gutter relative z-10 text-center reveal in-view"> <h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6">
+DISEÑO GRÁFICO
+</h1> <p class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-primary/90 mb-12">
+Damos vida a tus ideas con diseños visuales impactantes, desde branding y logotipos hasta material gráfico completo para tu marca.
+</p> <div class="relative w-full max-w-4xl mx-auto mt-12 transform hover:scale-[1.02] transition-transform duration-700"> <img alt="Diseño Gráfico" class="w-full rounded-2xl shadow-2xl border border-white/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLnSXflK2O240IsFhJYQzcgOWK_Zwx4hZdbZ4Q_xkoT3BYT3K73sSBWEMvrj6lXjuZhiOpT_3Nh4ZawOCQeJzkmwo8WB9eMbdyDwXrgv63JLYwkx-dCv9Z6dSuu3O1zTUUZPKGxJEoleqwktDtqUUV9UQMTQSQr-G2QTALFux1cKHWik2cPYhadu13u2beZ0gUp5p7EvRqLAJN20nkRqTJoaV1F_p-sZLi8ntAz-zMUEMk0BZCeGOsLTLF_NH3Pr-JOqp3UvaETxWv"> </div> </div> <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20"> <div class="absolute top-20 left-10 w-64 h-64 bg-white rounded-full blur-[100px]"></div> <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-[120px]"></div> </div> </section> <section class="bg-white py-16"> <div class="max-w-container-max mx-auto px-gutter"> <div class="grid grid-cols-1 md:grid-cols-3 gap-12"> <div class="flex flex-col items-start gap-4 stagger-fade"> <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary press-effect"> <span class="material-symbols-outlined text-3xl">palette</span> </div> <h3 class="font-headline-md text-headline-md text-on-surface">Identidad Visual</h3> <p class="font-body-md text-body-md text-secondary">Creamos conceptos que te diferencian y aportan valor real a tu marca para que sea inolvidable.</p> </div> <div class="flex flex-col items-start gap-4 stagger-fade"> <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary press-effect"> <span class="material-symbols-outlined text-3xl">edit_square</span> </div> <h3 class="font-headline-md text-headline-md text-on-surface">Diseño Versátil</h3> <p class="font-body-md text-body-md text-secondary">Adaptamos tu imagen para formatos digitales y físicos, garantizando la consistencia visual.</p> </div> <div class="flex flex-col items-start gap-4 stagger-fade"> <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary press-effect"> <span class="material-symbols-outlined text-3xl">visibility</span> </div> <h3 class="font-headline-md text-headline-md text-on-surface">Impacto Visual</h3> <p class="font-body-md text-body-md text-secondary">Composiciones estratégicas para comunicar el mensaje correcto y persuadir a tu audiencia.</p> </div> </div> </div> </section> <section class="bg-surface-container-low py-section-padding-desktop"> <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center"> <div class="order-2 md:order-1 reveal"> <div class="bg-white p-12 rounded-xl shadow-sm border border-outline-variant flex flex-col gap-6"> <h2 class="font-headline-lg text-headline-lg text-primary">Brand Design</h2> <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Etapa 1: 5 a 7 días · Etapa 2: 3 días</p> <p class="font-body-md text-body-md text-on-surface-variant">Más allá de un logotipo, creamos una identidad que conecte y se destaque en el mercado. Recibes el manual de identidad corporativa, el logotipo en formato editable, JPG y PNG, y las tipografías de tu marca.</p> <a href="../producto.html?service=diseno-grafico&plan=brand-design" class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold btn-magnetic press-effect shadow-md shadow-primary/20 tracking-widest text-center block"><span class="icon-wrap">COTIZAR</span></a> </div> </div> <div class="order-1 md:order-2 flex justify-center reveal"> <div class="relative w-80 h-80 md:w-full md:max-w-md aspect-square rounded-full border-[12px] border-primary-fixed p-4 overflow-visible"> <img alt="" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ZIa7ozAxTtuyMwcwTTwnjdSZN35MKkeOUjXrrPQ6meEWgyXEqAZOlArZItSu8Fkbefbj3lqFhslzQFzhOJMzxD-RTJT0NCm7JsJsv165BhaaIO22bU2TrlNfCRKD8mpWl0iyLADgvEI0VegTuSuGl9bL6owNPy9FlpmfEJUpKBXoy9ev456k2s-pMtJ5lFeIqAWHk_anF4x7boy5UMh_ObrA-lJHDjNF1lQ6czT3fzIoenaOG-7ZmcumPVihj6n5lsCEr8QOGDx9"> <div class="absolute -top-4 -right-4 bg-white p-3 rounded-full shadow-md text-primary press-effect"> <span class="material-symbols-outlined">auto_fix_high</span> </div> <div class="absolute top-1/2 -left-8 bg-white p-3 rounded-full shadow-md text-primary press-effect"> <span class="material-symbols-outlined">brush</span> </div> </div> </div> </div> </section> <section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop"> <div class="max-w-container-max mx-auto px-gutter"> <div class="text-center mb-16 reveal"> <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Nuestros servicios de diseño</h2>  <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div> </div> <div class="grid gap-8 items-stretch grid-cols-1 md:grid-cols-2 lg:grid-cols-3"> <div class="bg-surface-container-lowest p-8 rounded-3xl flex flex-col card-hover stagger-fade shadow-xl ring-4 ring-primary relative z-10"> <h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-3">Identidad de marca</h4> <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Brand Design</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-6">Diseñamos lo inimaginable: tres propuestas de logotipo y todo el material de apoyo de tu marca.</p> <ul class="space-y-3 mb-8 flex-grow"> <li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Llenado de brief para el equipo de diseño</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Etapa 1: desarrollo de 3 propuestas de logotipo en presentación PDF</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>1 ronda de cambios sobre una de las propuestas presentadas</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Etapa 2: manual de identidad corporativa, logotipo editable, JPG, PNG y tipografías</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Entrega: etapa 1 de 5 a 7 días, etapa 2 de 3 días hábiles</span> </li> </ul> <a href="../producto.html?service=diseno-grafico&#38;plan=brand-design" class="w-full py-4 font-bold rounded-xl uppercase tracking-wider text-sm text-center block press-effect transition-colors bg-primary text-on-primary hover:brightness-110 shadow-lg shadow-primary/20 btn-magnetic"> <span class="icon-wrap">Cotizar</span> </a> </div><div class="bg-surface-container-lowest p-8 rounded-3xl flex flex-col card-hover stagger-fade shadow-lg"> <h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-3">Naming</h4> <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Naming</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-6">Búsqueda estratégica del nombre adecuado para tu marca.</p> <ul class="space-y-3 mb-8 flex-grow"> <li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Propuesta de naming para tu marca</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Tiempo de entrega: 5 días hábiles</span> </li> </ul> <a href="../producto.html?service=diseno-grafico&#38;plan=naming" class="w-full py-4 font-bold rounded-xl uppercase tracking-wider text-sm text-center block press-effect transition-colors border-2 border-primary text-primary hover:bg-primary hover:text-on-primary"> <span class="icon-wrap">Cotizar</span> </a> </div><div class="bg-surface-container-lowest p-8 rounded-3xl flex flex-col card-hover stagger-fade shadow-lg"> <h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-3">Menú digital</h4> <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Menú digital Pyme</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-6">Carta digital interactiva y profesional para tu negocio.</p> <ul class="space-y-3 mb-8 flex-grow"> <li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Diseño de menú digital</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Diseño gráfico general</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Tiempo de entrega: 7 días hábiles</span> </li> </ul> <a href="../producto.html?service=diseno-grafico&#38;plan=menu-digital-pyme" class="w-full py-4 font-bold rounded-xl uppercase tracking-wider text-sm text-center block press-effect transition-colors border-2 border-primary text-primary hover:bg-primary hover:text-on-primary"> <span class="icon-wrap">Cotizar</span> </a> </div><div class="bg-surface-container-lowest p-8 rounded-3xl flex flex-col card-hover stagger-fade shadow-lg"> <h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-3">Empresarial</h4> <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Menú digital empresarial</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-6">Carta digital avanzada para negocios con una oferta amplia.</p> <ul class="space-y-3 mb-8 flex-grow"> <li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Diseño de menú digital empresarial</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Diseño gráfico general</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Tiempo de entrega: 7 días hábiles</span> </li> </ul> <a href="../producto.html?service=diseno-grafico&#38;plan=menu-digital-empresarial" class="w-full py-4 font-bold rounded-xl uppercase tracking-wider text-sm text-center block press-effect transition-colors border-2 border-primary text-primary hover:bg-primary hover:text-on-primary"> <span class="icon-wrap">Cotizar</span> </a> </div><div class="bg-surface-container-lowest p-8 rounded-3xl flex flex-col card-hover stagger-fade shadow-lg"> <h4 class="font-label-sm text-label-sm text-primary tracking-widest uppercase mb-3">Piezas individuales</h4> <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Otros servicios de diseño gráfico</h3> <p class="text-on-surface-variant font-body-md text-body-md mb-6">Piezas gráficas individuales para complementar la comunicación de tu marca.</p> <ul class="space-y-3 mb-8 flex-grow"> <li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Diseño de flyer, cartel y tríptico frente y vuelta</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Tarjeta de presentación, infografía y página de catálogo</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Display publicitario, post individual y cover, header o foto de portada</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Lona 1m x 1m, rótulos y 5 stickers básicos</span> </li><li class="flex items-start gap-3 text-on-surface-variant font-body-md text-body-md"> <span class="material-symbols-outlined text-primary text-base mt-1 shrink-0" style="font-variation-settings:'FILL' 1;">check_circle</span> <span>Ilustración básica y packaging básico (tiempo según dificultad)</span> </li> </ul> <a href="../producto.html?service=diseno-grafico&#38;plan=otros-servicios" class="w-full py-4 font-bold rounded-xl uppercase tracking-wider text-sm text-center block press-effect transition-colors border-2 border-primary text-primary hover:bg-primary hover:text-on-primary"> <span class="icon-wrap">Cotizar</span> </a> </div> </div> <p class="text-center text-on-surface-variant font-body-md text-body-md mt-12">
+Los precios se cotizan según el alcance de tu proyecto.
+<a href="../contacto.html" class="text-primary font-semibold hover:underline">Solicita tu cotización sin compromiso.</a> </p> </div> </section> <section class="bg-white py-section-padding-desktop"> <div class="max-w-container-max mx-auto px-gutter"> <div class="mb-12 reveal"> <h2 class="font-headline-lg text-headline-lg text-on-surface">Otros servicios de diseño gráfico</h2> <p class="font-body-lg text-body-lg text-on-surface-variant">Si buscas algo en específico, revisa nuestra lista de servicios individuales y sus tiempos de entrega.</p> </div> <div class="grid grid-cols-1 lg:grid-cols-2 gap-12"> <div class="overflow-x-auto rounded-lg border border-outline-variant reveal"> <table class="w-full text-left"> <thead class="bg-surface-container text-on-surface font-bold"> <tr> <th class="px-6 py-4 font-headline-md text-body-md">Servicio</th> <th class="px-6 py-4 font-headline-md text-body-md text-right">Tiempos de entrega</th> </tr> </thead> <tbody class="divide-y divide-outline-variant"> <tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Brand Design</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">Etapa 1: 5 a 7 días · Etapa 2: 3 días</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Diseño de flyer</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">4 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Tarjeta de presentación</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">4 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Cartel</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">4 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Tríptico frente y vuelta</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">5 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Infografía</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">3 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Página de catálogo</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">4 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Display publicitario</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">4 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Post individual</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">3 días hábiles</td> </tr> </tbody> </table> </div><div class="overflow-x-auto rounded-lg border border-outline-variant reveal"> <table class="w-full text-left"> <thead class="bg-surface-container text-on-surface font-bold"> <tr> <th class="px-6 py-4 font-headline-md text-body-md">Servicio</th> <th class="px-6 py-4 font-headline-md text-body-md text-right">Tiempos de entrega</th> </tr> </thead> <tbody class="divide-y divide-outline-variant"> <tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Cover, header, foto de portada, etc.</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">2 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Lona 1m x 1m</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">4 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Ilustración básica</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">Depende dificultad</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">5 stickers básicos</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">4 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Naming</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">5 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Menú digital Pyme</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">7 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Menú digital empresarial</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">7 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Rótulos</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">7 días hábiles</td> </tr><tr class="hover:bg-primary-fixed/30 transition-colors"> <td class="px-6 py-4 text-on-surface font-body-md">Packaging (básico)</td> <td class="px-6 py-4 text-on-surface-variant font-body-md text-right whitespace-nowrap">Depende dificultad</td> </tr> </tbody> </table> </div> </div> <p class="text-center text-on-surface-variant font-body-md text-body-md mt-12">
+Los precios se cotizan según el alcance de tu proyecto.
+<a href="../contacto.html" class="text-primary font-semibold hover:underline">Solicita tu cotización sin compromiso.</a> </p> </div> </section> <div class="max-w-container-max mx-auto px-gutter"> <div class="text-center mb-16 reveal"> <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestro Trabajo</h2> <p class="font-body-lg text-body-lg text-secondary">Algunos de nuestros proyectos recientes.</p> </div> <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"> <div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all card-hover stagger-fade"> <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-300 z-10 flex flex-col justify-end p-6"> <h4 class="text-white font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Identidad Visual 3D y Minimalista</h4> <p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Functor Studio</p> </div> <div class="w-full h-full bg-surface-container-highest flex items-center justify-center"> <span class="material-symbols-outlined text-6xl text-outline-variant">image</span> </div> </div> <div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all card-hover stagger-fade"> <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-300 z-10 flex flex-col justify-end p-6"> <h4 class="text-white font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Branding Corporativo y Ciberseguridad</h4> <p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Trezentos</p> </div> <div class="w-full h-full bg-surface-container-highest flex items-center justify-center"> <span class="material-symbols-outlined text-6xl text-outline-variant">image</span> </div> </div> <div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all card-hover stagger-fade"> <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-300 z-10 flex flex-col justify-end p-6"> <h4 class="text-white font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Logotipo Estética</h4> <p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Beviederm</p> </div> <div class="w-full h-full bg-surface-container-highest flex items-center justify-center"> <span class="material-symbols-outlined text-6xl text-outline-variant">image</span> </div> </div> <div class="group relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all card-hover stagger-fade"> <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-300 z-10 flex flex-col justify-end p-6"> <h4 class="text-white font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">Diseño de Menú Digital</h4> <p class="text-white/80 text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">Alta Pinta</p> </div> <div class="w-full h-full bg-surface-container-highest flex items-center justify-center"> <span class="material-symbols-outlined text-6xl text-outline-variant">image</span> </div> </div> </div> </div>  <footer class="bg-on-primary-fixed px-gutter py-section-padding-mobile md:py-section-padding-desktop"> <div class="max-w-container-max mx-auto"> <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16"> <div class="space-y-6"> <img src="../logos/logo-blanco.png" alt="MK Media Digital" class="h-16 w-auto" width="393" height="300"> <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);"> Impulsamos tu crecimiento. Agencia de marketing digital especializada en estrategias personalizadas para marcas que buscan crecer en línea y presencialmente. </p> <div class="flex gap-3"> <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);"> <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">share</span> </button> <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);"> <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">public</span> </button> </div> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Información de Contacto</h5> <ul class="space-y-4 font-body-md text-body-md" style="color:rgba(255,255,255,0.80);"> <li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">call</span> +52 662 715 6286 </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">mail</span> mkmediadigitalon@gmail.com </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">location_on</span> Cerrada de Neptuno 1-A, Col. San Simón Tolnahuac, Alcaldía Cuauhtémoc, CDMX, C.P. 06920 </li><li class="flex items-center gap-3"> <span class="material-symbols-outlined text-[18px]" style="color:rgba(255,255,255,0.55);">schedule</span> Lunes a viernes de 9:00 am a 5:00 pm </li> </ul> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Páginas</h5> <ul class="space-y-3 font-body-md text-body-md"> <li><a href="../index.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Inicio</a></li><li><a href="../nosotros.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Nosotros</a></li><li><a href="../index.html#servicios" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Servicios</a></li><li><a href="../contacto.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Contacto</a></li> </ul> </div> <div class="space-y-6"> <h5 class="font-label-sm text-label-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.50);">Enlaces Rápidos</h5> <ul class="space-y-3 font-body-md text-body-md"> <li><a href="../servicios/redes-sociales.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Administración de redes sociales</a></li><li><a href="../servicios/desarrollo-web.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Desarrollo web</a></li><li><a href="../servicios/agentes-ia.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Agentes IA 24/7</a></li><li><a href="../servicios/diseno-grafico.html" style="color:rgba(255,255,255,0.80);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.80)'">Diseño gráfico</a></li> </ul> </div> </div> <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style="border-top:1px solid rgba(255,255,255,0.12);"> <p class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);">© 2026 MK Media Digital | Todos los derechos reservados.</p> <div class="flex gap-6"> <a href="../contacto.html" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Contacto</a><a href="../index.html#servicios" class="font-label-sm text-label-sm" style="color:rgba(255,255,255,0.45);" onmouseover="this.style.color='var(--color-inverse-primary)'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Servicios</a> </div> </div> </div> </footer>
 <script>
-        // Micro-interactions
-        document.querySelectorAll('button, a').forEach(elem => {
-            elem.addEventListener('mouseenter', () => {
-                elem.style.transform = 'translateY(-2px)';
+    // Cabecera al hacer scroll
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const header = document.querySelector('header');
+                const scrolled = window.scrollY > 20;
+                header.classList.toggle('shadow-lg', scrolled);
+                header.classList.toggle('bg-surface/95', scrolled);
+                header.classList.toggle('backdrop-blur-sm', scrolled);
+                header.style.height = scrolled ? '4rem' : '5rem';
+                ticking = false;
             });
-            elem.addEventListener('mouseleave', () => {
-                elem.style.transform = 'translateY(0)';
-            });
-        });
+            ticking = true;
+        }
+    });
 
-        // Sticky Navbar subtle shadow on scroll
-        let ticking = false;
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                window.requestAnimationFrame(() => {
-                    const nav = document.querySelector('nav');
-                    if (window.scrollY > 50) {
-                        nav.classList.add('shadow-md', 'bg-white/95', 'backdrop-blur-sm');
-                        nav.classList.remove('bg-surface');
-                    } else {
-                        nav.classList.remove('shadow-md', 'bg-white/95', 'backdrop-blur-sm');
-                        nav.classList.add('bg-surface');
-                    }
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-    </script>
+    // Animaciones de entrada
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.reveal, .stagger-fade, .img-reveal').forEach(el => observer.observe(el));
+    } else {
+        document.querySelectorAll('.reveal, .stagger-fade, .img-reveal').forEach(el => el.classList.add('in-view'));
+    }
+</script>
 </body></html>

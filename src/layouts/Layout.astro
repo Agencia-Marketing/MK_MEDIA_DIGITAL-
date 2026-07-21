@@ -9,7 +9,10 @@ export interface Props {
 
 const { title, currentPage = 'inicio' } = Astro.props;
 const { brand, ctaLabel, nav, contact, footerTagline, footerPages, footerLinks, footerBottomLinks, copyright } = site;
-const contactIcons: Record<string, string> = { phone: 'call', email: 'mail', location: 'location_on' };
+
+type NavItem = { label: string; href: string; children?: { label: string; href: string }[] };
+const navItems = nav as NavItem[];
+const contactIcons: Record<string, string> = { phone: 'call', email: 'mail', location: 'location_on', hours: 'schedule' };
 
 // --- Tema → variables CSS que consume global.css (única fuente: src/config/theme.mjs) ---
 const hexToRgb = (hex: string) => {
@@ -34,6 +37,9 @@ const cssVars: Record<string, string> = {
   '--color-body-text': colors['body-text'],
   '--color-outline': colors.outline,
   '--color-footer-bg': colors['on-primary-fixed'],
+  '--color-accent': colors.accent,
+  '--color-accent-rgb': hexToRgb(colors.accent),
+  '--color-navy': colors.navy,
   '--font-display': fonts.display,
   '--font-body': fonts.body,
 };
@@ -45,20 +51,47 @@ const rootStyle = ':root{' + Object.entries(cssVars).map(([k, v]) => `${k}:${v}`
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>{title}</title>
+  <link rel="icon" type="image/png" href={logo.icon} />
+  <link rel="apple-touch-icon" href="/logos/icono-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href={fonts.googleHref} rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   <style set:html={rootStyle}></style>
 </head>
 <body class="bg-background text-on-surface font-body-md">
-  <header class="bg-primary-container top-0 sticky z-50 transition-all duration-300">
+  <header class="bg-surface border-b border-outline top-0 sticky z-50 transition-all duration-300">
     <nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
-      <a href="/" class="font-headline-md text-headline-md font-bold flex items-center gap-2" style="color:var(--color-on-surface)">
-        {logo.image && <img src={logo.image} alt={logo.alt} class="h-8 w-auto" />}
-        {brand}
+      <a href="/" class="font-headline-md text-headline-md font-bold flex items-center gap-2 shrink-0" style="color:var(--color-on-surface)" aria-label={brand}>
+        {logo.image
+          ? <img src={logo.image} alt={logo.alt} class="h-12 md:h-14 w-auto" width="393" height="300" />
+          : brand}
       </a>
       <div class="hidden md:flex items-center gap-8">
-        {nav.map(item => (
-          <a class="font-body-md text-body-md font-medium transition-colors duration-200 hover:text-primary" href={item.href}>{item.label}</a>
+        {navItems.map(item => item.children ? (
+          <div class="relative nav-dropdown">
+            <a
+              href={item.href}
+              class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary inline-flex items-center gap-1"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              {item.label}
+              <span class="material-symbols-outlined text-[18px] transition-transform duration-200 nav-dropdown-chevron">expand_more</span>
+            </a>
+            <div class="nav-dropdown-panel absolute left-1/2 -translate-x-1/2 top-full pt-4">
+              <div class="bg-surface border border-outline rounded-2xl shadow-xl p-2 grid grid-cols-2 gap-x-1 w-[36rem]">
+                {item.children.map(child => (
+                  <a
+                    href={child.href}
+                    class="nav-dropdown-item block px-4 py-3 rounded-xl font-body-md text-body-md leading-snug transition-colors"
+                  >{child.label}</a>
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : (
+          <a class="font-body-md text-body-md font-medium text-on-surface transition-colors duration-200 hover:text-primary" href={item.href}>{item.label}</a>
         ))}
       </div>
       <div class="flex items-center gap-3">
@@ -76,7 +109,9 @@ const rootStyle = ':root{' + Object.entries(cssVars).map(([k, v]) => `${k}:${v}`
     <div class="max-w-container-max mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         <div class="space-y-6">
-          <div class="font-headline-md text-headline-md font-bold" style="color:#ffffff;">{brand}</div>
+          {logo.imageLight
+            ? <img src={logo.imageLight} alt={logo.alt} class="h-16 w-auto" width="393" height="300" />
+            : <div class="font-headline-md text-headline-md font-bold" style="color:#ffffff;">{brand}</div>}
           <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);">
             {footerTagline}
           </p>
@@ -141,7 +176,7 @@ const rootStyle = ':root{' + Object.entries(cssVars).map(([k, v]) => `${k}:${v}`
             const header = d.querySelector('header');
             const scrolled = window.scrollY > 20;
             header.classList.toggle('shadow-lg', scrolled);
-            header.classList.toggle('bg-primary-container/95', scrolled);
+            header.classList.toggle('bg-surface/95', scrolled);
             header.classList.toggle('backdrop-blur-sm', scrolled);
             header.classList.toggle('h-16', scrolled);
             header.classList.toggle('h-20', !scrolled);

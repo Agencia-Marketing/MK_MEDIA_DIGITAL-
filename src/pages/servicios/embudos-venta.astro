@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PlanesServicio from '../../components/PlanesServicio.astro';
 ---
-<Layout title="Embudos de Venta | Plantilla 1">
+<Layout title="Embudos de ventas con filtro API de Facebook | MK Media Digital">
 <main>
 <!-- Hero Section -->
 <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary-container overflow-hidden">
@@ -23,55 +24,6 @@ import Layout from '../../layouts/Layout.astro';
 </div>
 </section>
 <!-- Pricing / Features Section -->
-<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<!-- Left: Dashboard Graphic -->
-<div class="order-2 md:order-1">
-<div class="relative rounded-xl overflow-hidden shadow-2xl bg-white p-4">
-<img alt="Captura de pantalla de alta resolución de un panel de control de automatización de ventas con gráficos de flujo visual, métricas de conversión y una interfaz minimalista en tonos púrpura y blanco." class="w-full h-auto rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNoyfJG61Gp3ZV_HnvgRb4iHj4ozYq8xecsV5x9hiwDg7I7SeSdzfrtQ88ly52zYI7pzgWFjZb5yMKJBVlWi2pvoOBUmIkxPzTcgu2wtSP7V5TWf8cUMMIm2yyrl0_UB8vZc_i0v3gt0B9-EbGfDKpd3nShIE9VluZIO_BrnbufSihBfwRwVHt5AObmA2VNpWTkEvljXhvtfJ5BcI9mkcLpwTvQY7f_1nBRW6s4qK3bw2V1snYs8H_2RoUUtodxErC37DeJmEdYoa9"/>
-</div>
-</div>
-<!-- Right: Pricing Card -->
-<div class="order-1 md:order-2">
-<div class="bg-white border-t-8 border-primary rounded-xl shadow-xl p-8 md:p-12 transition-all hover:shadow-2xl">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary text-4xl" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Automatiza tus ventas</h2>
-</div>
-<div class="mb-8">
-<span class="text-4xl font-bold text-on-surface">$3,999</span>
-<span class="text-on-surface-variant font-body-md text-body-md ml-2">USD / Proyecto</span>
-</div>
-<ul class="space-y-4 mb-10">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-left">Diseño de landing page de alta conversión</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-left">Configuración y automatización del embudo en GoHighLevel</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-left">Integración de calendario de citas automático</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-left">Diseño de secuencia de 3 emails (Nurturing)</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface-variant text-left">Integración de formularios y API de conversión</span>
-</li>
-</ul>
-<a href="/producto?service=embudos-venta&plan=automatizacion" class="w-full bg-primary-container text-on-primary font-label-sm text-label-sm py-5 rounded-lg hover:bg-opacity-90 active:scale-95 transition-all tracking-widest btn-magnetic press-effect text-center block">
-                                <span class="icon-wrap">CONTRATAR AHORA</span>
-                            </a>
-</div>
-</div>
-</div>
-</div>
-</section>
+<PlanesServicio service="embudos-venta" heading="Embudos de ventas con filtro API de Facebook" />
 </main>
 </Layout>

@@ -1,34 +1,40 @@
 {
-  "title": "Nosotros | Plantilla 1",
-  "heroHeading": "Impulsamos el crecimiento de tu marca trabajando en equipo.",
-  "heroParagraph": "Nuestro compromiso es ir más allá de tus metas, forjando alianzas duraderas cimentadas en la transparencia y los triunfos mutuos.",
-  "heroCtaPrimary": { "label": "Nuestra Historia", "href": "#esencia" },
+  "title": "Nosotros | MK Media Digital",
+  "heroHeading": "Estrategias personalizadas para marcas que buscan crecer.",
+  "heroParagraph": "Nuestra misión es ayudarte a alcanzar a tu público ideal en el momento oportuno, optimizando presupuestos y generando resultados tangibles.",
+  "heroCtaPrimary": { "label": "Quiénes somos", "href": "#esencia" },
   "heroCtaSecondary": { "label": "Servicios", "href": "/#servicios" },
   "heroImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuCQhPEMMIcG4hW_a1hwRUCZbB6U011aYxBNG6rY_Wlm0kLNNxgNBuaZQK2W43MWAdxsIFeJYhACgabnvUUnSsyWL0-nrqiRYX2Ui3MSA7xgEzpBZHaT4sd-QmisarvyAZlU2UxGFMFBb0PDkw8MM7YodinZHkhpF331gfHKMEFT9A2srJO4QsyiX8AnamTwk_Nosqrz92z1UgUOYnS-ROZWMOxxq6yoWgqVdA6u-bhcgrsZ9lnBT24GjhIJG-iVejSSjbOq7wFHksbI",
-  "heroImageAlt": "Equipo trabajando",
+  "heroImageAlt": "Equipo MK Media Digital",
   "esenciaTag": "Nuestra Esencia",
-  "esenciaHeading": "El motor que impulsa nuestra agencia",
-  "esenciaParagraph": "Vivimos para detonar el máximo rendimiento de tu negocio en internet. No somos solo una agencia, somos tu socio estratégico. Entendemos que cada clic cuenta y cada interacción es una oportunidad para brillar. Nuestra metodología combina datos rigurosos con una creatividad desbordante para asegurar que tu marca no solo sea vista, sino recordada.",
+  "esenciaHeading": "Un aliado estratégico para tu presencia digital",
+  "esenciaParagraph": "MK Media Digital es una agencia de marketing digital especializada en estrategias personalizadas para marcas que buscan crecer en línea y presencialmente. Al integrarnos con Display DMG seguimos siendo un organismo autónomo, pero alineamos nuestros servicios para potenciar la experiencia completa de exposiciones y eventos.",
   "esenciaCtaLabel": "Hablemos de tu proyecto",
-  "esenciaImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDwKFIrrQy6l4HevDOlZIakGLDpej8j1gVs_wOQVLKp8w_lk2pi7YnE68Oq-hxvmfYm28agDkMRbfQJ3Q7jCgPVoIKgUdrtba4HL6PPxLTgvBDCfuLbpunBVDd_c3BvK_Em21m4HiCEjARo-2WSyFqw7IG0v-CpFOhUXlwNVkMgs42cs2w1XnaIs0yQHu_xYsObjOOjyGKoaNORKPRpfZPDwqIU0k8vV6V0yB7wgFNWwk2PiKq8k49uEFvAu7hONvLa6KlVkxayUGHO",
-  "esenciaImageAlt": "Liderazgo creativo",
-  "esenciaBadgeValue": "10+",
-  "esenciaBadgeLabel": "Años transformando marcas digitales",
-  "quienesHeading": "Quiénes Somos",
-  "quienesParagraph": "Nuestra misión es maximizar tu presencia online de forma contundente. Creemos en el poder de las ideas bien ejecutadas y en la tecnología como facilitador del crecimiento humano. Nuestra agencia nació de la necesidad de ofrecer soluciones digitales que realmente muevan la aguja del éxito empresarial, sin complicaciones y con total transparencia.",
-  "stats": [
-    { "value": "500+", "label": "Proyectos" },
-    { "value": "98%", "label": "Retención" },
-    { "value": "24/7", "label": "Soporte" },
-    { "value": "15", "label": "Países" }
+  "esenciaImages": [
+    { "src": "/img/display-dmg-1.jpg", "alt": "Stand de exposición desarrollado junto a Display DMG" },
+    { "src": "/img/display-dmg-2.jpg", "alt": "Stand de exposición desarrollado junto a Display DMG" }
   ],
-  "teamHeading": "Conoce a nuestros expertos",
-  "teamQuote": "El talento gana partidos, pero el trabajo en equipo y la inteligencia ganan campeonatos.",
-  "teamCtaLabel": "Agenda una cita",
-  "team": [
-    { "name": "Alex Rivera", "role": "Director Creativo", "img": "https://i.pravatar.cc/400?img=1" },
-    { "name": "Elena Gómez", "role": "Estratega SEO", "img": "https://i.pravatar.cc/400?img=5" },
-    { "name": "Marc Costa", "role": "Lead Developer", "img": "https://i.pravatar.cc/400?img=8" },
-    { "name": "Sofía Méndez", "role": "Growth Manager", "img": "https://i.pravatar.cc/400?img=11" }
+  "esenciaBadgeValue": "24/7",
+  "esenciaBadgeLabel": "Agentes de IA atendiendo a tus clientes",
+  "quienesHeading": "¿Quiénes Somos?",
+  "quienesParagraph": "Somos una agencia creativa. Nuestro objetivo es permitir que cualquier persona u organización tenga la misma visibilidad digital que las grandes organizaciones, e impulsar su propósito para materializar su presencia digital con nuestro profesionalismo, experiencia y flexibilidad.",
+  "beneficiosHeading": "Beneficios de asociarse con MK Media Digital",
+  "beneficios": [
+    { "icon": "ads_click", "title": "Segmentación precisa y alcance ampliado", "desc": "Gracias al marketing digital es posible dirigirse con precisión al público ideal mediante datos demográficos, intereses y comportamientos en línea. Esto garantiza que el mensaje llegue a las personas adecuadas sin malgastar presupuesto y mejora el retorno de inversión." },
+    { "icon": "savings", "title": "Retorno de inversión (ROI) y rentabilidad", "desc": "Las campañas digitales permiten ajustar el presupuesto a las necesidades y obtener resultados cuantificables. Los anuncios en línea suelen ser más económicos que la publicidad tradicional y ofrecen resultados más precisos." },
+    { "icon": "handshake", "title": "Relaciones sólidas con los clientes", "desc": "Interactuar en redes sociales, crear contenido valioso y utilizar email marketing ayuda a construir relaciones duraderas y fidelizar clientes." },
+    { "icon": "insights", "title": "Resultados medibles y basados en datos", "desc": "El uso de herramientas de analítica permite seguir el rendimiento en tiempo real, identificar lo que funciona y optimizar las estrategias." },
+    { "icon": "auto_awesome", "title": "Experiencias personalizadas", "desc": "El marketing digital facilita ofrecer contenidos y ofertas relevantes a cada segmento, aumentando la tasa de conversión y la satisfacción del cliente." }
+  ],
+  "enfoqueHeading": "Nuestro enfoque",
+  "enfoqueQuote": "Creatividad, tecnología y análisis de datos trabajando juntos por tu marca.",
+  "enfoqueCtaLabel": "Agenda una cita",
+  "enfoque": [
+    { "icon": "diversity_3", "title": "Redes Sociales", "desc": "Estrategia, contenido y comunidad para convertir tus redes en un canal real de ventas y fidelización." },
+    { "icon": "search_insights", "title": "Posicionamiento en buscadores (SEO)", "desc": "Estructura y contenido optimizados para mejorar tu visibilidad en internet de forma sostenida." },
+    { "icon": "ads_click", "title": "Publicidad Digital (Ads)", "desc": "Campañas en Google, Meta y TikTok con segmentación avanzada y monitoreo constante." },
+    { "icon": "mail", "title": "Email Marketing", "desc": "Secuencias de nutrición y comunicación directa que fortalecen la relación con tu audiencia." },
+    { "icon": "monitoring", "title": "Analítica y Optimización", "desc": "Medición del rendimiento en tiempo real para optimizar cada campaña y su retorno de inversión." },
+    { "icon": "movie", "title": "Contenido Creativo y Multimedia", "desc": "Diseño, video y animación que amplifican tu mensaje en cada punto de contacto." }
   ]
 }
