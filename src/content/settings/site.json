@@ -28,6 +28,10 @@
     "location": "Cerrada de Neptuno 1-A, Col. San Simón Tolnahuac, Alcaldía Cuauhtémoc, CDMX, C.P. 06920",
     "hours": "Lunes a viernes de 9:00 am a 5:00 pm"
   },
+  "social": [
+    { "name": "Instagram", "href": "https://www.instagram.com/mkmediadigitalon/" },
+    { "name": "Facebook", "href": "https://www.facebook.com/profile.php?id=61579457630729" }
+  ],
   "footerTagline": "Impulsamos tu crecimiento. Agencia de marketing digital especializada en estrategias personalizadas para marcas que buscan crecer en línea y presencialmente.",
   "footerPages": [
     { "label": "Inicio", "href": "/" },

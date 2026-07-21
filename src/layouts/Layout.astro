@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { colors, fonts, logo } from '../config/theme.mjs';
 import site from '../content/settings/site.json';
+import RedesSociales from '../components/RedesSociales.astro';
 export interface Props {
   title: string;
   currentPage?: 'inicio' | 'nosotros' | 'contacto' | 'servicios';
@@ -115,14 +116,7 @@ const rootStyle = ':root{' + Object.entries(cssVars).map(([k, v]) => `${k}:${v}`
           <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);">
             {footerTagline}
           </p>
-          <div class="flex gap-3">
-            <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-              <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">share</span>
-            </button>
-            <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-              <span class="material-symbols-outlined text-[20px]" style="color:#ffffff;">public</span>
-            </button>
-          </div>
+          <RedesSociales variant="footer" />
         </div>
 
         <div class="space-y-6">

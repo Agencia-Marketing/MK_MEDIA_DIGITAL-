@@ -331,6 +331,26 @@ section.bg-primary .glass-card * {
 .btn-whatsapp:hover { background-color: var(--color-primary-fixed); }
 .btn-whatsapp * { color: var(--color-primary) !important; }
 
+/* --- Redes sociales del footer --- */
+.social-link {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+.social-link:hover {
+  background: var(--color-inverse-primary);
+  border-color: var(--color-inverse-primary);
+  color: var(--color-on-primary-fixed) !important;
+}
+
+/* CTA del hero: es un botón claro dentro de section.bg-primary, cuya regla
+   "section.bg-primary span" pintaría el texto de blanco sobre blanco. */
+section.bg-primary .btn-hero-cta,
+section.bg-primary .btn-hero-cta span,
+.btn-hero-cta,
+.btn-hero-cta span { color: var(--color-primary) !important; }
+
 @media (prefers-reduced-motion: reduce) {
   .nav-dropdown-panel { transition: none; }
 }

@@ -1,0 +1,41 @@
+---
+/* Enlaces a redes sociales. Las URLs viven en content/settings/site.json;
+   los logotipos van como SVG en línea porque Material Symbols no incluye
+   marcas de terceros. */
+import site from '../content/settings/site.json';
+
+export interface Props {
+  /** 'footer' → círculo translúcido sobre fondo oscuro.
+   *  'outline' → círculo con borde sobre fondo claro. */
+  variant?: 'footer' | 'outline';
+}
+
+const { variant = 'footer' } = Astro.props;
+const { social, brand } = site;
+
+const ICONOS: Record<string, string> = {
+  Instagram: 'M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.67 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.13-1.38.67-.67 1.08-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm7.85-10.41a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z',
+  Facebook: 'M24 12.07C24 5.44 18.63.07 12 .07S0 5.44 0 12.07c0 5.99 4.39 10.95 10.13 11.85v-8.38H7.08v-3.47h3.05V9.43c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.47h-2.8v8.38C19.61 23.02 24 18.06 24 12.07z',
+};
+
+const ESTILOS = {
+  footer: 'social-link w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect',
+  outline: 'w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect',
+};
+---
+<div class="flex gap-4">
+  {social.map(red => (
+    <a
+      href={red.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`${brand} en ${red.name}`}
+      title={red.name}
+      class={ESTILOS[variant]}
+    >
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d={ICONOS[red.name]} />
+      </svg>
+    </a>
+  ))}
+</div>
