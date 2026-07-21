@@ -1,166 +1,315 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PlanesServicio from '../../components/PlanesServicio.astro';
+import Layout from "../../layouts/Layout.astro";
+import PlanesServicio from "../../components/PlanesServicio.astro";
 ---
+
 <Layout title="Administración de redes sociales | MK Media Digital">
-<!-- Hero Section -->
-<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary-container overflow-hidden">
-<div class="max-w-container-max mx-auto px-gutter relative z-10 text-center">
-<h1 class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6">
-                Domina tus Redes Sociales.
-            </h1>
-<p class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-primary-container/90 mb-12">
-                Convierte a tus seguidores en clientes leales con estrategias de contenido que atrapan, retienen y multiplican tus ventas.
-            </p>
-<div class="relative w-full max-w-4xl mx-auto mt-12 transform hover:scale-[1.02] transition-transform duration-700">
-<img alt="3D Social Media Icons" class="w-full rounded-2xl shadow-2xl border border-on-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Tnj9XFcjNHv9TekdiJ7cx1eBF-iE0UvldTA_1tK6cWUPXBHq0RZW5bweOm4dqHNkGRWR8gxvekPi7f1MjaBj8Yaus6m1km06NTnro_gQANrNrS4HNM1stjTcePuFfQNxJN7boywvsAiRfAkQuEHn20rH6zfIvJ7Vno-Y9ZWFivsAPXz8vKAv1ebhm_sIjQaZTX8wsZ9c3WSpC-Lrqm9hfBf6Z0ajD-y_IE7uDOHG4M08t-9iRAv9nuby_oY1INFf_-m-wmytOHff"/>
-</div>
-</div>
-<!-- Background accents -->
-<div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20">
-<div class="absolute top-20 left-10 w-64 h-64 bg-primary-fixed rounded-full blur-[100px]"></div>
-<div class="absolute bottom-10 right-10 w-96 h-96 bg-on-primary-container rounded-full blur-[120px]"></div>
-</div>
-</section>
-<!-- Benefits Bar -->
-<section class="bg-surface-container-lowest py-20 relative z-20 -mt-12 md:-mt-24">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 bg-white p-12 rounded-xl shadow-xl border border-outline-variant/30">
-<!-- Benefit 1 -->
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined text-4xl">target</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4 text-primary">Estrategia Definida</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Trazamos la ruta exacta basada en datos para conectar tu marca con la audiencia ideal.</p>
-</div>
-<!-- Benefit 2 -->
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined text-4xl">trending_up</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4 text-primary">Crecimiento Escalable</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Impulsamos tu comunidad con métricas reales usando GA4, optimización de conversiones y resultados tangibles.</p>
-</div>
-<!-- Benefit 3 -->
-<div class="flex flex-col items-center text-center">
-<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary">
-<span class="material-symbols-outlined text-4xl">lightbulb</span>
-</div>
-<h3 class="font-headline-md text-headline-md mb-4 text-primary">Contenido Innovador</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Destaca en el feed con formatos creativos y visuales atractivos que rompen el molde del mercado.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Ecosistema 360 Section -->
-<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
-<div class="max-w-container-max mx-auto px-gutter text-center">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 text-on-surface">Ecosistema Digital 360</h2>
-<p class="font-body-lg text-body-lg text-on-secondary-fixed-variant mb-16">Dominamos las plataformas clave para tu negocio.</p>
-<div class="flex flex-col gap-12">
-<!-- Row 1 -->
-<div class="flex flex-wrap justify-center gap-8 md:gap-16">
-<div class="flex flex-col items-center gap-4">
-<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">social_leaderboard</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Facebook</span>
-</div>
-<div class="flex flex-col items-center gap-4">
-<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl">camera</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Instagram</span>
-</div>
-<div class="flex flex-col items-center gap-4">
-<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl">close</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">X</span>
-</div>
-</div>
-<!-- Row 2 -->
-<div class="flex flex-wrap justify-center gap-8 md:gap-16">
-<div class="flex flex-col items-center gap-4">
-<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl">work</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">LinkedIn</span>
-</div>
-<div class="flex flex-col items-center gap-4">
-<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl">push_pin</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Pinterest</span>
-</div>
-<div class="flex flex-col items-center gap-4">
-<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl">store</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Google Business</span>
-</div>
-<div class="flex flex-col items-center gap-4">
-<div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl">music_note</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">TikTok</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Pricing Plans Section -->
-<PlanesServicio service="redes-sociales" heading="Elige tus redes sociales" featured="plan-integral" />
-<!-- Portfolio Section -->
-<section class="bg-surface-container-lowest py-section-padding-mobile md:py-section-padding-desktop border-t border-outline-variant/20">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="mb-16">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Nuestro Trabajo</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">Casos de éxito y marcas que confían en nosotros.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Case 1 -->
-<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A clean minimalist office interior with white walls, natural wood accents, and bright daylight. Professional people are seen in a soft blur, focusing on creative work in a modern workspace. The aesthetic is professional, calm, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaRTOfruyW0-7pDWOma3em0DeAA5_ul_3LUEaP_trTy9rKHV0ObOXLYisrKu5UMQB5IThZ00aWiuJxZDcz4F03XofB9E02Emn0cB8cPKXfJ-V3Nm5I83E3TpP_CILDnRNGCCM1RayEAXFdnbglk1GWT5j-Wx8FkbqztUoZttiHEqKUPftATIoJVLgpeX2Mk1QKWSiSHR7YA6AWmokQQO7D0ZtFTyw9cLH4X02PON1zefSFMtTvnoX0WiZtMkGoLH1nqN0KBB5RZ_H-">
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-<div class="text-on-primary">
-<h4 class="font-headline-md text-headline-md">Beviederm</h4>
-<p class="font-label-sm text-label-sm uppercase opacity-80">Sector Estético</p>
-</div>
-</div>
-</div>
-<!-- Case 2 -->
-<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A professional workspace with multiple screens displaying financial charts, stock market data, and analytical graphs. The lighting is low and sophisticated, featuring cool blue and deep purple tones that suggest precision and high-level financial analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7bdY9bToKCbPoD-nz1ZSvPiPx_X9DRy-1QXXAioNVg8cvxpmcSG4so1u7wMzwDhFLnsT9LaQdFq2iEgeJhQreZZeVtaHSqGucMPR6joAIh1N0DBEl7h7vPvkKqCO86fiFRpZWbQBUUNmxki4EqxTwtIgSlKz1iJm-C0mcZ_xbOJvVc-5f8gKZ6yK7whD2aimdGJ-Odq1-t9taytV5bHPlxkrmAofgZ195cwLRuLvs8tYVLaxobF6PdMGJBR4bOKk5ayWZIMyrFlta">
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-<div class="text-on-primary">
-<h4 class="font-headline-md text-headline-md">Sion Capital</h4>
-<p class="font-label-sm text-label-sm uppercase opacity-80">Sector Financiero</p>
-</div>
-</div>
-</div>
-<!-- Case 3 -->
-<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="An elegant meeting room setting with glass tables, modern ergonomic chairs, and large windows overlooking a city skyline at sunset. The atmosphere is warm and professional, emphasizing high-level corporate consultation and strategic planning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWstWJsuHQUMeJt6OWS7ftJGtXJ-pC4uaIeC5GYgCvEfNsIEjB98SZ99hKQEK_DpdlSkdGhG9tlEQGRK_MZXBerNLujk-3xrvIaNY54pglHRskjdnkxLtfsS3JcqiGrm0Pc7bJWnut_s0gbE4CF9TD2Xr05wSHPXzY25inc7Ve71xjYo0yqh0-FpJP_KH6NElR2VkEqlXoX3tYuexmRU_B-Beo0ccgHwac2qVwN1dCaH127kdy_xrdzBIXkS1TtNqznMIRwdJyNY8">
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-<div class="text-on-primary">
-<h4 class="font-headline-md text-headline-md">Trezentos</h4>
-<p class="font-label-sm text-label-sm uppercase opacity-80">Consultoría</p>
-</div>
-</div>
-</div>
-<!-- Case 4 -->
-<div class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A dynamic creative agency studio space with white brick walls, colorful abstract art, and multiple workstations equipped with high-end design tools. Bright, natural lighting pours in through large industrial windows, creating an energetic and productive atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqks-3n_FiyhB-de65cqwnGxnfO6pmouxIVSK4UWgEPYTlGg0iWk1rr5R2ryirT6BbSk_gTJ4XeDEIJbJOIbwnekQ27FLywJ-80Z3kqJuPG8EK1ftf-i7AIPM_9CG0sXqfCePK2mBHzz8itsxrVOrcCjGTZd_tIaSJqS1MBfuFsg1W_cPaYsF4DV8V_M8Han0pKn6GyQGyNTAyTyZkLwZ2r4rlLqAr4p5RaI1NwzYx70knAfNqkdjmoAWgsyw2F56_HBx_tvqErTqt">
-<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-<div class="text-on-primary">
-<h4 class="font-headline-md text-headline-md">Waymedia</h4>
-<p class="font-label-sm text-label-sm uppercase opacity-80">Agencias</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <!-- Hero Section -->
+  <section
+    class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-primary-container overflow-hidden"
+  >
+    <div
+      class="max-w-container-max mx-auto px-gutter relative z-10 text-center"
+    >
+      <h1
+        class="font-display-hero-mobile md:font-display-hero text-display-hero-mobile md:text-display-hero text-on-primary mb-6"
+      >
+        Domina tus Redes Sociales.
+      </h1>
+      <p
+        class="max-w-3xl mx-auto font-body-lg text-body-lg text-on-primary-container/90 mb-12"
+      >
+        Convierte a tus seguidores en clientes leales con estrategias de
+        contenido que atrapan, retienen y multiplican tus ventas.
+      </p>
+      <div
+        class="relative w-full max-w-4xl mx-auto mt-12 transform hover:scale-[1.02] transition-transform duration-700"
+      >
+        <img
+          alt="Ilustración 3D de gestión de redes sociales: teléfono con feed de contenido rodeado de iconos de interacción"
+          class="w-full rounded-2xl shadow-2xl border border-on-primary-container/20"
+          src="/img/servicios/redes-sociales.jpg" width="1600" height="900" fetchpriority="high"/>
+      </div>
+    </div>
+    <!-- Background accents -->
+    <div
+      class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20"
+    >
+      <div
+        class="absolute top-20 left-10 w-64 h-64 bg-primary-fixed rounded-full blur-[100px]"
+      >
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-on-primary-container rounded-full blur-[120px]"
+      >
+      </div>
+    </div>
+  </section>
+  <!-- Benefits Bar -->
+  <section
+    class="bg-surface-container-lowest py-20 relative z-20 -mt-12 md:-mt-24"
+  >
+    <div class="max-w-container-max mx-auto px-gutter">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-12 bg-white p-12 rounded-xl shadow-xl border border-outline-variant/30"
+      >
+        <!-- Benefit 1 -->
+        <div class="flex flex-col items-center text-center">
+          <div
+            class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary"
+          >
+            <span class="material-symbols-outlined text-4xl">target</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md mb-4 text-primary">
+            Estrategia Definida
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Trazamos la ruta exacta basada en datos para conectar tu marca con
+            la audiencia ideal.
+          </p>
+        </div>
+        <!-- Benefit 2 -->
+        <div class="flex flex-col items-center text-center">
+          <div
+            class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary"
+          >
+            <span class="material-symbols-outlined text-4xl">trending_up</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md mb-4 text-primary">
+            Crecimiento Escalable
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Impulsamos tu comunidad con métricas reales usando GA4, optimización
+            de conversiones y resultados tangibles.
+          </p>
+        </div>
+        <!-- Benefit 3 -->
+        <div class="flex flex-col items-center text-center">
+          <div
+            class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6 text-primary"
+          >
+            <span class="material-symbols-outlined text-4xl">lightbulb</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md mb-4 text-primary">
+            Contenido Innovador
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Destaca en el feed con formatos creativos y visuales atractivos que
+            rompen el molde del mercado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Ecosistema 360 Section -->
+  <section
+    class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop"
+  >
+    <div class="max-w-container-max mx-auto px-gutter text-center">
+      <h2
+        class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 text-on-surface"
+      >
+        Ecosistema Digital 360
+      </h2>
+      <p
+        class="font-body-lg text-body-lg text-on-secondary-fixed-variant mb-16"
+      >
+        Dominamos las plataformas clave para tu negocio.
+      </p>
+      <div class="flex flex-col gap-12">
+        <!-- Row 1 -->
+        <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+          <div class="flex flex-col items-center gap-4">
+            <div
+              class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform"
+            >
+              <span
+                class="material-symbols-outlined text-4xl"
+                style="font-variation-settings: 'FILL' 1;"
+                >social_leaderboard</span
+              >
+            </div>
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >Facebook</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <div
+              class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl">camera</span>
+            </div>
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >Instagram</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <div
+              class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl">close</span>
+            </div>
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >X</span
+            >
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+          <div class="flex flex-col items-center gap-4">
+            <div
+              class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl">work</span>
+            </div>
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >LinkedIn</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <div
+              class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl">push_pin</span>
+            </div>
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >Pinterest</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <div
+              class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl">store</span>
+            </div>
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >Google Business</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <div
+              class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center text-primary hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl">music_note</span>
+            </div>
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >TikTok</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing Plans Section -->
+  <PlanesServicio
+    service="redes-sociales"
+    heading="Elige tus redes sociales"
+    featured="plan-integral"
+  />
+  <!-- Portfolio Section -->
+  <section
+    class="bg-surface-container-lowest py-section-padding-mobile md:py-section-padding-desktop border-t border-outline-variant/20"
+  >
+    <div class="max-w-container-max mx-auto px-gutter">
+      <div class="mb-16">
+        <h2
+          class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2"
+        >
+          Nuestro Trabajo
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Casos de éxito y marcas que confían en nosotros.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Case 1 -->
+        <div
+          class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            data-alt="A clean minimalist office interior with white walls, natural wood accents, and bright daylight. Professional people are seen in a soft blur, focusing on creative work in a modern workspace. The aesthetic is professional, calm, and sophisticated."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaRTOfruyW0-7pDWOma3em0DeAA5_ul_3LUEaP_trTy9rKHV0ObOXLYisrKu5UMQB5IThZ00aWiuJxZDcz4F03XofB9E02Emn0cB8cPKXfJ-V3Nm5I83E3TpP_CILDnRNGCCM1RayEAXFdnbglk1GWT5j-Wx8FkbqztUoZttiHEqKUPftATIoJVLgpeX2Mk1QKWSiSHR7YA6AWmokQQO7D0ZtFTyw9cLH4X02PON1zefSFMtTvnoX0WiZtMkGoLH1nqN0KBB5RZ_H-"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8"
+          >
+            <div class="text-on-primary">
+              <h4 class="font-headline-md text-headline-md">Beviederm</h4>
+              <p class="font-label-sm text-label-sm uppercase opacity-80">
+                Sector Estético
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Case 2 -->
+        <div
+          class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            data-alt="A professional workspace with multiple screens displaying financial charts, stock market data, and analytical graphs. The lighting is low and sophisticated, featuring cool blue and deep purple tones that suggest precision and high-level financial analysis."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7bdY9bToKCbPoD-nz1ZSvPiPx_X9DRy-1QXXAioNVg8cvxpmcSG4so1u7wMzwDhFLnsT9LaQdFq2iEgeJhQreZZeVtaHSqGucMPR6joAIh1N0DBEl7h7vPvkKqCO86fiFRpZWbQBUUNmxki4EqxTwtIgSlKz1iJm-C0mcZ_xbOJvVc-5f8gKZ6yK7whD2aimdGJ-Odq1-t9taytV5bHPlxkrmAofgZ195cwLRuLvs8tYVLaxobF6PdMGJBR4bOKk5ayWZIMyrFlta"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8"
+          >
+            <div class="text-on-primary">
+              <h4 class="font-headline-md text-headline-md">Sion Capital</h4>
+              <p class="font-label-sm text-label-sm uppercase opacity-80">
+                Sector Financiero
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Case 3 -->
+        <div
+          class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            data-alt="An elegant meeting room setting with glass tables, modern ergonomic chairs, and large windows overlooking a city skyline at sunset. The atmosphere is warm and professional, emphasizing high-level corporate consultation and strategic planning."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWstWJsuHQUMeJt6OWS7ftJGtXJ-pC4uaIeC5GYgCvEfNsIEjB98SZ99hKQEK_DpdlSkdGhG9tlEQGRK_MZXBerNLujk-3xrvIaNY54pglHRskjdnkxLtfsS3JcqiGrm0Pc7bJWnut_s0gbE4CF9TD2Xr05wSHPXzY25inc7Ve71xjYo0yqh0-FpJP_KH6NElR2VkEqlXoX3tYuexmRU_B-Beo0ccgHwac2qVwN1dCaH127kdy_xrdzBIXkS1TtNqznMIRwdJyNY8"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8"
+          >
+            <div class="text-on-primary">
+              <h4 class="font-headline-md text-headline-md">Trezentos</h4>
+              <p class="font-label-sm text-label-sm uppercase opacity-80">
+                Consultoría
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Case 4 -->
+        <div
+          class="group relative aspect-square rounded-xl overflow-hidden cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            data-alt="A dynamic creative agency studio space with white brick walls, colorful abstract art, and multiple workstations equipped with high-end design tools. Bright, natural lighting pours in through large industrial windows, creating an energetic and productive atmosphere."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqks-3n_FiyhB-de65cqwnGxnfO6pmouxIVSK4UWgEPYTlGg0iWk1rr5R2ryirT6BbSk_gTJ4XeDEIJbJOIbwnekQ27FLywJ-80Z3kqJuPG8EK1ftf-i7AIPM_9CG0sXqfCePK2mBHzz8itsxrVOrcCjGTZd_tIaSJqS1MBfuFsg1W_cPaYsF4DV8V_M8Han0pKn6GyQGyNTAyTyZkLwZ2r4rlLqAr4p5RaI1NwzYx70knAfNqkdjmoAWgsyw2F56_HBx_tvqErTqt"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8"
+          >
+            <div class="text-on-primary">
+              <h4 class="font-headline-md text-headline-md">Waymedia</h4>
+              <p class="font-label-sm text-label-sm uppercase opacity-80">
+                Agencias
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
