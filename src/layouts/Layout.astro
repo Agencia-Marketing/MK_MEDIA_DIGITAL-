@@ -65,7 +65,7 @@ const rootStyle = ':root{' + Object.entries(cssVars).map(([k, v]) => `${k}:${v}`
     <nav class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
       <a href="/" class="font-headline-md text-headline-md font-bold flex items-center gap-2 shrink-0" style="color:var(--color-on-surface)" aria-label={brand}>
         {logo.image
-          ? <img src={logo.image} alt={logo.alt} class="h-12 md:h-14 w-auto" width="393" height="300" />
+          ? <img src={logo.image} alt={logo.alt} class="h-14 md:h-16 w-auto shadow-none rounded-none" width="393" height="300" />
           : brand}
       </a>
       <div class="hidden md:flex items-center gap-8">
