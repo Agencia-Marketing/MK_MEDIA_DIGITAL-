@@ -64,55 +64,6 @@
       }
     }
   },
-  "creacion-contenido": {
-    "name": "Creación de contenido individuales",
-    "plans": {
-      "diseno-individual": {
-        "name": "Diseño individual",
-        "label": "Individual",
-        "desc": "Una pieza puntual para cubrir una necesidad específica de tu negocio.",
-        "features": [
-          "1 diseño (imagen fija)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 1 a 2 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
-        ]
-      },
-      "paquete-15": {
-        "name": "Paquete de 15 diseños",
-        "label": "15 diseños",
-        "desc": "Mantén una presencia visual regular en tus redes sociales principales.",
-        "features": [
-          "15 diseños, de los cuales hasta 8 pueden ser en formato video",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega para todos los diseños: 5 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
-        ]
-      },
-      "paquete-20": {
-        "name": "Paquete de 20 diseños",
-        "label": "20 diseños",
-        "desc": "Cobertura de contenido robusta para negocios en crecimiento constante.",
-        "features": [
-          "20 diseños, de los cuales hasta 10 pueden ser en formato video",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega para todos los diseños: 5 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
-        ]
-      },
-      "paquete-30": {
-        "name": "Paquete de 30 diseños",
-        "label": "30 diseños",
-        "desc": "Volumen de publicaciones de nivel corporativo para marcas activas.",
-        "features": [
-          "30 diseños, de los cuales hasta 15 pueden ser en formato video",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega para todos los diseños: 5 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
-        ]
-      }
-    }
-  },
   "creadores-ugc": {
     "name": "Creadores UGC",
     "plans": {

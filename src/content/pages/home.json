@@ -9,7 +9,6 @@
   "servicesParagraph": "Trabajamos como un aliado estratégico para empresas que buscan fortalecer su presencia digital, mejorar su visibilidad en internet y generar oportunidades reales de negocio a través de estrategias digitales efectivas.",
   "services": [
     { "icon": "diversity_3", "title": "Administración de redes sociales", "desc": "Community manager, diseñador gráfico y trafficker dedicados a tu marca, con parrilla de contenidos y atención a mensajes y comentarios.", "href": "/servicios/redes-sociales" },
-    { "icon": "history_edu", "title": "Creación de contenido individuales", "desc": "Paquetes de diseños e imágenes fijas o en formato video, entregados en editable de CANVA sobre una misma línea gráfica.", "href": "/servicios/creacion-contenido" },
     { "icon": "campaign", "title": "Creadores UGC", "desc": "Videos publicitarios con personas reales: diseño de script, contratación del creador, edición y propuesta de campaña.", "href": "/servicios/creadores-ugc" },
     { "icon": "palette", "title": "Diseño gráfico", "desc": "Brand Design y material corporativo: logotipo, manual de identidad, flyers, tarjetas, menús digitales, packaging y más.", "href": "/servicios/diseno-grafico" },
     { "icon": "code", "title": "Desarrollo web", "desc": "Landing page, sitio informativo y e-commerce en WordPress, en modalidad económico o a la medida, con hosting y SSL.", "href": "/servicios/desarrollo-web" },

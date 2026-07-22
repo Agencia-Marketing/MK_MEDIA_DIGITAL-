@@ -9,7 +9,6 @@
       "href": "/#servicios",
       "children": [
         { "label": "Administración de redes sociales", "href": "/servicios/redes-sociales" },
-        { "label": "Creación de contenido individuales", "href": "/servicios/creacion-contenido" },
         { "label": "Creadores UGC", "href": "/servicios/creadores-ugc" },
         { "label": "Master Plan", "href": "/producto?service=master-plan&plan=master-plan" },
         { "label": "Diseño gráfico", "href": "/servicios/diseno-grafico" },
